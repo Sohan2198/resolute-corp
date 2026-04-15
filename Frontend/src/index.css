@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-slide > div {
+    margin: 0 10px;
+}
+
+.slick-dots{
+    bottom: -45px !important; 
+}
+.slick-dots li button:before {
+    color: #0E4669 !important;
+    font-size: 10px !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  width: 25px !important; 
+  height: 25px !important; 
+}
+
+
+  * {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .read-more-link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0066cc; /* blue color */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .read-more-link:hover {
+    color: #003399; /* darker blue color on hover */
+  }
+  :root {
+    --swiper-navigation-size: 28px !important;
+    --swiper-theme-color:#fff !important
+}
+
+@media screen and (max-width:600px) {
+  .swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+ }  
+}
+
+
+/* button  */
+.animated-button {
+  position: relative;
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-10px); 
+  }
+  60% {
+    transform: translateY(-5px); 
+  }
+}
+
+.kch-d-flex.kch-justify-content-around.kch-align-items-center {
+  display: none !important;
+}
+.kch-section.kch-header-section.kch-d-flex.kch-justify-content-center.kch-w-100.kch-pb-30.kch-position-sticky.kch-px-32 {
+  display: none !important;
+}
