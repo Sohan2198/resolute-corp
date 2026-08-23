@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import ReactQuill from 'react-quill';
+import ReactQuill, { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useAdmin } from '../../../contexts/AdminContext';
 import { blogPosts as initialBlogPosts } from '../../../data/blogData';
+
+// Allow pasting images as base64 inside editor content
+const ImageBlot = Quill.import('formats/image');
+ImageBlot.sanitize = (url) => url; // allow base64 and http urls
+Quill.register(ImageBlot, true);
 
 const BlogManager = () => {
   const { logout, isLoggedIn } = useAdmin();
@@ -183,15 +188,37 @@ const BlogManager = () => {
     reader.readAsDataURL(file);
   };
 
+  const quillRef = useRef(null);
+
   const quillModules = {
     toolbar: [
-      [{ 'header': [1, 2, 3, false] }],
-      ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+      [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+      [{ 'font': [] }],
+      [{ 'size': ['small', false, 'large', 'huge'] }],
+      ['bold', 'italic', 'underline', 'strike'],
+      [{ 'color': [] }, { 'background': [] }],
+      [{ 'align': [] }],
+      ['blockquote', 'code-block'],
       [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-      ['link', 'image'],
+      ['link', 'image', 'video'],
       ['clean']
     ],
+    clipboard: {
+      // Allow paste from Google Docs / Word while preserving formatting
+      matchVisual: false,
+    },
   };
+
+  const quillFormats = [
+    'header', 'font', 'size',
+    'bold', 'italic', 'underline', 'strike',
+    'color', 'background',
+    'align',
+    'blockquote', 'code-block',
+    'list', 'bullet', 'indent',
+    'link', 'image', 'video',
+    'table',
+  ];
 
   // Date Helpers
   const formatDateForInput = (dateStr) => {
@@ -418,11 +445,13 @@ const BlogManager = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Content (Rich Text)</label>
                 <div className="bg-white rounded-xl overflow-hidden border border-gray-300 focus-within:ring-2 focus-within:ring-[#0E4669] focus-within:border-transparent transition-all">
                   <ReactQuill 
+                    ref={quillRef}
                     theme="snow" 
                     value={formData.content} 
                     onChange={handleContentChange} 
                     modules={quillModules}
-                    className="h-64 border-none"
+                    formats={quillFormats}
+                    className="h-96 border-none"
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-2">The excerpt is automatically generated from the first few lines of content.</p>
