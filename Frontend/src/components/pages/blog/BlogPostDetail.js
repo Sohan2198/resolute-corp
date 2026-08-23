@@ -1,22 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { blogPosts as initialBlogPosts } from '../../../data/blogData';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../../firebase';
 
 const BlogPostDetail = () => {
   const { slug } = useParams();
   const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
   
   useEffect(() => {
-    // Load custom/edited posts from localStorage
-    const localPosts = localStorage.getItem('resolute_blog_posts');
-    if (localPosts) {
+    const fetchPosts = async () => {
       try {
-        const parsed = JSON.parse(localPosts);
-        setBlogPosts(parsed);
-      } catch (e) {
-        console.error("Error parsing local posts", e);
+        const querySnapshot = await getDocs(collection(db, "blogs"));
+        const firestorePosts = [];
+        querySnapshot.forEach((doc) => {
+          firestorePosts.push(doc.data());
+        });
+        
+        // Merge with initialBlogPosts, preferring firestorePosts for duplicates based on slug
+        const merged = [...firestorePosts];
+        initialBlogPosts.forEach(initial => {
+          if (!merged.find(p => p.slug === initial.slug)) {
+            merged.push(initial);
+          }
+        });
+        
+        setBlogPosts(merged);
+      } catch (error) {
+        console.error("Error fetching from Firebase", error);
+        setBlogPosts(initialBlogPosts);
       }
-    }
+    };
+    
+    fetchPosts();
   }, []);
 
   const post = blogPosts.find(post => post.slug === slug);

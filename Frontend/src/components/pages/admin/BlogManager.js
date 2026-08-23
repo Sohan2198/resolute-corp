@@ -4,6 +4,8 @@ import ReactQuill, { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useAdmin } from '../../../contexts/AdminContext';
 import { blogPosts as initialBlogPosts } from '../../../data/blogData';
+import { collection, getDocs, doc, setDoc, deleteDoc } from 'firebase/firestore';
+import { db } from '../../../firebase';
 
 // Allow pasting images as base64 inside editor content
 const ImageBlot = Quill.import('formats/image');
@@ -44,17 +46,32 @@ const BlogManager = () => {
       return;
     }
     
-    // Load custom/edited posts from localStorage or default
-    const localPosts = localStorage.getItem('resolute_blog_posts');
-    if (localPosts) {
+    const fetchPosts = async () => {
       try {
-        setPosts(JSON.parse(localPosts));
-      } catch (e) {
+        const querySnapshot = await getDocs(collection(db, "blogs"));
+        const firestorePosts = [];
+        querySnapshot.forEach((doc) => {
+          firestorePosts.push(doc.data());
+        });
+        
+        // Merge with initialBlogPosts, preferring firestorePosts for duplicates based on slug
+        const merged = [...firestorePosts];
+        initialBlogPosts.forEach(initial => {
+          if (!merged.find(p => p.slug === initial.slug)) {
+            merged.push(initial);
+          }
+        });
+        
+        // Sort by date descending
+        merged.sort((a, b) => new Date(b.date) - new Date(a.date));
+        setPosts(merged);
+      } catch (error) {
+        console.error("Error fetching from Firebase", error);
         setPosts(initialBlogPosts);
       }
-    } else {
-      setPosts(initialBlogPosts);
-    }
+    };
+    
+    fetchPosts();
   }, [isLoggedIn, navigate]);
 
   const handleLogout = () => {
@@ -62,42 +79,53 @@ const BlogManager = () => {
     navigate('/admin');
   };
 
-  const handleSave = (e) => {
+  const handleSave = async (e) => {
     e.preventDefault();
-    let updatedPosts;
     
-    if (editingPost) {
-      // Update existing
-      updatedPosts = posts.map(p => p.slug === formData.slug ? formData : p);
-    } else {
-      // Create new - check if slug exists
-      if (posts.some(p => p.slug === formData.slug)) {
-        alert("A post with this slug already exists. Please choose a unique slug.");
-        return;
-      }
-      updatedPosts = [formData, ...posts];
+    // Create new - check if slug exists
+    if (!editingPost && posts.some(p => p.slug === formData.slug)) {
+      alert("A post with this slug already exists. Please choose a unique slug.");
+      return;
     }
-    
+
     try {
-      localStorage.setItem('resolute_blog_posts', JSON.stringify(updatedPosts));
+      // Save to Firebase using slug as document ID
+      await setDoc(doc(db, "blogs", formData.slug), formData);
+      
+      let updatedPosts;
+      if (editingPost) {
+        updatedPosts = posts.map(p => p.slug === formData.slug ? formData : p);
+      } else {
+        updatedPosts = [formData, ...posts];
+      }
+      
+      // Sort
+      updatedPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+      
       setPosts(updatedPosts);
       setEditingPost(null);
       resetForm();
-      alert("Post saved successfully!");
+      alert("Post saved successfully to database!");
     } catch (e) {
-      if (e.name === 'QuotaExceededError') {
-        alert("Failed to save: Local Storage is full! Please delete some posts or use smaller images.");
-      } else {
-        alert("An error occurred while saving the post.");
-      }
+      console.error("Firebase save error:", e);
+      alert("An error occurred while saving to database. Check console.");
     }
   };
 
-  const handleDelete = (slug) => {
+  const handleDelete = async (slug) => {
     if (window.confirm("Are you sure you want to delete this post?")) {
-      const updatedPosts = posts.filter(p => p.slug !== slug);
-      setPosts(updatedPosts);
-      localStorage.setItem('resolute_blog_posts', JSON.stringify(updatedPosts));
+      try {
+        // Try deleting from firebase
+        await deleteDoc(doc(db, "blogs", slug));
+        const updatedPosts = posts.filter(p => p.slug !== slug);
+        setPosts(updatedPosts);
+      } catch(e) {
+        console.error("Delete error", e);
+        // If it fails, maybe it's a hardcoded post that doesn't exist in DB
+        const updatedPosts = posts.filter(p => p.slug !== slug);
+        setPosts(updatedPosts);
+        alert("Post removed from view (if it was a hardcoded post, it will reappear on refresh).");
+      }
     }
   };
 

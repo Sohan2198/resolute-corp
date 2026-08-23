@@ -4,6 +4,8 @@ import { ChevronDown } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import portfolioBg from '../../../assets/images/Resolute-UI-Portfolio.jpg';
 import { blogPosts as initialBlogPosts } from '../../../data/blogData';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../../firebase';
 
 const BlogPost = ({ post }) => {
   const navigate = useNavigate();
@@ -42,16 +44,30 @@ const Blog = () => {
   const postsPerPage = 12;
 
   useEffect(() => {
-    // Load custom/edited posts from localStorage
-    const localPosts = localStorage.getItem('resolute_blog_posts');
-    if (localPosts) {
+    const fetchPosts = async () => {
       try {
-        const parsed = JSON.parse(localPosts);
-        setBlogPosts(parsed);
-      } catch (e) {
-        console.error("Error parsing local posts", e);
+        const querySnapshot = await getDocs(collection(db, "blogs"));
+        const firestorePosts = [];
+        querySnapshot.forEach((doc) => {
+          firestorePosts.push(doc.data());
+        });
+        
+        // Merge with initialBlogPosts, preferring firestorePosts for duplicates based on slug
+        const merged = [...firestorePosts];
+        initialBlogPosts.forEach(initial => {
+          if (!merged.find(p => p.slug === initial.slug)) {
+            merged.push(initial);
+          }
+        });
+        
+        setBlogPosts(merged);
+      } catch (error) {
+        console.error("Error fetching from Firebase", error);
+        setBlogPosts(initialBlogPosts);
       }
-    }
+    };
+    
+    fetchPosts();
   }, []);
 
   const categories = [...new Set(blogPosts.map(post => post.category))];
