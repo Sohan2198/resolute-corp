@@ -34,7 +34,10 @@ const BlogPostDetail = () => {
         <p className="text-gray-500">{post.date} • {post.category}</p>
       </div>
       <div className="mt-3 text-justify max-w-4xl mx-auto">
-        <p className="text-gray-800 text-lg leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div 
+          className="text-gray-800 text-lg leading-relaxed prose max-w-none" 
+          dangerouslySetInnerHTML={{ __html: post.content }} 
+        />
       </div>
     </div>
   );
