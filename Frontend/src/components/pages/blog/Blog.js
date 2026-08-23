@@ -9,7 +9,7 @@ const BlogPost = ({ post }) => {
   const navigate = useNavigate();
 
   const handleReadMore = () => {
-    navigate(`/${post.slug}`); // Redirect to the blog post detail page
+    navigate(`/blog/${post.slug}`); // Redirect to the blog post detail page
   };
 
   return (

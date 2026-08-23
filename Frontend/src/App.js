@@ -56,12 +56,11 @@ function App() {
               <Route path="portfolio" element={<Portfolio />} />
               <Route path="career" element={<Career />} />
               <Route path="blog" element={<Blog />} />
+              <Route path="blog/:slug" element={<BlogPostDetail />} />
               <Route path="pitch" element={<Pitch />} />
               <Route path="events-highlights" element={<EventsHighlights />} />
               <Route path="press-releases" element={<PressReleases />} />
               <Route path="scheme-of-arrangement" element={<SchemeOfArrangement />} />
-              {/* Dynamic slug route must be at the end to prevent catching other static routes */}
-              <Route path=":slug" element={<BlogPostDetail />} />
             </Route>
 
             {/* Admin Routes (No public Header/Footer) */}
