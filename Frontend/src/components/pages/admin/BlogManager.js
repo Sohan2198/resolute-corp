@@ -10,6 +10,10 @@ const ImageBlot = Quill.import('formats/image');
 ImageBlot.sanitize = (url) => url; // allow base64 and http urls
 Quill.register(ImageBlot, true);
 
+// Delta used for custom clipboard matchers
+const Delta = Quill.import('delta');
+
+
 const BlogManager = () => {
   const { logout, isLoggedIn } = useAdmin();
   const navigate = useNavigate();
@@ -204,8 +208,53 @@ const BlogManager = () => {
       ['clean']
     ],
     clipboard: {
-      // Allow paste from Google Docs / Word while preserving formatting
       matchVisual: false,
+      matchers: [
+        // Convert HTML <table> from Google Docs/Word into styled text rows
+        ['table', (node) => {
+          let result = new Delta();
+          const rows = node.querySelectorAll('tr');
+          rows.forEach((tr, rowIndex) => {
+            const cells = tr.querySelectorAll('td, th');
+            const cellTexts = [];
+            cells.forEach(cell => {
+              cellTexts.push((cell.innerText || cell.textContent || '').trim());
+            });
+            const line = cellTexts.join(' \u2502 ');
+            if (rowIndex === 0) {
+              result.insert(line, { bold: true });
+            } else {
+              result.insert(line);
+            }
+            result.insert('\n');
+            // Add a divider row after header
+            if (rowIndex === 0 && rows.length > 1) {
+              const divider = cellTexts.map(c => '\u2500'.repeat(Math.max(c.length, 5))).join('\u253C');
+              result.insert(divider + '\n');
+            }
+          });
+          result.insert('\n');
+          return result;
+        }],
+        // Handle images pasted from Google Docs (they fail to load due to Google auth)
+        ['img', (node) => {
+          const src = node.getAttribute('src') || '';
+          // Google Docs/Drive images are behind auth - cannot be loaded externally
+          if (
+            src.includes('googleusercontent.com') ||
+            src.includes('google.com/drawings') ||
+            src.includes('lh3.google') ||
+            src.includes('docs.google')
+          ) {
+            return new Delta().insert(
+              '[ 📷 Image from Google Docs — please upload it manually using the Image button in the toolbar above ]\n',
+              { italic: true, color: '#888888' }
+            );
+          }
+          // Allow all other images (http/https/base64)
+          return new Delta().insert({ image: src });
+        }],
+      ]
     },
   };
 
@@ -217,7 +266,6 @@ const BlogManager = () => {
     'blockquote', 'code-block',
     'list', 'bullet', 'indent',
     'link', 'image', 'video',
-    'table',
   ];
 
   // Date Helpers
