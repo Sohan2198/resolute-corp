@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Search } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import portfolioBg from '../../../assets/images/Resolute-UI-Portfolio.jpg';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
@@ -14,23 +14,33 @@ const BlogPost = ({ post }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden mt-10 flex flex-col h-full">
-      <div className="relative">
-        <img src={post.banner} alt={post.title} className="w-full h-48 object-cover" />
-        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
-          <h2 className="md:text-xl text-sm font-semibold mb-2 line-clamp-2">{post.title}</h2>
-          <span className="text-sm">{post.date}</span>
-          <span className="text-sm ml-4">{post.author}</span>
-        </div>
+    <div className="bg-white rounded-lg shadow-md overflow-hidden mt-10 flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+      <div className="relative overflow-hidden cursor-pointer" onClick={handleReadMore}>
+        <img src={post.banner} alt={post.title} className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
       </div>
       <div className="p-6 flex flex-col flex-grow">
-        <p className="text-gray-600 mb-4 flex-grow line-clamp-3">{post.excerpt}</p>
-        <button 
-          onClick={handleReadMore} 
-          className="text-[#0E4669] font-medium flex items-center hover:text-blue-600 mt-auto"
+        <div className="flex justify-between items-center text-xs text-gray-500 mb-3">
+          <span>{post.date}</span>
+          <span className="font-medium text-gray-700">{post.category}</span>
+        </div>
+        <h2 
+          className="md:text-xl text-lg font-bold mb-3 line-clamp-2 text-[#0E4669] hover:text-blue-600 cursor-pointer" 
+          onClick={handleReadMore}
         >
-          Read More <ChevronDown className="ml-2 h-4 w-4" />
-        </button>
+          {post.title}
+        </h2>
+        <div className="flex-grow mb-4">
+          <p className="text-gray-600 line-clamp-3 text-justify">{post.excerpt}</p>
+        </div>
+        <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
+          <span className="text-sm font-medium text-gray-800">{post.author}</span>
+          <button 
+            onClick={handleReadMore} 
+            className="text-[#0E4669] font-medium flex items-center hover:text-blue-600"
+          >
+            Read More <ChevronDown className="ml-1 h-4 w-4" />
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -40,6 +50,7 @@ const Blog = () => {
   const [blogPosts, setBlogPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 12;
 
@@ -65,9 +76,16 @@ const Blog = () => {
 
   const categories = [...new Set(blogPosts.map(post => post.category))];
 
-  const filteredBlogPosts = selectedCategory === 'All' 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+  const filteredBlogPosts = blogPosts.filter(post => {
+    const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
+    const searchLower = searchTerm.toLowerCase();
+    const matchesSearch = !searchTerm || 
+      post.title?.toLowerCase().includes(searchLower) || 
+      post.excerpt?.toLowerCase().includes(searchLower) ||
+      post.content?.toLowerCase().includes(searchLower);
+    
+    return matchesCategory && matchesSearch;
+  });
 
   const sortedBlogPosts = [...filteredBlogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -80,6 +98,11 @@ const Blog = () => {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
     setCurrentPage(1); // Reset to page 1 on category change
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+    setCurrentPage(1); // Reset to page 1 on search change
   };
 
   const handlePageChange = (pageNumber) => {
@@ -118,17 +141,31 @@ const Blog = () => {
         {/* Content — shown after load */}
         {!loading && (
           <>
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center my-6 gap-2 px-4">
-              {['All', ...categories].map(category => (
-                <button
-                  key={category}
-                  onClick={() => handleCategoryChange(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category ? 'bg-[#0E4669] text-white' : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}`}
-                >
-                  {category}
-                </button>
-              ))}
+            {/* Category Filter and Search */}
+            <div className="container mx-auto px-4 my-8">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="flex flex-wrap justify-center gap-2">
+                  {['All', ...categories].map(category => (
+                    <button
+                      key={category}
+                      onClick={() => handleCategoryChange(category)}
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category ? 'bg-[#0E4669] text-white' : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}`}
+                    >
+                      {category}
+                    </button>
+                  ))}
+                </div>
+                <div className="relative w-full md:w-72">
+                  <input
+                    type="text"
+                    placeholder="Search blogs..."
+                    value={searchTerm}
+                    onChange={handleSearchChange}
+                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#0E4669] focus:border-transparent transition-all"
+                  />
+                  <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+                </div>
+              </div>
             </div>
 
             {/* Blog Posts Grid */}

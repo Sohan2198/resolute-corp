@@ -49,7 +49,7 @@ const BlogPostDetail = () => {
   return (
     <div className="container mx-auto p-4 md:py-12">
       <h1 className="md:text-4xl md:text-center md:py-6 text-2xl font-bold mb-6 text-[#0E4669]">{post.title}</h1>
-      <img src={post.banner} alt={post.title} className="w-full max-h-[500px] object-cover rounded-lg shadow-md mb-8" />
+      <img src={post.banner} alt={post.title} className="w-full h-auto rounded-lg shadow-md mb-8" />
       <div className="flex items-center justify-between border-b pb-4 mb-6">
         <p className="font-semibold text-gray-700">By {post.author}</p>
         <p className="text-gray-500">{post.date} • {post.category}</p>
