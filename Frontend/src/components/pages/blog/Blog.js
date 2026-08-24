@@ -16,15 +16,15 @@ const BlogPost = ({ post }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden mt-10 flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
       <div className="relative overflow-hidden cursor-pointer" onClick={handleReadMore}>
-        <img src={post.banner} alt={post.title} className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300" />
+        <img src={post.banner} alt={post.title} className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300" />
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <div className="flex justify-between items-center text-xs text-gray-500 mb-3">
           <span>{post.date}</span>
           <span className="font-medium text-gray-700">{post.category}</span>
         </div>
-        <h2 
-          className="md:text-xl text-lg font-bold mb-3 line-clamp-2 text-[#0E4669] hover:text-blue-600 cursor-pointer" 
+        <h2
+          className="md:text-xl text-lg font-bold mb-3 line-clamp-2 text-[#0E4669] hover:text-blue-600 cursor-pointer"
           onClick={handleReadMore}
         >
           {post.title}
@@ -34,8 +34,8 @@ const BlogPost = ({ post }) => {
         </div>
         <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
           <span className="text-sm font-medium text-gray-800">{post.author}</span>
-          <button 
-            onClick={handleReadMore} 
+          <button
+            onClick={handleReadMore}
             className="text-[#0E4669] font-medium flex items-center hover:text-blue-600"
           >
             Read More <ChevronDown className="ml-1 h-4 w-4" />
@@ -79,11 +79,11 @@ const Blog = () => {
   const filteredBlogPosts = blogPosts.filter(post => {
     const matchesCategory = selectedCategory === 'All' || post.category === selectedCategory;
     const searchLower = searchTerm.toLowerCase();
-    const matchesSearch = !searchTerm || 
-      post.title?.toLowerCase().includes(searchLower) || 
+    const matchesSearch = !searchTerm ||
+      post.title?.toLowerCase().includes(searchLower) ||
       post.excerpt?.toLowerCase().includes(searchLower) ||
       post.content?.toLowerCase().includes(searchLower);
-    
+
     return matchesCategory && matchesSearch;
   });
 
