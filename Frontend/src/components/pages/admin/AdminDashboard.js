@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAdmin } from '../../../contexts/AdminContext';
-import { blogPosts as initialBlogPosts } from '../../../data/blogData';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../../../firebase';
 
 const AdminDashboard = () => {
   const { logout, isLoggedIn } = useAdmin();
   const navigate = useNavigate();
+  const [totalPosts, setTotalPosts] = useState('—');
+  const [totalCategories, setTotalCategories] = useState('—');
+
+  // Always call hooks before any early returns
+  useEffect(() => {
+    if (!isLoggedIn) return;
+    const fetchStats = async () => {
+      try {
+        const snapshot = await getDocs(collection(db, 'blogs'));
+        const posts = [];
+        snapshot.forEach(d => posts.push(d.data()));
+        const categories = new Set(posts.map(p => p.category).filter(Boolean));
+        setTotalPosts(posts.length);
+        setTotalCategories(categories.size);
+      } catch (err) {
+        console.error('Error fetching stats:', err);
+      }
+    };
+    fetchStats();
+  }, [isLoggedIn]);
 
   // Redirect if not logged in
   if (!isLoggedIn) {
@@ -17,19 +38,6 @@ const AdminDashboard = () => {
     logout();
     navigate('/admin');
   };
-
-  // Get current stats
-  const localPosts = localStorage.getItem('resolute_blog_posts');
-  let currentPosts = initialBlogPosts;
-  if (localPosts) {
-    try {
-      currentPosts = JSON.parse(localPosts);
-    } catch(e) {}
-  }
-  
-  const categories = [...new Set(currentPosts.map(post => post.category))];
-  const totalPosts = currentPosts.length;
-  const totalCategories = categories.length;
 
   return (
     <div className="flex h-screen bg-gray-100 font-sans">
@@ -76,7 +84,7 @@ const AdminDashboard = () => {
             <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wider mb-2">Storage Status</h3>
             <div className="text-xl font-semibold text-green-600 mt-2 flex items-center">
               <span className="w-3 h-3 rounded-full bg-green-500 mr-2"></span>
-              Local Storage Active
+              Firebase Firestore
             </div>
           </div>
         </div>

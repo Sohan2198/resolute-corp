@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 import portfolioBg from '../../../assets/images/Resolute-UI-Portfolio.jpg';
-import { blogPosts as initialBlogPosts } from '../../../data/blogData';
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../../../firebase';
 
 const BlogPost = ({ post }) => {
@@ -38,7 +37,8 @@ const BlogPost = ({ post }) => {
 };
 
 const Blog = () => {
-  const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
+  const [blogPosts, setBlogPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 12;
@@ -46,27 +46,20 @@ const Blog = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "blogs"));
-        const firestorePosts = [];
+        setLoading(true);
+        const q = query(collection(db, 'blogs'), orderBy('date', 'desc'));
+        const querySnapshot = await getDocs(q);
+        const posts = [];
         querySnapshot.forEach((doc) => {
-          firestorePosts.push(doc.data());
+          posts.push(doc.data());
         });
-        
-        // Merge with initialBlogPosts, preferring firestorePosts for duplicates based on slug
-        const merged = [...firestorePosts];
-        initialBlogPosts.forEach(initial => {
-          if (!merged.find(p => p.slug === initial.slug)) {
-            merged.push(initial);
-          }
-        });
-        
-        setBlogPosts(merged);
+        setBlogPosts(posts);
       } catch (error) {
-        console.error("Error fetching from Firebase", error);
-        setBlogPosts(initialBlogPosts);
+        console.error('Error fetching blogs from Firebase:', error);
+      } finally {
+        setLoading(false);
       }
     };
-    
     fetchPosts();
   }, []);
 
@@ -114,64 +107,76 @@ const Blog = () => {
           <h1 className="text-4xl font-bold text-center mb-3 py-5">Blogs</h1>
           <h4 className='text-center text-xl mb-5 font-semibold'>Insights on Investments and Growth</h4>
         </div>
-        
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center my-6 gap-2 px-4">
-            {['All', ...categories].map(category => (
-              <button 
-                key={category} 
-                onClick={() => handleCategoryChange(category)} 
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category ? 'bg-[#0E4669] text-white' : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}`}
-              >
-                {category}
-              </button>
-            ))}
-        </div>
 
-        {/* Blog Posts Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto px-4 min-h-[500px]">
-          {currentPosts.length > 0 ? (
-            currentPosts.map(post => (
-              <BlogPost key={post.slug} post={post} />
-            ))
-          ) : (
-            <div className="col-span-full text-center py-10 text-gray-500">
-              No blog posts found for this category.
-            </div>
-          )}
-        </div>
+        {/* Loading State */}
+        {loading && (
+          <div className="flex justify-center items-center py-20">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#0E4669]"></div>
+          </div>
+        )}
 
-        {/* Pagination */}
-        {totalPages > 1 && (
-          <div className="flex justify-center items-center mt-12 gap-2">
-            <button 
-              onClick={() => handlePageChange(currentPage - 1)}
-              disabled={currentPage === 1}
-              className="px-4 py-2 rounded border border-gray-300 bg-white text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
-            >
-              Previous
-            </button>
-            
-            <div className="flex gap-1 overflow-x-auto max-w-[200px] sm:max-w-none px-2">
-              {[...Array(totalPages)].map((_, i) => (
+        {/* Content — shown after load */}
+        {!loading && (
+          <>
+            {/* Category Filter */}
+            <div className="flex flex-wrap justify-center my-6 gap-2 px-4">
+              {['All', ...categories].map(category => (
                 <button
-                  key={i + 1}
-                  onClick={() => handlePageChange(i + 1)}
-                  className={`w-10 h-10 rounded flex items-center justify-center transition-colors shrink-0 ${currentPage === i + 1 ? 'bg-[#0E4669] text-white' : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'}`}
+                  key={category}
+                  onClick={() => handleCategoryChange(category)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${selectedCategory === category ? 'bg-[#0E4669] text-white' : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'}`}
                 >
-                  {i + 1}
+                  {category}
                 </button>
               ))}
             </div>
 
-            <button 
-              onClick={() => handlePageChange(currentPage + 1)}
-              disabled={currentPage === totalPages}
-              className="px-4 py-2 rounded border border-gray-300 bg-white text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
-            >
-              Next
-            </button>
-          </div>
+            {/* Blog Posts Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto px-4 min-h-[500px]">
+              {currentPosts.length > 0 ? (
+                currentPosts.map(post => (
+                  <BlogPost key={post.slug} post={post} />
+                ))
+              ) : (
+                <div className="col-span-full text-center py-10 text-gray-500">
+                  No blog posts found for this category.
+                </div>
+              )}
+            </div>
+
+            {/* Pagination */}
+            {totalPages > 1 && (
+              <div className="flex justify-center items-center mt-12 gap-2">
+                <button
+                  onClick={() => handlePageChange(currentPage - 1)}
+                  disabled={currentPage === 1}
+                  className="px-4 py-2 rounded border border-gray-300 bg-white text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                >
+                  Previous
+                </button>
+
+                <div className="flex gap-1 overflow-x-auto max-w-[200px] sm:max-w-none px-2">
+                  {[...Array(totalPages)].map((_, i) => (
+                    <button
+                      key={i + 1}
+                      onClick={() => handlePageChange(i + 1)}
+                      className={`w-10 h-10 rounded flex items-center justify-center transition-colors shrink-0 ${currentPage === i + 1 ? 'bg-[#0E4669] text-white' : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'}`}
+                    >
+                      {i + 1}
+                    </button>
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => handlePageChange(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                  className="px-4 py-2 rounded border border-gray-300 bg-white text-gray-700 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                >
+                  Next
+                </button>
+              </div>
+            )}
+          </>
         )}
       </div>
     </section>

@@ -3,8 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import ReactQuill, { Quill } from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { useAdmin } from '../../../contexts/AdminContext';
-import { blogPosts as initialBlogPosts } from '../../../data/blogData';
-import { collection, getDocs, doc, setDoc, deleteDoc } from 'firebase/firestore';
+import { collection, getDocs, doc, setDoc, deleteDoc, query, orderBy } from 'firebase/firestore';
 import { db } from '../../../firebase';
 
 // Allow pasting images as base64 inside editor content
@@ -48,26 +47,15 @@ const BlogManager = () => {
     
     const fetchPosts = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "blogs"));
+        const q = query(collection(db, 'blogs'), orderBy('date', 'desc'));
+        const querySnapshot = await getDocs(q);
         const firestorePosts = [];
         querySnapshot.forEach((doc) => {
           firestorePosts.push(doc.data());
         });
-        
-        // Merge with initialBlogPosts, preferring firestorePosts for duplicates based on slug
-        const merged = [...firestorePosts];
-        initialBlogPosts.forEach(initial => {
-          if (!merged.find(p => p.slug === initial.slug)) {
-            merged.push(initial);
-          }
-        });
-        
-        // Sort by date descending
-        merged.sort((a, b) => new Date(b.date) - new Date(a.date));
-        setPosts(merged);
+        setPosts(firestorePosts);
       } catch (error) {
-        console.error("Error fetching from Firebase", error);
-        setPosts(initialBlogPosts);
+        console.error('Error fetching from Firebase', error);
       }
     };
     

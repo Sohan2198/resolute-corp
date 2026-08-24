@@ -1,44 +1,49 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { blogPosts as initialBlogPosts } from '../../../data/blogData';
-import { collection, getDocs } from 'firebase/firestore';
+import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../firebase';
 
 const BlogPostDetail = () => {
   const { slug } = useParams();
-  const [blogPosts, setBlogPosts] = useState(initialBlogPosts);
-  
+  const [post, setPost] = useState(null);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchPost = async () => {
       try {
-        const querySnapshot = await getDocs(collection(db, "blogs"));
-        const firestorePosts = [];
-        querySnapshot.forEach((doc) => {
-          firestorePosts.push(doc.data());
-        });
-        
-        // Merge with initialBlogPosts, preferring firestorePosts for duplicates based on slug
-        const merged = [...firestorePosts];
-        initialBlogPosts.forEach(initial => {
-          if (!merged.find(p => p.slug === initial.slug)) {
-            merged.push(initial);
-          }
-        });
-        
-        setBlogPosts(merged);
+        setLoading(true);
+        const docRef = doc(db, 'blogs', slug);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setPost(docSnap.data());
+        } else {
+          setPost(null);
+        }
       } catch (error) {
-        console.error("Error fetching from Firebase", error);
-        setBlogPosts(initialBlogPosts);
+        console.error('Error fetching blog post from Firebase:', error);
+        setPost(null);
+      } finally {
+        setLoading(false);
       }
     };
-    
-    fetchPosts();
-  }, []);
 
-  const post = blogPosts.find(post => post.slug === slug);
+    if (slug) fetchPost();
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center min-h-[60vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#0E4669]"></div>
+      </div>
+    );
+  }
 
   if (!post) {
-    return <div>Post not found</div>;
+    return (
+      <div className="flex justify-center items-center min-h-[60vh] text-gray-500 text-lg">
+        Post not found.
+      </div>
+    );
   }
 
   return (
