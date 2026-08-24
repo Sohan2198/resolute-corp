@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAdmin } from '../../../contexts/AdminContext';
 
@@ -6,23 +6,48 @@ const AdminLogin = () => {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const { login, isLoggedIn } = useAdmin();
+  const [submitting, setSubmitting] = useState(false);
+  const { login, isLoggedIn, authLoading } = useAdmin();
   const navigate = useNavigate();
 
   // If already logged in, redirect to dashboard
-  if (isLoggedIn) {
-    navigate('/admin/dashboard');
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const success = login(id, password);
-    if (success) {
+  useEffect(() => {
+    if (!authLoading && isLoggedIn) {
       navigate('/admin/dashboard');
-    } else {
-      setError('Invalid ID or Password');
+    }
+  }, [authLoading, isLoggedIn, navigate]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setSubmitting(true);
+    try {
+      await login(id, password);
+      navigate('/admin/dashboard');
+    } catch (err) {
+      console.error('Admin login error:', err.code, err.message);
+      switch (err.code) {
+        case 'auth/operation-not-allowed':
+          setError('Email/Password sign-in is not enabled for this project yet.');
+          break;
+        case 'auth/invalid-email':
+          setError('That email address is not valid.');
+          break;
+        case 'auth/too-many-requests':
+          setError('Too many attempts. Please wait a moment and try again.');
+          break;
+        case 'auth/network-request-failed':
+          setError('Network error — check your connection and try again.');
+          break;
+        default:
+          setError('Invalid email or password');
+      }
+    } finally {
+      setSubmitting(false);
     }
   };
+
+  if (authLoading) return null;
 
   return (
     <div className="min-h-screen bg-gray-900 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 font-sans">
@@ -38,14 +63,14 @@ const AdminLogin = () => {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div className="mb-4">
-              <label htmlFor="id" className="sr-only">Admin ID</label>
+              <label htmlFor="id" className="sr-only">Admin Email</label>
               <input
                 id="id"
                 name="id"
-                type="text"
+                type="email"
                 required
                 className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-600 bg-gray-700 placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-[#0E4669] focus:border-transparent sm:text-sm transition-colors"
-                placeholder="Admin ID"
+                placeholder="Admin Email"
                 value={id}
                 onChange={(e) => setId(e.target.value)}
               />
@@ -74,9 +99,10 @@ const AdminLogin = () => {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-[#0E4669] hover:bg-[#0c3954] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-[#0E4669] transition-colors shadow-lg"
+              disabled={submitting}
+              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-lg text-white bg-[#0E4669] hover:bg-[#0c3954] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-[#0E4669] transition-colors shadow-lg disabled:opacity-50"
             >
-              Sign In
+              {submitting ? 'Signing in...' : 'Sign In'}
             </button>
           </div>
         </form>

@@ -1,125 +1,125 @@
-import blog1 from '../assets/blog/Blog Banner.jpg';
-import blog2 from '../assets/blog/Diwali-2024.jpg';
-import blog3 from '../assets/blog/Evolution.jpg';
-import blog4 from '../assets/blog/Unlock-Prosperity.jpg';
-import blog5 from '../assets/blog/No-Shave.jpg';
-import blog6 from '../assets/blog/Sectors Likely.jpg';
-import blog7 from '../assets/blog/Indian-Wedding-Season.jpg';
-import blog8 from '../assets/blog/DirectTax.jpg';
-import blog9 from '../assets/blog/Investment.jpg';
-import blog10 from '../assets/blog/SMP.jpg';
-import blog11 from '../assets/blog/People Analytics HR.jpg';
-import blog12 from '../assets/blog/HRTrends.jpg';
-import blog13 from '../assets/blog/EthicsofHRAutomation.jpg';
-import blog14 from '../assets/blog/TopAITools.jpg';
-import blog15 from '../assets/blog/StrongEmployerBrand.jpg';
-import blog16 from '../assets/blog/AIAutomation.jpg';
-import blog17 from '../assets/blog/PortfolioCompanies.jpg'
-import blog18 from '../assets/blog/TopHR.jpg'
-import blog19 from '../assets/blog/AIVsHuman.jpg'
-import blog20 from '../assets/blog/HDCFashion.jpg'
-import blog21 from '../assets/blog/3NewWays.webp'
-import blog22 from '../assets/blog/DubaiRealEstateVsRest.webp'
-import blog23 from '../assets/blog/FractionalRealEstate.webp'
-import blog24 from '../assets/blog/RealEstateSector.webp'
-import blog25 from '../assets/blog/FractionalReal.webp'
-import blog26 from '../assets/blog/WhatisFractional.webp'
-import blog27 from '../assets/blog/WhyFractionalOwnership.webp'
-import blog28 from '../assets/blog/10Reasons.jpg'
-import blog29 from '../assets/blog/InvestinginDubai.jpg'
-import blog30 from '../assets/blog/MostPromising.jpg'
-import blog31 from '../assets/blog/Neighbourhoods.jpg'
-import blog32 from '../assets/blog/Understanding.jpg'
-import blog33 from '../assets/blog/FutureofSport.jpg'
-import blog34 from '../assets/blog/Boardroom.jpg'
-import blog35 from '../assets/blog/FutureofWork.jpg'
-import blog36 from '../assets/blog/LuxuryMeetsStrategy.jpg'
-import blog37 from '../assets/blog/Champions.jpg'
-import blog38 from '../assets/blog/FamilyOffice.jpg'
-import blog39 from '../assets/blog/TheTalentWar.jpg'
-import blog40 from '../assets/blog/WomenEntrepreneurs.jpg'
-import blog41 from '../assets/blog/BehindtheBrand.jpg'
-import blog42 from '../assets/blog/WhyFamilyOffices.jpg'
-import blog43 from '../assets/blog/FamilyOfficeModels.jpg'
-import blog44 from '../assets/blog/Diversification.jpg'
-import blog45 from '../assets/blog/WhyIsDubai.jpg'
-import blog46 from '../assets/blog/Multi-Generational.jpg'
-import bicycle from '../assets/blog/BicycleLaunchpad.jpg'
-import blog47 from '../assets/blog/FrontierBanner.jpg'
-import Dubai from '../assets/blog/Dubai.jpg'
-import Singapore from '../assets/blog/Singapore.jpg'
-import HongKong from '../assets/blog/HongKong.jpg'
-import blog48 from '../assets/blog/TheRiseFamily.jpg'
-import blog49 from '../assets/blog/India-UK-FTA.jpg'
-import blog50 from '../assets/blog/Hair-Accessories.jpg'
-import blog51 from '../assets/blog/Mortgage.jpg'
-import Training1 from '../assets/blog/Training1.jpg'
-import Training2 from '../assets/blog/Training2.jpg'
-import blog52 from '../assets/blog/TrainingCamp.jpg'
-import blog53 from '../assets/blog/RedefiningAI.jpg'
-import blog54 from '../assets/blog/MuhuratTrading.jpg'
-import blog55 from '../assets/blog/StrategicAllocation.jpg'
-import blog56 from '../assets/blog/PVLSeason.jpg'
-import blog57 from "../assets/blog/India’sFestival.jpg"
-import blog58 from "../assets/blog/ImportertoInnovator.jpg"
-import blog59 from "../assets/blog/BeyondSkills.jpg"
-import blog60 from "../assets/blog/BeautyBoom.jpeg"
-import blog61 from "../assets/blog/Acquisitions.jpg"
-import blog62 from "../assets/blog/YenCarryTrade.jpg"
-import blog63 from "../assets/blog/GoldmanSachs.jpg"
-import blog64 from "../assets/blog/Data-Led.jpg"
-import blog65 from "../assets/blog/SportsSponsorship.jpg"
-import blog66 from "../assets/blog/NewLeagues.jpg"
-import blog67 from "../assets/blog/IPOs.jpeg"
-import blog68 from "../assets/blog/Union_Budget.jpg"
-import ipo from "../assets/blog/ipo.jpg"
-import blog69 from "../assets/blog/Long-Term-Growth.jpeg"
-import blog70 from "../assets/blog/Consumer.jpeg"
-import blog71 from "../assets/blog/DubaiRealEstate.jpeg"
-import ProjectedAI from "../assets/blog/ProjectedAI.jpg"
-import blog72 from "../assets/blog/IndiaImpact.jpeg"
-import blog73 from "../assets/blog/Billion-DollarDeals.jpg"
-import Acquisition from "../assets/blog/Acquisition.jpg"
-import Hormuz from "../assets/blog/Hormuz.jpg"
-import blog74 from "../assets/blog/indian-energy-needs.jpeg"
-import GASPS from "../assets/blog/GASPS.jpg"
-import blog75 from "../assets/blog/GASPSS.jpeg"
-import Oilimport from "../assets/blog/Oil_Imports.jpg"
-import Oilimport2 from "../assets/blog/Oil_Importss.jpg"
-import blog76 from "../assets/blog/Diversification.jpeg"
-import blog77 from "../assets/blog/Decoding_Market.jpg"
-import blog78 from "../assets/blog/Nifty-Fell.jpeg"
-import blog79 from "../assets/blog/NewIncome.jpg"
-import blog80 from "../assets/blog/Wealth_ How.jpg"
-import blog81 from "../assets/blog/PsychologyBehindSpendingandInvesting.jpg"
-import blog82 from "../assets/blog/SIPvsLumpSum.jpeg"
-import Reuters from "../assets/blog/Reuters.jpg"
-import blog83 from "../assets/blog/InterestRates.jpeg"
-import blog84 from "../assets/blog/StockMarket.jpeg"
-import Real from "../assets/blog/Real.jpg"
-import blog85 from "../assets/blog/smart-investors.jpeg"
-import blog86 from "../assets/blog/Aerospace.jpg"
-import PIB from "../assets/blog/PIB.jpg"
-import blog87 from "../assets/blog/FY2027.jpg"
-import GoldMan from "../assets/blog/Goldman.jpg"
-import TOI from "../assets/blog/TOI.jpg"
-import blog88 from "../assets/blog/Post-War.jpeg"
-import blog89 from "../assets/blog/Sports-Invest.jpeg"
-import Leagues   from "../assets/blog/Leagues.jpg"
-import blog90 from "../assets/blog/BiggestInvestors.jpg"
-import DLD from "../assets/blog/DLD.jpg"
-import blog91 from "../assets/blog/10-MinuteWardrobe.jpg"
-import Bain from "../assets/blog/Bain.jpg"
-import blog92 from "../assets/blog/FashionGlobal.jpg"
-
+import blog1 from "../assets/blog/Blog Banner.jpg";
+import blog2 from "../assets/blog/Diwali-2024.jpg";
+import blog3 from "../assets/blog/Evolution.jpg";
+import blog4 from "../assets/blog/Unlock-Prosperity.jpg";
+import blog5 from "../assets/blog/No-Shave.jpg";
+import blog6 from "../assets/blog/Sectors Likely.jpg";
+import blog7 from "../assets/blog/Indian-Wedding-Season.jpg";
+import blog8 from "../assets/blog/DirectTax.jpg";
+import blog9 from "../assets/blog/Investment.jpg";
+import blog10 from "../assets/blog/SMP.jpg";
+import blog11 from "../assets/blog/People Analytics HR.jpg";
+import blog12 from "../assets/blog/HRTrends.jpg";
+import blog13 from "../assets/blog/EthicsofHRAutomation.jpg";
+import blog14 from "../assets/blog/TopAITools.jpg";
+import blog15 from "../assets/blog/StrongEmployerBrand.jpg";
+import blog16 from "../assets/blog/AIAutomation.jpg";
+import blog17 from "../assets/blog/PortfolioCompanies.jpg";
+import blog18 from "../assets/blog/TopHR.jpg";
+import blog19 from "../assets/blog/AIVsHuman.jpg";
+import blog20 from "../assets/blog/HDCFashion.jpg";
+import blog21 from "../assets/blog/3NewWays.webp";
+import blog22 from "../assets/blog/DubaiRealEstateVsRest.webp";
+import blog23 from "../assets/blog/FractionalRealEstate.webp";
+import blog24 from "../assets/blog/RealEstateSector.webp";
+import blog25 from "../assets/blog/FractionalReal.webp";
+import blog26 from "../assets/blog/WhatisFractional.webp";
+import blog27 from "../assets/blog/WhyFractionalOwnership.webp";
+import blog28 from "../assets/blog/10Reasons.jpg";
+import blog29 from "../assets/blog/InvestinginDubai.jpg";
+import blog30 from "../assets/blog/MostPromising.jpg";
+import blog31 from "../assets/blog/Neighbourhoods.jpg";
+import blog32 from "../assets/blog/Understanding.jpg";
+import blog33 from "../assets/blog/FutureofSport.jpg";
+import blog34 from "../assets/blog/Boardroom.jpg";
+import blog35 from "../assets/blog/FutureofWork.jpg";
+import blog36 from "../assets/blog/LuxuryMeetsStrategy.jpg";
+import blog37 from "../assets/blog/Champions.jpg";
+import blog38 from "../assets/blog/FamilyOffice.jpg";
+import blog39 from "../assets/blog/TheTalentWar.jpg";
+import blog40 from "../assets/blog/WomenEntrepreneurs.jpg";
+import blog41 from "../assets/blog/BehindtheBrand.jpg";
+import blog42 from "../assets/blog/WhyFamilyOffices.jpg";
+import blog43 from "../assets/blog/FamilyOfficeModels.jpg";
+import blog44 from "../assets/blog/Diversification.jpg";
+import blog45 from "../assets/blog/WhyIsDubai.jpg";
+import blog46 from "../assets/blog/Multi-Generational.jpg";
+import bicycle from "../assets/blog/BicycleLaunchpad.jpg";
+import blog47 from "../assets/blog/FrontierBanner.jpg";
+import Dubai from "../assets/blog/Dubai.jpg";
+import Singapore from "../assets/blog/Singapore.jpg";
+import HongKong from "../assets/blog/HongKong.jpg";
+import blog48 from "../assets/blog/TheRiseFamily.jpg";
+import blog49 from "../assets/blog/India-UK-FTA.jpg";
+import blog50 from "../assets/blog/Hair-Accessories.jpg";
+import blog51 from "../assets/blog/Mortgage.jpg";
+import Training1 from "../assets/blog/Training1.jpg";
+import Training2 from "../assets/blog/Training2.jpg";
+import blog52 from "../assets/blog/TrainingCamp.jpg";
+import blog53 from "../assets/blog/RedefiningAI.jpg";
+import blog54 from "../assets/blog/MuhuratTrading.jpg";
+import blog55 from "../assets/blog/StrategicAllocation.jpg";
+import blog56 from "../assets/blog/PVLSeason.jpg";
+import blog57 from "../assets/blog/India’sFestival.jpg";
+import blog58 from "../assets/blog/ImportertoInnovator.jpg";
+import blog59 from "../assets/blog/BeyondSkills.jpg";
+import blog60 from "../assets/blog/BeautyBoom.jpeg";
+import blog61 from "../assets/blog/Acquisitions.jpg";
+import blog62 from "../assets/blog/YenCarryTrade.jpg";
+import blog63 from "../assets/blog/GoldmanSachs.jpg";
+import blog64 from "../assets/blog/Data-Led.jpg";
+import blog65 from "../assets/blog/SportsSponsorship.jpg";
+import blog66 from "../assets/blog/NewLeagues.jpg";
+import blog67 from "../assets/blog/IPOs.jpeg";
+import blog68 from "../assets/blog/Union_Budget.jpg";
+import ipo from "../assets/blog/ipo.jpg";
+import blog69 from "../assets/blog/Long-Term-Growth.jpeg";
+import blog70 from "../assets/blog/Consumer.jpeg";
+import blog71 from "../assets/blog/DubaiRealEstate.jpeg";
+import ProjectedAI from "../assets/blog/ProjectedAI.jpg";
+import blog72 from "../assets/blog/IndiaImpact.jpeg";
+import blog73 from "../assets/blog/Billion-DollarDeals.jpg";
+import Acquisition from "../assets/blog/Acquisition.jpg";
+import Hormuz from "../assets/blog/Hormuz.jpg";
+import blog74 from "../assets/blog/indian-energy-needs.jpeg";
+import GASPS from "../assets/blog/GASPS.jpg";
+import blog75 from "../assets/blog/GASPSS.jpeg";
+import Oilimport from "../assets/blog/Oil_Imports.jpg";
+import Oilimport2 from "../assets/blog/Oil_Importss.jpg";
+import blog76 from "../assets/blog/Diversification.jpeg";
+import blog77 from "../assets/blog/Decoding_Market.jpg";
+import blog78 from "../assets/blog/Nifty-Fell.jpeg";
+import blog79 from "../assets/blog/NewIncome.jpg";
+import blog80 from "../assets/blog/Wealth_ How.jpg";
+import blog81 from "../assets/blog/PsychologyBehindSpendingandInvesting.jpg";
+import blog82 from "../assets/blog/SIPvsLumpSum.jpeg";
+import Reuters from "../assets/blog/Reuters.jpg";
+import blog83 from "../assets/blog/InterestRates.jpeg";
+import blog84 from "../assets/blog/StockMarket.jpeg";
+import Real from "../assets/blog/Real.jpg";
+import blog85 from "../assets/blog/smart-investors.jpeg";
+import blog86 from "../assets/blog/Aerospace.jpg";
+import PIB from "../assets/blog/PIB.jpg";
+import blog87 from "../assets/blog/FY2027.jpg";
+import GoldMan from "../assets/blog/Goldman.jpg";
+import TOI from "../assets/blog/TOI.jpg";
+import blog88 from "../assets/blog/Post-War.jpeg";
+import blog89 from "../assets/blog/Sports-Invest.jpeg";
+import Leagues from "../assets/blog/Leagues.jpg";
+import blog90 from "../assets/blog/BiggestInvestors.jpg";
+import DLD from "../assets/blog/DLD.jpg";
+import blog91 from "../assets/blog/10-MinuteWardrobe.jpg";
+import Bain from "../assets/blog/Bain.jpg";
+import blog92 from "../assets/blog/FashionGlobal.jpg";
 
 // Sample blog post data
 export const blogPosts = [
   {
     id: 1,
     title: "3 Guardrails of Investing: Essential Tips for Long-Term Success",
-    slug:'3-guardrails-of-investing-essential-tips-for-long-term-success',
-    excerpt: "Over the years we have witnessed how the stigma attached to investment that it is a highly risky business has subsided significantly.",
+    slug: "3-guardrails-of-investing-essential-tips-for-long-term-success",
+    excerpt:
+      "Over the years we have witnessed how the stigma attached to investment that it is a highly risky business has subsided significantly.",
     content: `Over the years we have witnessed how the stigma attached to investment that it is a highly risky business has subsided significantly. Today,..investing is often seen as a pathway to wealth, but without a clear strategy and well-defined principles, it can also lead to costly mistakes.
     
 <span class="font-bold pb-1 md:text-xl">1. Do Not Follow the Herd</span>
@@ -163,9 +163,11 @@ Investing can be an incredible tool for building wealth, but it requires discipl
   },
   {
     id: 2,
-    title: "Diwali 2024: Why Investing in Index Funds Is the Best Bet for Long-Term Wealth Creation",
-    slug:"diwali-2024-why-investing-in-index-funds-is-the-best-bet-for-long-term-wealth-creation",
-    excerpt: "Diwali marks a time of new beginnings, prosperity, and thoughtful investments. This festive season,",
+    title:
+      "Diwali 2024: Why Investing in Index Funds Is the Best Bet for Long-Term Wealth Creation",
+    slug: "diwali-2024-why-investing-in-index-funds-is-the-best-bet-for-long-term-wealth-creation",
+    excerpt:
+      "Diwali marks a time of new beginnings, prosperity, and thoughtful investments. This festive season,",
     content: `Diwali marks a time of new beginnings, prosperity, and thoughtful investments. This festive season, if you're considering ways to grow your wealth steadily, investing in large-cap equities through index funds or ETFs (Exchange-Traded Funds) is a smart, strategic move. Index funds are a solid bet on India’s economic growth story, one that has consistently shown resilience and potential over time. This Diwali, build your wealth wisely by investing in index funds. Let’s break this for you. In this blog, we will explore why index funds, particularly the SIP (Systematic Investment Plan) route, are your best option for long-term wealth creation.
 
 <span class="font-bold pb-1 md:text-xl">Betting on India's Growth Story</span>
@@ -223,7 +225,8 @@ So, this Diwali, bet on India and watch your wealth grow with it.`,
     id: 3,
     title: "Evolution of Investment over the Last Decade",
     slug: "evolution-of-investment-over-the-last-decade",
-    excerpt: "In today’s rapidly shifting and highly competitive financial world, investing has become a necessity rather than an option...",
+    excerpt:
+      "In today’s rapidly shifting and highly competitive financial world, investing has become a necessity rather than an option...",
     content: `In today’s rapidly shifting and highly competitive financial world, investing has become a necessity rather than an option. With modern spending habits – spending more, saving less, and sometimes incurring unnecessary debts and heavy losses, aspiration for financial independence can be difficult to fulfil. However, reaching financial security is still within your reach; it’s just about deliberate action and wise investment choices, especially in this hour when a second income has become a pressing need. Here’s a guide on how to adapt to this new landscape and secure your financial future.
 
 <span class="font-bold pb-1 md:text-xl">Why Investing Has Become a Financial Imperative?</span>
@@ -276,9 +279,11 @@ In the modern financial landscape, investing is crucial for a stable, prosperous
   },
   {
     id: 4,
-    title: "Unlock Prosperity this Dhanteras: 3 Strategic Ways to Invest in Gold",
+    title:
+      "Unlock Prosperity this Dhanteras: 3 Strategic Ways to Invest in Gold",
     slug: "unlock-prosperity-this-dhanteras-3-strategic-ways-to-invest-in-gold",
-    excerpt: "As the festive season approaches, Dhanteras, a day dedicated to wealth and prosperity, takes on special significance for many...",
+    excerpt:
+      "As the festive season approaches, Dhanteras, a day dedicated to wealth and prosperity, takes on special significance for many...",
     content: `As the festive season approaches, Dhanteras, a day dedicated to wealth and prosperity, takes on special significance for many. Buying gold on this auspicious day is more than just a tradition, it is considered a prudent financial investment, ensuring wealth accumulation and security for years to come. However, with changing times, the methods of investing in gold have evolved a lot. Instead of simply buying physical gold, modern investors now have options that offer convenience, flexibility, and even better financial returns.
 
 In this blog, we’ll explore three strategic ways to invest in gold this Dhanteras that promise prosperity and long-term financial gains.
@@ -351,10 +356,11 @@ Whichever path you choose, remember that gold is not just an auspicious ornament
   },
   {
     id: 5,
-    title:"No-Shave November – Analysis of Men's Grooming Market in India",
-    slug:"no-shave-november-analysis-of-mens-grooming-market-in-india",
-    excerpt:"No-Shave November (NSN) has grown beyond its initial health awareness campaign into a powerful cultural and economic phenomenon, particularly within the men's grooming sector.",
-    content:`<span class="font-bold pb-1 md:text-xl">Introduction</span>
+    title: "No-Shave November – Analysis of Men's Grooming Market in India",
+    slug: "no-shave-november-analysis-of-mens-grooming-market-in-india",
+    excerpt:
+      "No-Shave November (NSN) has grown beyond its initial health awareness campaign into a powerful cultural and economic phenomenon, particularly within the men's grooming sector.",
+    content: `<span class="font-bold pb-1 md:text-xl">Introduction</span>
 No-Shave November (NSN) has grown beyond its initial health awareness campaign into a powerful cultural and economic phenomenon, particularly within the men's grooming sector. This annual event encourages men to embrace facial hair growth for the month, raising awareness for cancer, especially prostate cancer, while also celebrating men's wellness and overall health.
 
 <span class="font-bold pb-1 md:text-xl">The Economic Impact of No-Shave November</span>
@@ -381,15 +387,17 @@ According to recent reports, the Indian men's grooming market is projected to gr
 No-Shave November is more than just a charity movement; it has now become a strategic opportunity for the men’s grooming industry in India to leverage men’s new growing fondness for wellness and selfcare. By influencing consumer habits and increasing the demand for beard care and skincare products, NSN plays a pivotal role in the continued expansion of the grooming market. With the sector expected to grow rapidly over the next few years, No-Shave November's lasting impact on men’s grooming trends is undeniable, making it an essential event for both established and emerging brands looking to connect with this evolving market.`,
     author: "Resolute Corp",
     date: "2024-11-19",
-    category: "Investment",    
+    category: "Investment",
     banner: blog5,
   },
   {
     id: 6,
-    title:"Sectors Likely to Provide Excellent Returns to Investors in the Future",
-    slug:"sectors-likely-to-provide-excellent-returns-to-investors-in-the-future",
-    excerpt:"India's economy is set for a robust growth, with the Asian Development Bank forecasting an 8% growth rate over the next 5-6 years. As investors increasingly look to capitalize on this momentum,",
-    content:`India's economy is set for a robust growth, with the Asian Development Bank forecasting an 8% growth rate over the next 5-6 years. As investors increasingly look to capitalize on this momentum, understanding which sectors will offer the best returns is critical for strategic investment decisions. From technology to renewable energy, several industries are poised to outperform and drive long-term growth. Here’s a closer look at the sectors likely to yield excellent returns for investors in the future.
+    title:
+      "Sectors Likely to Provide Excellent Returns to Investors in the Future",
+    slug: "sectors-likely-to-provide-excellent-returns-to-investors-in-the-future",
+    excerpt:
+      "India's economy is set for a robust growth, with the Asian Development Bank forecasting an 8% growth rate over the next 5-6 years. As investors increasingly look to capitalize on this momentum,",
+    content: `India's economy is set for a robust growth, with the Asian Development Bank forecasting an 8% growth rate over the next 5-6 years. As investors increasingly look to capitalize on this momentum, understanding which sectors will offer the best returns is critical for strategic investment decisions. From technology to renewable energy, several industries are poised to outperform and drive long-term growth. Here’s a closer look at the sectors likely to yield excellent returns for investors in the future.
 
     <span class="font-bold pb-1 md:text-xl">1. Healthcare and Insurance</span>
 The Indian healthcare sector is expanding rapidly due to an aging population, rising disposable incomes, and the growing incidence of chronic diseases. The pandemic has highlighted the need for improved healthcare infrastructure, making this sector an attractive investment option. Government initiatives such as Ayushman Bharat are improving accessibility, while private players are leveraging technology to improve services. Moreover, the health insurance market in India is experiencing significant growth, fuelled by increasing awareness and government-backed initiatives.
@@ -428,15 +436,16 @@ India’s dynamic market, combined with strategic investments in these promising
     `,
     author: "Resolute Corp",
     date: "2024-11-19",
-    category: "Investment",    
+    category: "Investment",
     banner: blog6,
   },
   {
     id: 7,
-    title:"Impact of the Indian Wedding Season on the National Economy",
-    slug:"impact-of-the-indian-wedding-season-on-the-national-economy",
-    excerpt:"Indian weddings are synonymous with opulence, culture, and celebration. With the vibrant rituals and multi-day festivities, weddings in India  ",
-    content:`<span class="font-bold pb-1 md:text-xl">Introduction</span>
+    title: "Impact of the Indian Wedding Season on the National Economy",
+    slug: "impact-of-the-indian-wedding-season-on-the-national-economy",
+    excerpt:
+      "Indian weddings are synonymous with opulence, culture, and celebration. With the vibrant rituals and multi-day festivities, weddings in India  ",
+    content: `<span class="font-bold pb-1 md:text-xl">Introduction</span>
     Indian weddings are synonymous with opulence, culture, and celebration. With the vibrant rituals and multi-day festivities, weddings in India transcend personal celebrations to become economic powerhouses. Valued at an estimated INR 3.75 lakh crores annually, the Indian wedding industry touches nearly every sector – from textiles and jewellery to hospitality and technology. The seasonal nature of these celebrations creates a substantial economic impact, driving consumption and generating employment. Here’s an exploration of how this industry powers India’s economy.
 
     <span class="font-bold pb-1 md:text-xl">Key Sectors Benefiting from the Wedding Season</span>
@@ -467,14 +476,15 @@ The Indian wedding industry is on a growth trajectory, with an annual increase o
 Indian weddings transcend cultural significance to become economic engines. From gold to garments, and catering to cosmetics, they generate vast revenues and create employment across multiple sectors. With sustainable practices and strategic policies, this industry not only preserves tradition but also fuels innovation, making it an integral part of India's economic fabric.`,
     author: "Resolute Corp",
     date: "2024-12-06",
-    category: "Investment",    
+    category: "Investment",
     banner: blog7,
   },
   {
-    title: "Direct Tax Code 2025: Will It Make The Tax System More Transparent?",
+    title:
+      "Direct Tax Code 2025: Will It Make The Tax System More Transparent?",
     slug: "direct-tax-code-2025-will-it-make-the-tax-system-more-transparent",
     excerpt: `“Taxation is not just about revenue generation; it is about shaping a society that is more equitable and fair."`,
-    content:`“Taxation is not just about revenue generation; it is about shaping a society that is more equitable and fair."
+    content: `“Taxation is not just about revenue generation; it is about shaping a society that is more equitable and fair."
 
     <span class="font-semibold italic pb-1">Amartya Sen</span>
  In the above statement, <span class="font-bold">Amartya Sen</span> calls for a broader view of taxation, beyond tax collection, as a means to give effect to <span class="font-bold">social justice, and equality</span> in our society. Moreover,a significant change in this regard is the introduction of the <span class="font-bold">Direct Tax Code (DTC) 2025</span> which aims to change the tax regime in India.
@@ -525,14 +535,14 @@ Indian weddings transcend cultural significance to become economic engines. From
  Ultimately, whether the DTC fosters increased transparency will rely not only on the legislative framework but also on the collective determination to enforce it fairly. If implemented correctly, the DTC could signify the dawn of a new era in Indian taxation, one where taxpayers enjoy greater clarity and confidence in the system, thereby supporting the nation’s economic development.`,
     author: "Resolute Corp",
     date: "2025-01-01",
-    category: "Investment",    
+    category: "Investment",
     banner: blog8,
   },
   {
     title: "Investment Outlook for 2025",
     slug: "investment-outlook-for-2025",
     excerpt: `As 2025 is a day away, India strives for change in the economic atmosphere and market directions. Here, the investors are on the lookout for potential investment prospects whil assessing emerging issues.`,
-    content:`<span class="font-bold pb-1 md:text-xl">Introduction</span>
+    content: `<span class="font-bold pb-1 md:text-xl">Introduction</span>
  As 2025 is a day away, India strives for change in the economic atmosphere and market directions. Here, the investors are on the lookout for potential investment prospects while assessing emerging issues. The issues explored in this blog include the role of economic indicators, fiscal policies, sectoral opportunity, and geopolitics in determining the outlook for the Indian market 2025.
 
  <span class="font-bold pb-1 md:text-xl">Economic Growth Projections</span>
@@ -567,14 +577,14 @@ Indian weddings transcend cultural significance to become economic engines. From
  The investment outlook in India for 2025 appears to be good with consistent economic growth, careful spending, and opportunities in various fields. After a stupendous 4-5 year run, equities may take a breather in 2025 while Bonds may deliver better returns. It will be wise to rebalance your investments in favour of bonds. Gold continues to be attractive. Real Estate may lose a bit of sheen if government maintains fiscal prudence. However, REITs and InvITs shall may do better if interest rates soften. Global equities particularly in Asia-Pacific (China and Japan), high dividend yield stocks in Europe as well as Industrial / Energy sectors in USA look attractive. To summarise, investors who can rebalance and diversify their portfolios across asset classes and geographies in 2025, shall be better positioned in terms of risk reward.`,
     author: "Resolute Corp",
     date: "2025-01-01",
-    category: "Investment",    
+    category: "Investment",
     banner: blog9,
   },
   {
     title: "Smart Tax Planning for Salaried Employees in 2025",
     slug: "smart-tax-planning-for-salaried-employees-in-2025",
     excerpt: `Smart Tax Planning for Salaried Employees in 2025: Common Pitfalls and Maximizing Returns`,
-    content:`<span class="font-bold pb-1 md:text-xl">Smart Tax Planning for Salaried Employees in 2025: Common Pitfalls and Maximizing Returns</span>
+    content: `<span class="font-bold pb-1 md:text-xl">Smart Tax Planning for Salaried Employees in 2025: Common Pitfalls and Maximizing Returns</span>
  Welive in a time when just earning well doesn’t guarantee financial stability. Budgeting is equally important, and one inherently imperative requirement toward this direction is tax management. Salaried employees, often the backbone of the economy, have several avenues to minimize tax liability and save money if they budget and plan their finances well. Here’s how salaried employees can strategically plan their taxes in the financial year of 2025, avoid common pitfalls, and maximize their returns.
 
  <span class="font-bold pb-1 md:text-xl">Understanding Your Salary Structure</span>
@@ -633,14 +643,15 @@ Indian weddings transcend cultural significance to become economic engines. From
  Tax planning is not just about saving money– it’s about building a secure financial future. For salaried employees, budgeting well, leveraging exemptions and deductions, and aligning investments with life goals can make all the difference. Start early, plan strategically, and reap the dual benefits of reduced tax liability and financial growth in 2025.`,
     author: "Resolute Corp",
     date: "2025-01-06",
-    category: "Investment",    
+    category: "Investment",
     banner: blog10,
   },
   {
-    title: "People Analytics in HR: How Data-Driven Insights are Shaping HR Decisions",
+    title:
+      "People Analytics in HR: How Data-Driven Insights are Shaping HR Decisions",
     slug: "people-analytics-in-hr-how-data-driven-insights-are-shaping-hr-decisions",
     excerpt: `We live in an era where data is revolutionizing industries, and the human resources (HR) domain is no exception.`,
-    content:`We live in an era where data is revolutionizing industries, and the human resources (HR) domain is no exception. People analytics, which is the practice of collecting, analysing, and leveraging employee data is transforming how organizations make strategic HR decisions. By providing actionable insights, people analytics empowers HR teams to enhance employee engagement, improve retention, and align workforce strategies with organizational goals. This blog delves into the concept of people analytics, its benefits, and how it is reshaping the HR landscape.
+    content: `We live in an era where data is revolutionizing industries, and the human resources (HR) domain is no exception. People analytics, which is the practice of collecting, analysing, and leveraging employee data is transforming how organizations make strategic HR decisions. By providing actionable insights, people analytics empowers HR teams to enhance employee engagement, improve retention, and align workforce strategies with organizational goals. This blog delves into the concept of people analytics, its benefits, and how it is reshaping the HR landscape.
 
 <span class="font-bold pb-1 md:text-xl">What is People Analytics?</span>
 People analytics, also known as HR analytics or workforce analytics, involves the use of data to understand and optimize the workforce. It leverages statistical methods, machine learning, and predictive modelling to extract meaningful insights from employee data, ranging from recruitment and performance to engagement and retention. The core elements include:
@@ -689,14 +700,14 @@ People analytics is truly revolutionizing the HR landscape, enabling organizatio
 `,
     author: "Resolute Corp",
     date: "2025-01-27",
-    category: "HR",    
+    category: "HR",
     banner: blog11,
   },
   {
-    title:'Top 5 HR Trends to Look Out for in 2025',
-    slug:'top-5-hr-trends-to-look-out-for-in-2025',
-    excerpt:`As we have taken a step into the year 2025, the evolution of Human Resources (HR) over the last few years has been revolutionary in its approach.`,
-    content:`As we have taken a step into the year 2025, the evolution of Human Resources (HR) over the last few years has been revolutionary in its approach. HR leaders engage in recruiting, interviewing, and ensuring that employees who join the company get incorporated into it effectively. This encompasses the induction of new employees within the organization as they get accustomed to the culture, policies, and other relevant aspects of the firm.
+    title: "Top 5 HR Trends to Look Out for in 2025",
+    slug: "top-5-hr-trends-to-look-out-for-in-2025",
+    excerpt: `As we have taken a step into the year 2025, the evolution of Human Resources (HR) over the last few years has been revolutionary in its approach.`,
+    content: `As we have taken a step into the year 2025, the evolution of Human Resources (HR) over the last few years has been revolutionary in its approach. HR leaders engage in recruiting, interviewing, and ensuring that employees who join the company get incorporated into it effectively. This encompasses the induction of new employees within the organization as they get accustomed to the culture, policies, and other relevant aspects of the firm.
 
 Here are the big five trends we'll all be talking about in 2025:
 
@@ -720,14 +731,15 @@ The HR sector in 2025 will be all about tech, looking out for folks' well-being,
 `,
     author: "Resolute Corp",
     date: "2025-02-03",
-    category: "HR",    
+    category: "HR",
     banner: blog12,
   },
   {
-    title:'The Ethics of HR Automation: Protecting Privacy and Promoting Fairness',
-    slug:'the-ethics-of-hr-automation-protecting-privacy-and-promoting-fairness',
-    excerpt:`In today’s digitally advanced world, automation is revolutionizing every field, including the domain of human resources (HR), streamlining recruitment, payroll, performance management, and employee engagement.`,
-    content:`In today’s digitally advanced world, automation is revolutionizing every field, including the domain of human resources (HR), streamlining recruitment, payroll, performance management, and employee engagement. While these technological advancements enhance efficiency, they also raise significant ethical concerns regarding privacy and fairness. Striking a balance between automation and ethical responsibility is essential to building a just and transparent workplace. In this blog, we explore the ethicality of HR automation, along with its benefits, challenges, and ways to improve its fairness.
+    title:
+      "The Ethics of HR Automation: Protecting Privacy and Promoting Fairness",
+    slug: "the-ethics-of-hr-automation-protecting-privacy-and-promoting-fairness",
+    excerpt: `In today’s digitally advanced world, automation is revolutionizing every field, including the domain of human resources (HR), streamlining recruitment, payroll, performance management, and employee engagement.`,
+    content: `In today’s digitally advanced world, automation is revolutionizing every field, including the domain of human resources (HR), streamlining recruitment, payroll, performance management, and employee engagement. While these technological advancements enhance efficiency, they also raise significant ethical concerns regarding privacy and fairness. Striking a balance between automation and ethical responsibility is essential to building a just and transparent workplace. In this blog, we explore the ethicality of HR automation, along with its benefits, challenges, and ways to improve its fairness.
 
 <span class="font-bold pb-1 md:text-xl">What is HR Automation?</span>
 HR automation refers to the use of technology, including artificial intelligence (AI) and machine learning, to automate repetitive HR tasks such as resume screening, payroll processing, employee performance tracking, and onboarding. By reducing manual workload, automation allows HR professionals to focus on strategic decision-making and employee well-being. However, as organizations integrate these systems, ethical concerns around data privacy and fairness become increasingly significant.
@@ -761,11 +773,12 @@ HR automation is a powerful tool, but its ethical implications cannot be overloo
     banner: blog13,
   },
   {
-    title:'Top AI Tools Revolutionizing HR: How Technology Can Streamline Recruitment, Engagement, and Retention',
-    slug:'top-ai-tools-revolutionizing-hr-how-technology-can-streamline-recruitment-engagement-and-retention',
-    excerpt:`The Human Resources (HR) sector is transforming with the advanced Artificial Intelligence (AI) 
+    title:
+      "Top AI Tools Revolutionizing HR: How Technology Can Streamline Recruitment, Engagement, and Retention",
+    slug: "top-ai-tools-revolutionizing-hr-how-technology-can-streamline-recruitment-engagement-and-retention",
+    excerpt: `The Human Resources (HR) sector is transforming with the advanced Artificial Intelligence (AI) 
     which automates, enhances decision-making, and optimizes the employee experience.`,
-    content:`The Human Resources (HR) sector is transforming with the advanced Artificial Intelligence (AI) which automates, enhances decision-making, and optimizes the employee experience. Today AI based applications enable HR teams to manage people and processes from the challenging steps of recruitment to the engagement and retention phases more strategically and effectively. This blog will cover the best AI software for HR, their most critical functions, and what differentiates them from the competition.
+    content: `The Human Resources (HR) sector is transforming with the advanced Artificial Intelligence (AI) which automates, enhances decision-making, and optimizes the employee experience. Today AI based applications enable HR teams to manage people and processes from the challenging steps of recruitment to the engagement and retention phases more strategically and effectively. This blog will cover the best AI software for HR, their most critical functions, and what differentiates them from the competition.
 
 <span class="font-bold pb-1 md:text-xl">Best AI Tools for HR</span>
 To ease and streamline efficiency, various tools have been introduced for automating processes, improving proficiency, etc. Some of the best AI tools for HR are listed below -
@@ -836,10 +849,10 @@ With this transformation, AI’s contribution to HR will keep growing and provid
     banner: blog14,
   },
   {
-    title:'How to Build a Strong Employer Brand to Attract Top Talent',
-    slug:'how-to-build-a-strong-employer-brand-to-attract-top-talent',
-    excerpt:`A job market resembles a bustling party, where it's crucial to highlight your company's strengths by bringing in top talent as your VIP guests. Every organization should make efforts to develop a robust employer brand that appeals to prospective employees.`,
-    content:`A job market resembles a bustling party, where it's crucial to highlight your company's strengths by bringing in top talent as your VIP guests. Every organization should make efforts to develop a robust employer brand that appeals to prospective employees. A strong employer brand not only aids in attracting suitable candidates but also positions your organization as an appealing workplace. So, how can companies foster an engaging employer brand? Let’s examine some effective approaches.
+    title: "How to Build a Strong Employer Brand to Attract Top Talent",
+    slug: "how-to-build-a-strong-employer-brand-to-attract-top-talent",
+    excerpt: `A job market resembles a bustling party, where it's crucial to highlight your company's strengths by bringing in top talent as your VIP guests. Every organization should make efforts to develop a robust employer brand that appeals to prospective employees.`,
+    content: `A job market resembles a bustling party, where it's crucial to highlight your company's strengths by bringing in top talent as your VIP guests. Every organization should make efforts to develop a robust employer brand that appeals to prospective employees. A strong employer brand not only aids in attracting suitable candidates but also positions your organization as an appealing workplace. So, how can companies foster an engaging employer brand? Let’s examine some effective approaches.
 
 <span class="font-bold pb-1 md:text-xl">Discover what sets your company apart </span>
 Firstly, it’s essential to understand what your organization seeks and the type of vision you wish to cultivate. This represents your unique recipe that differentiates you from competitors. It involves conveying what matters to you, ensuring equal treatment for all, and prioritizing customer satisfaction.
@@ -878,10 +891,11 @@ Establishing a robust employer brand demands  commitment and authenticity. By ar
     banner: blog15,
   },
   {
-    title:"From AI to Automation: Is Budget 2025 Future-Proofing India's Workforce?",
-    slug:"from-ai-to-automation-is-budget-2025-future-proofing-indias-workforce",
-    excerpt:`The Union Budget 2025 has sparked a lot of discussions about India's preparedness for the future of work. With rapid advancements in artificial intelligence (AI) `,
-    content:`<span class="font-bold pb-1 md:text-xl">Introduction</span>
+    title:
+      "From AI to Automation: Is Budget 2025 Future-Proofing India's Workforce?",
+    slug: "from-ai-to-automation-is-budget-2025-future-proofing-indias-workforce",
+    excerpt: `The Union Budget 2025 has sparked a lot of discussions about India's preparedness for the future of work. With rapid advancements in artificial intelligence (AI) `,
+    content: `<span class="font-bold pb-1 md:text-xl">Introduction</span>
 The Union Budget 2025 has sparked a lot of discussions about India's preparedness for the future of work. With rapid advancements in artificial intelligence (AI) and automation reshaping industries globally, the budget aims to future-proof India's workforce by integrating AI into education, upskilling initiatives, and employment strategies. This blog delves into the key aspects of Budget 2025, exploring how it positions India to harness the potential of AI and automation while addressing the challenges of workforce transformation.
 
 <span class="font-bold pb-1 md:text-xl">The AI Revolution and India's Workforce</span>
@@ -930,16 +944,17 @@ Budget 2025 marks a significant step toward future-proofing India's workforce in
 
 As India navigates the complexities of the fourth industrial revolution, Budget 2025 serves as a blueprint for building a resilient, skilled, and future-ready workforce.
 `,
-     author: "Resolute Corp",
-     date: "2025-02-24",
-     category: "AI",
-     banner: blog16,
-   },
-   {
-     title:"Exploring the Portfolio Companies of Resolute Corp: A Deep Dive into Its Innovative Ventures",
-     slug:"exploring-the-portfolio-companies-of-resolute-corp-a-deep-dive-into-its-innovative-ventures",
-     excerpt:`In an ever-evolving landscape of global investments, Resolute Corp today stands as a beacon of innovation and strategic farsight. As a distinguished investment firm`,
-     content:`In an ever-evolving landscape of global investments, Resolute Corp today stands as a beacon of innovation and strategic farsight. As a distinguished investment firm, it has consistently demonstrated a commitment to excellence, nurturing a diverse portfolio that spans multiple industries. With a strong foundation rooted in decades of expertise, Resolute Corp has successfully expanded its influence across diverse sectors such as real estate, fashion, and sports.
+    author: "Resolute Corp",
+    date: "2025-02-24",
+    category: "AI",
+    banner: blog16,
+  },
+  {
+    title:
+      "Exploring the Portfolio Companies of Resolute Corp: A Deep Dive into Its Innovative Ventures",
+    slug: "exploring-the-portfolio-companies-of-resolute-corp-a-deep-dive-into-its-innovative-ventures",
+    excerpt: `In an ever-evolving landscape of global investments, Resolute Corp today stands as a beacon of innovation and strategic farsight. As a distinguished investment firm`,
+    content: `In an ever-evolving landscape of global investments, Resolute Corp today stands as a beacon of innovation and strategic farsight. As a distinguished investment firm, it has consistently demonstrated a commitment to excellence, nurturing a diverse portfolio that spans multiple industries. With a strong foundation rooted in decades of expertise, Resolute Corp has successfully expanded its influence across diverse sectors such as real estate, fashion, and sports.
 
 In this blog, we take a deep dive into the innovative ventures under Resolute Corp’s umbrella and explore how each of its portfolio companies are reshaping their respective industries.
 
@@ -983,12 +998,13 @@ As Resolute Corp continues to explore new territories and uncover exciting oppor
     date: "2025-02-25",
     category: "Investment",
     banner: blog17,
-   },
-   {
-     title: "HR Technology: Tools and Trends to Watch in 2025",
-     slug: "hr-technology-tools-and-trends-to-watch-in-2025",
-     excerpt: 'Entering 2025, we can all agree on one thing: The domain of Human Resources (HR) is transforming quite fast. Technology has modernized almost all traditional human resource',
-     content: `Entering 2025, we can all agree on one thing: The domain of Human Resources (HR) is transforming quite fast. Technology has modernized almost all traditional human resource practices, making them more effective and aimed toward the employee’s requirements. We will explore some selected HR tech tools and innovations that are transforming the business world as we know it. 
+  },
+  {
+    title: "HR Technology: Tools and Trends to Watch in 2025",
+    slug: "hr-technology-tools-and-trends-to-watch-in-2025",
+    excerpt:
+      "Entering 2025, we can all agree on one thing: The domain of Human Resources (HR) is transforming quite fast. Technology has modernized almost all traditional human resource",
+    content: `Entering 2025, we can all agree on one thing: The domain of Human Resources (HR) is transforming quite fast. Technology has modernized almost all traditional human resource practices, making them more effective and aimed toward the employee’s requirements. We will explore some selected HR tech tools and innovations that are transforming the business world as we know it. 
 
      <span class="font-bold pb-1 md:text-xl">Artificial Intelligence (AI) in Recruitment</span>
 Recruitment has transformed with artificial intelligence as a solid pillar for most of the new practices. AI technologies drastically reduce hiring timelines by automating functions such as resume screening, candidate sourcing, and interview scheduling. AI chatbots, for instance, can pre-screen applicants by responding to their queries and performing interviews, which eventually enhances the candidate's experience while also saving time on recruitment.
@@ -1023,16 +1039,16 @@ Generative AI is revolutionizing a range of HR functions, including content gene
 <span class="font-bold pb-1 md:text-xl">Conclusion </span>
 In conclusion, the HR technology landscape in 2025 is characterized by the rise of new tools and trends which, in turn, enhance the productivity, diversity, and ongoing improvement of the organization. With these changes, Resolute Corp can build more adaptable and resilient work cultures that can address the needs of the business environment today.
 `,
-      author: "Resolute Corp",
-      date: "2025-03-03",
-      category: "HR",
-      banner: blog18,
-   }, 
-   {
-      title: "AI vs Human Recruiters: Who’s Better at Finding Top Talent?",
-      slug: "ai-vs-human-recruiters-whos-better-at-finding-top-talent",
-      excerpt: `The arena of recruitment is undergoing changes every day. With the rise of artificial intelligence (AI), the age-old question of whether machines can outperform humans has found its way into the hiring process.`,
-      content:`The arena of recruitment is undergoing changes every day. With the rise of artificial intelligence (AI), the age-old question of whether machines can outperform humans has found its way into the hiring process. Can AI truly replace human recruiters, or is there a middle ground where both can coexist and progress? Let’s dive into the strengths and limitations of AI, the irreplaceable qualities of human recruiters, and explore where the future of recruitment lies.
+    author: "Resolute Corp",
+    date: "2025-03-03",
+    category: "HR",
+    banner: blog18,
+  },
+  {
+    title: "AI vs Human Recruiters: Who’s Better at Finding Top Talent?",
+    slug: "ai-vs-human-recruiters-whos-better-at-finding-top-talent",
+    excerpt: `The arena of recruitment is undergoing changes every day. With the rise of artificial intelligence (AI), the age-old question of whether machines can outperform humans has found its way into the hiring process.`,
+    content: `The arena of recruitment is undergoing changes every day. With the rise of artificial intelligence (AI), the age-old question of whether machines can outperform humans has found its way into the hiring process. Can AI truly replace human recruiters, or is there a middle ground where both can coexist and progress? Let’s dive into the strengths and limitations of AI, the irreplaceable qualities of human recruiters, and explore where the future of recruitment lies.
 
 <span class="font-bold pb-1 md:text-xl">The Strengths of AI in Recruitment</span>
 AI has revolutionized recruitment by introducing efficiency, scalability, and data-driven decision-making. Here’s how AI excels in finding top talent:
@@ -1077,17 +1093,18 @@ The ideal recruitment model is a hybrid one, where AI and human recruiters work 
 AI is a powerful tool, but it’s not a replacement for human recruiters. While AI excels at efficiency, scalability, and data analysis, humans bring emotional intelligence, cultural understanding, and relationship-building skills to the table. The future of recruitment lies in augmented intelligence, where AI complements human capabilities, creating a hybrid model that delivers the best outcomes for both employers and candidates.
 
 So, who’s better at finding top talent? The answer is neither AI nor human recruiters alone. It’s the synergy between the two that will define the future of hiring. At ResoluteCorp, we understand the evolving landscape of recruitment and how businesses can leverage both AI and human expertise to optimize hiring. By embracing these collaborative approaches, they can build stronger, more diverse, and more successful teams.
-`, 
-      author: "Resolute Corp",
-      date: "2025-03-20",
-      category: "AI",
-      banner: blog19,
-   }, 
-   {
-      title:"The Business of Fashion: How Resolute Group Invests in Style and Innovation",
-      slug:"the-business-of-fashion-how-resolute-group-invests-in-style-and-innovation",
-      excerpt:`Fashion is more than just an expression of personal style and it is a multi-billion-dollar industry that influences economies worldwide. From luxury brands to fast fashion and niche accessory lines,`,
-      content:`Fashion is more than just an expression of personal style and it is a multi-billion-dollar industry that influences economies worldwide. From luxury brands to fast fashion and niche accessory lines, the sector is driven by consumer trends, technological advancements, and sustainability initiatives.  
+`,
+    author: "Resolute Corp",
+    date: "2025-03-20",
+    category: "AI",
+    banner: blog19,
+  },
+  {
+    title:
+      "The Business of Fashion: How Resolute Group Invests in Style and Innovation",
+    slug: "the-business-of-fashion-how-resolute-group-invests-in-style-and-innovation",
+    excerpt: `Fashion is more than just an expression of personal style and it is a multi-billion-dollar industry that influences economies worldwide. From luxury brands to fast fashion and niche accessory lines,`,
+    content: `Fashion is more than just an expression of personal style and it is a multi-billion-dollar industry that influences economies worldwide. From luxury brands to fast fashion and niche accessory lines, the sector is driven by consumer trends, technological advancements, and sustainability initiatives.  
 
 For Resolute Group, the business of fashion offers vast opportunities. However, success in this industry requires more than financial backing; it demands market insight, trend forecasting, and brand positioning. Resolute specializes in identifying promising ventures and providing them with the resources to scale effectively.
 
@@ -1131,17 +1148,17 @@ The fashion business thrives on constant reinvention. Brands that fail to embrac
 
 <span class="font-bold pb-1 md:text-xl">Conclusion</span>
 As the fashion landscape continues to evolve, investors who recognize the power of innovation and adaptability will shape the future of the industry. Resolute Group is at the forefront of this transformation, proving that fashion is not just about aesthetics – it’s a thriving business built on vision, strategy and the right investment.
-`, 
-      author: "Hair Drama Co.",
-      date: "2025-03-20",
-      category: "Fashion",
-      banner: blog20,
-   },
-   {
-      title:"3 New Ways to Invest in Dubai Properties",
-      slug:"3-new-ways-to-invest-in-dubai-properties",
-      excerpt:`Dubai’s property market is a global hotspot for innovation, providing new ways of investments that cater to diverse budgets and goals.`,
-      content:`Dubai’s property market is a global hotspot for innovation, providing new ways of investments that cater to diverse budgets and goals. With strategies designed to make property investment more accessible and lucrative, both seasoned investors and first-timers can find opportunities to build wealth in this vibrant market. These modern approaches make the market more accessible, dynamic, and rewarding for investors worldwide. Below, we explore three emerging ways to invest in Dubai properties.
+`,
+    author: "Hair Drama Co.",
+    date: "2025-03-20",
+    category: "Fashion",
+    banner: blog20,
+  },
+  {
+    title: "3 New Ways to Invest in Dubai Properties",
+    slug: "3-new-ways-to-invest-in-dubai-properties",
+    excerpt: `Dubai’s property market is a global hotspot for innovation, providing new ways of investments that cater to diverse budgets and goals.`,
+    content: `Dubai’s property market is a global hotspot for innovation, providing new ways of investments that cater to diverse budgets and goals. With strategies designed to make property investment more accessible and lucrative, both seasoned investors and first-timers can find opportunities to build wealth in this vibrant market. These modern approaches make the market more accessible, dynamic, and rewarding for investors worldwide. Below, we explore three emerging ways to invest in Dubai properties.
 
 <span class="font-bold pb-1 md:text-xl">1. Fractional Ownership Platforms</span>
 
@@ -1181,17 +1198,17 @@ With the rising interest in REITs, investors can tap into Dubai’s booming real
 These modern investment methods like fractional ownership, rent-to-own, and REITs demonstrate how Dubai's real estate market is adapting to cater to diverse investor profiles. Whether you're a first-time investor with limited funds or a seasoned professional seeking diversification, these strategies offer exciting opportunities in one of the world’s most dynamic property markets.
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
-`, 
-      author: "ShareSquare",
-      date: "2025-01-27",
-      category: "Real Estate",
-      banner: blog21,
-   },
-   {
-      title:"Dubai Real Estate vs. Rest of the World",
-      slug:"dubai-real-estate-vs-rest-of-the-world",
-      excerpt:`In the constantly evolving world of real estate Dubai has quickly become one of the top places in the world for investment in the sector.`,
-      content:`In the constantly evolving world of real estate Dubai has quickly become one of the top places in the world for investment in the sector. With a mix of affordable property prices, good returns, and a friendly environment for investors, Dubai's real estate market is very appealing. Come let’s know what exactly makes this city stand out from other major real estate markets?
+`,
+    author: "ShareSquare",
+    date: "2025-01-27",
+    category: "Real Estate",
+    banner: blog21,
+  },
+  {
+    title: "Dubai Real Estate vs. Rest of the World",
+    slug: "dubai-real-estate-vs-rest-of-the-world",
+    excerpt: `In the constantly evolving world of real estate Dubai has quickly become one of the top places in the world for investment in the sector.`,
+    content: `In the constantly evolving world of real estate Dubai has quickly become one of the top places in the world for investment in the sector. With a mix of affordable property prices, good returns, and a friendly environment for investors, Dubai's real estate market is very appealing. Come let’s know what exactly makes this city stand out from other major real estate markets?
 
 <span class="font-bold pb-1 md:text-xl">Why Dubai is a Great Choice for Real Estate?</span>
 Dubai is an excellent choice for real estate due to various reasons, its strategic location, world-class infrastructure, and dynamic economy are just few of them. The city's luxury properties, innovative architecture, and exceptional lifestyle never stops captivating global investors. The city's stability, safety, and diverse opportunities make it a prime destination for those seeking both luxury and strong returns. Let’s delve on to some of the lesser-known reasons which make the Emirate one of the most coveted real estate destinations. 
@@ -1226,17 +1243,17 @@ In addition to the well-known districts, Dubai is also developing new areas, cre
 <span class="font-bold pb-1 md:text-xl">Conclusion</span>
 Dubai’s real estate market is one of the most attractive in the world because it combines affordable prices, high returns, and a welcoming environment for investors. With its great location, excellent infrastructure, investor-friendly policies, and ongoing development in prime areas, Dubai offers one of the best opportunities for real estate investment today. Whether you’re looking for a property that will increase in value or provide strong rental income, Dubai is a secure and profitable choice for real estate investment.
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
-`, 
-      author: "ShareSquare",
-      date: "2025-03-31",
-      category: "Real Estate",
-      banner: blog22,
-   },
-   {
-      title:"Why Fractional Real Estate Investment is Booming in UAE",
-      slug:"why-fractional-real-estate-investment-is-booming-in-uae",
-      excerpt:`Real estate has always been a key player in the investment world, often associated with large down payments, long-term commitments, and significant capital.`,
-      content:`Real estate has always been a key player in the investment world, often associated with large down payments, long-term commitments, and significant capital. However, the landscape is changing, and fractional real estate investment is emerging as a transformative force, redefining property ownership. Today, we’ll explore this innovative approach and its potential trajectory as we move forward.
+`,
+    author: "ShareSquare",
+    date: "2025-03-31",
+    category: "Real Estate",
+    banner: blog22,
+  },
+  {
+    title: "Why Fractional Real Estate Investment is Booming in UAE",
+    slug: "why-fractional-real-estate-investment-is-booming-in-uae",
+    excerpt: `Real estate has always been a key player in the investment world, often associated with large down payments, long-term commitments, and significant capital.`,
+    content: `Real estate has always been a key player in the investment world, often associated with large down payments, long-term commitments, and significant capital. However, the landscape is changing, and fractional real estate investment is emerging as a transformative force, redefining property ownership. Today, we’ll explore this innovative approach and its potential trajectory as we move forward.
 
  <span class="font-bold pb-1 md:text-xl">Understanding Fractional Real Estate Investment</span>
 Fractional real estate investment democratizes property ownership by allowing investors to purchase a share or fraction of a property. This method lowers the entry barrier, making real estate investment accessible to a wider audience. Unlike traditional methods, fractional ownership invites everyday individuals to join the property market without needing substantial capital.
@@ -1285,17 +1302,17 @@ While challenges lie ahead, including regulatory changes and maintaining market 
 For anyone considering real estate investment, fractional ownership could be the ideal starting point. The future is fractional, and it's full of promise.
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
-`, 
-      author: "ShareSquare",
-      date: "2025-03-15",
-      category: "Real Estate",
-      banner: blog23,
-   },
-   {
-      title:"Real Estate Sector in Dubai: A Growth Story",
-      slug:`real-estate-sector-in-dubai-a-growth-story`,
-      excerpt:`Dubai’s real estate market continues to thrive, marked by surging project launches and impressive sales growth. In Q3 2024 alone, 8,100 new apartment units entered the market,`,
-      content:`Dubai’s real estate market continues to thrive, marked by surging project launches and impressive sales growth. In Q3 2024 alone, 8,100 new apartment units entered the market, representing a massive 50% increase in completions. A further 14,900 residential units are all set for handover in Q4, reflecting a continued shift toward inland urban development along E311 and E611 corridors.
+`,
+    author: "ShareSquare",
+    date: "2025-03-15",
+    category: "Real Estate",
+    banner: blog23,
+  },
+  {
+    title: "Real Estate Sector in Dubai: A Growth Story",
+    slug: `real-estate-sector-in-dubai-a-growth-story`,
+    excerpt: `Dubai’s real estate market continues to thrive, marked by surging project launches and impressive sales growth. In Q3 2024 alone, 8,100 new apartment units entered the market,`,
+    content: `Dubai’s real estate market continues to thrive, marked by surging project launches and impressive sales growth. In Q3 2024 alone, 8,100 new apartment units entered the market, representing a massive 50% increase in completions. A further 14,900 residential units are all set for handover in Q4, reflecting a continued shift toward inland urban development along E311 and E611 corridors.
 
 As the Emirate expands beyond its traditional boundaries, enhanced infrastructure and robust economic fundamentals continue to drive this growth, creating unparalleled opportunities for residents and investors across the globe. In this blog, we will explore the remarkable growth of Dubai’s real estate market, examining the factors behind its expansion, the latest trends, and how the city continues to redefine property development in the UAE and beyond.
 
@@ -1320,17 +1337,17 @@ However, rental rates in Sharjah and other Emirates remain significantly lower. 
 Dubai’s real estate market stands out as a beacon of growth and innovation within the United Arab Emirates, marked by its luxury developments, robust mid-range housing, and strategic urban planning. While the Northern Emirates, particularly Sharjah, offer affordable alternatives and attract families, Dubai's unparalleled infrastructure, economic opportunities, and global connectivity ensure its continued dominance in the region's real estate landscape. This blend of high-end and inclusive housing solidifies Dubai’s status as a leading investment destination not only in the Middle East but throughout the globe.
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
-`, 
-      author: "ShareSquare",
-      date: "2025-03-16",
-      category: "Real Estate",
-      banner: blog24,
-   },
-   {
-      title:"The Rise of Fractional Real Estate: Investing Smarter, Not Bigger",
-      slug:"the-rise-of-fractional-real-estate-investing-smarter-not-bigger",
-      excerpt:`The Rise of Fractional Real Estate: Investing Smarter, Not Bigger`,
-      content:`As soon as one hears about investing in real estate, one instantly starts thinking about heavy down payments, long-term commitments, and the accessibility to the few with substantial capital. But not anymore! Fractional real estate investing is here to revolutionize property ownership. Get ready to explore this game-changer and see how it's transforming the real estate landscape for the future.
+`,
+    author: "ShareSquare",
+    date: "2025-03-16",
+    category: "Real Estate",
+    banner: blog24,
+  },
+  {
+    title: "The Rise of Fractional Real Estate: Investing Smarter, Not Bigger",
+    slug: "the-rise-of-fractional-real-estate-investing-smarter-not-bigger",
+    excerpt: `The Rise of Fractional Real Estate: Investing Smarter, Not Bigger`,
+    content: `As soon as one hears about investing in real estate, one instantly starts thinking about heavy down payments, long-term commitments, and the accessibility to the few with substantial capital. But not anymore! Fractional real estate investing is here to revolutionize property ownership. Get ready to explore this game-changer and see how it's transforming the real estate landscape for the future.
  
 <span class="font-bold pb-1 md:text-xl">Unveiling Fractional Real Estate</span>
 Fractional real estate investing is essentially a more accessible way for investors to own real estate by enabling them to buy a "share" or "fraction" of a property. By lowering the entry barrier, this strategy increases accessibility to real estate investing for a wider range of people. Fractional ownership invites regular people to participate in the real estate market, unlike typical real estate investments, which require one to be significantly affluent.
@@ -1380,16 +1397,16 @@ To sum up, fractional real estate investment is not just shaping the future of p
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-02-20",
-      category: "Real Estate",
-      banner: blog25,
-   },
-   {
-      title:"What is Fractional Investment in Real Estate?",
-      slug:"what-is-fractional-investment-in-real-estate",
-      excerpt:`Real estate investment has traditionally been associated with high capital requirements and long-term commitments. However, fractional investment in `,
-      content:`Real estate investment has traditionally been associated with high capital requirements and long-term commitments. However, fractional investment in real estate is reshaping this landscape by making property ownership more accessible and inclusive. Let’s explore what fractional investment is and how it’s changing the real estate market.
+    author: "ShareSquare",
+    date: "2025-02-20",
+    category: "Real Estate",
+    banner: blog25,
+  },
+  {
+    title: "What is Fractional Investment in Real Estate?",
+    slug: "what-is-fractional-investment-in-real-estate",
+    excerpt: `Real estate investment has traditionally been associated with high capital requirements and long-term commitments. However, fractional investment in `,
+    content: `Real estate investment has traditionally been associated with high capital requirements and long-term commitments. However, fractional investment in real estate is reshaping this landscape by making property ownership more accessible and inclusive. Let’s explore what fractional investment is and how it’s changing the real estate market.
 
   <span class="font-bold pb-1 md:text-xl">Understanding Fractional Investment</span>
 Fractional real estate investment involves dividing a property into shares or fractions that can be purchased by multiple investors. This method lowers the barrier to entry, allowing individuals with varied financial capacities to invest in real estate. Unlike traditional real estate investments, where large sums are needed upfront, fractional ownership offers a more approachable way to participate in the property market.
@@ -1415,16 +1432,17 @@ Fractional real estate investment is revolutionizing how we think about property
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-02-20",
-      category: "Real Estate",
-      banner: blog26,
-   },
-   {
-      title:"Why Fractional Ownership is the Next Big Thing in Dubai Real Estate",
-      slug:"why-fractional-ownership-is-the-next-big-thing-in-dubai-real-estate",
-      excerpt:`Dubai’s dynamic real estate market, known for its luxury and high-value investments, is undergoing a transformation. Fractional ownership – a model allowing multiple investors to`,
-      content:`Dubai’s dynamic real estate market, known for its luxury and high-value investments, is undergoing a transformation. Fractional ownership – a model allowing multiple investors to co-own a property has emerged as a game-changer, democratizing access to prime real estate.
+    author: "ShareSquare",
+    date: "2025-02-20",
+    category: "Real Estate",
+    banner: blog26,
+  },
+  {
+    title:
+      "Why Fractional Ownership is the Next Big Thing in Dubai Real Estate",
+    slug: "why-fractional-ownership-is-the-next-big-thing-in-dubai-real-estate",
+    excerpt: `Dubai’s dynamic real estate market, known for its luxury and high-value investments, is undergoing a transformation. Fractional ownership – a model allowing multiple investors to`,
+    content: `Dubai’s dynamic real estate market, known for its luxury and high-value investments, is undergoing a transformation. Fractional ownership – a model allowing multiple investors to co-own a property has emerged as a game-changer, democratizing access to prime real estate.
 
  <span class="font-bold pb-1 md:text-xl">What is Fractional Ownership?</span>
 Fractional ownership enables individuals to own a portion of a property, usually ranging from 5-10%. Unlike traditional joint ownership, each investor holds an individual title deed, offering autonomy and flexibility. This model is distinct from timeshare arrangements, focusing on asset ownership rather than limited usage rights.
@@ -1457,16 +1475,16 @@ This innovative approach not only diversifies opportunities but also paves the w
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-01-20",
-      category: "Real Estate",
-      banner: blog27,
-   },
-   {
-      title:'10 Reasons to Invest in Off-Plan Properties in Dubai',
-      slug:'10-reasons-to-invest-in-off-plan-properties-in-dubai',
-      excerpt:`In recent years, Dubai has solidified its position as a global leader in luxury real estate, offering a dynamic property market filled with opportunities. Among `,
-      content:`In recent years, Dubai has solidified its position as a global leader in luxury real estate, offering a dynamic property market filled with opportunities. Among these, off-plan properties – those purchased before or during the construction phase – have emerged as a particularly attractive investment option. Now is the most propitious time to explore the possibilities of off-plan properties and reap the rewards of investing in one of the world’s most dynamic cities.
+    author: "ShareSquare",
+    date: "2025-01-20",
+    category: "Real Estate",
+    banner: blog27,
+  },
+  {
+    title: "10 Reasons to Invest in Off-Plan Properties in Dubai",
+    slug: "10-reasons-to-invest-in-off-plan-properties-in-dubai",
+    excerpt: `In recent years, Dubai has solidified its position as a global leader in luxury real estate, offering a dynamic property market filled with opportunities. Among `,
+    content: `In recent years, Dubai has solidified its position as a global leader in luxury real estate, offering a dynamic property market filled with opportunities. Among these, off-plan properties – those purchased before or during the construction phase – have emerged as a particularly attractive investment option. Now is the most propitious time to explore the possibilities of off-plan properties and reap the rewards of investing in one of the world’s most dynamic cities.
 
 Here are ten compelling reasons why investing in off-plan properties in Dubai is a smart and lucrative choice.
 
@@ -1505,16 +1523,17 @@ Off-plan properties represent a golden opportunity for investors looking to ente
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-02-19",
-      category: "Real Estate",
-      banner: blog28,
-   },
-   {
-      title:'Investing in Dubai Real Estate Market',
-      slug:'investing-in-dubai-real-estate-market',
-      excerpt:'When considering where to invest or relocate, having clear priorities and understanding the potential of a location is crucial. Here, we explore why',
-      content:`When considering where to invest or relocate, having clear priorities and understanding the potential of a location is crucial. Here, we explore why Dubai stands out as a premier destination for real estate investment and what the future holds.
+    author: "ShareSquare",
+    date: "2025-02-19",
+    category: "Real Estate",
+    banner: blog28,
+  },
+  {
+    title: "Investing in Dubai Real Estate Market",
+    slug: "investing-in-dubai-real-estate-market",
+    excerpt:
+      "When considering where to invest or relocate, having clear priorities and understanding the potential of a location is crucial. Here, we explore why",
+    content: `When considering where to invest or relocate, having clear priorities and understanding the potential of a location is crucial. Here, we explore why Dubai stands out as a premier destination for real estate investment and what the future holds.
 
  <span class="font-bold pb-1 md:text-xl">Growth of Tourism and Influx of Wealthy Residents</span>
 Dubai consistently ranks among the world's top cities, attracting millions of tourists and residents alike. In 2023, the city's hotels achieved record occupancy rates, underscoring its appeal as a global tourism hub. The influx of wealthy individuals to the UAE has also been notable, with thousands of millionaires relocating here annually, drawn by the country's stability, business-friendly environment, and attractive tax policies.
@@ -1545,16 +1564,17 @@ At ShareSquare Properties Dubai, we specialize in guiding investors through Duba
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-01-20",
-      category: "Real Estate",
-      banner: blog29,
-   },
-   {
-      title:'Most Promising Areas in Dubai for Off-Plan Property Investment',
-      slug:'most-promising-areas-in-dubai-for-off-plan-property-investment',
-      excerpt:'Dubai’s real estate sector continues to be a magnet for investors globally, thanks to its innovative projects, strategic location, and consistent economic growth. ',
-      content:`Dubai’s real estate sector continues to be a magnet for investors globally, thanks to its innovative projects, strategic location, and consistent economic growth. Among the many investment avenues, off-plan properties have emerged as a preferred choice for those looking to maximize returns while participating in Dubai's development story. This blog explores the most promising areas for off-plan property investment and delves into essential considerations for prospective buyers.
+    author: "ShareSquare",
+    date: "2025-01-20",
+    category: "Real Estate",
+    banner: blog29,
+  },
+  {
+    title: "Most Promising Areas in Dubai for Off-Plan Property Investment",
+    slug: "most-promising-areas-in-dubai-for-off-plan-property-investment",
+    excerpt:
+      "Dubai’s real estate sector continues to be a magnet for investors globally, thanks to its innovative projects, strategic location, and consistent economic growth. ",
+    content: `Dubai’s real estate sector continues to be a magnet for investors globally, thanks to its innovative projects, strategic location, and consistent economic growth. Among the many investment avenues, off-plan properties have emerged as a preferred choice for those looking to maximize returns while participating in Dubai's development story. This blog explores the most promising areas for off-plan property investment and delves into essential considerations for prospective buyers.
 
  <span class="font-bold pb-1 md:text-xl">Why Off-Plan Investments in Dubai?</span>
 Off-plan properties, where investors purchase real estate before or during its construction phase, offer unique benefits like:
@@ -1605,16 +1625,17 @@ To ensure success, investors must combine thorough research with strategic plann
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-02-05",
-      category: "Real Estate",
-      banner: blog30,
-   },
-   {
-      title:'Top Neighbourhoods in Dubai for Real Estate Investment ',
-      slug:'top-neighbourhoods-in-dubai-for-real-estate-investment',
-      excerpt:'Amidst the constantly changing world of investment opportunities, real estate is an arena which has always remained a reliable option that consistently ',
-      content:`Amidst the constantly changing world of investment opportunities, real estate is an arena which has always remained a reliable option that consistently offers a safe haven for generating scores of wealth. And with time Dubai has evolved to be one of the most sought-after destinations, giving out terrific gains against lucrative investments. If you are someone who is looking for the best destinations in the emirate to invest in real estate, then you are at the right place. 
+    author: "ShareSquare",
+    date: "2025-02-05",
+    category: "Real Estate",
+    banner: blog30,
+  },
+  {
+    title: "Top Neighbourhoods in Dubai for Real Estate Investment ",
+    slug: "top-neighbourhoods-in-dubai-for-real-estate-investment",
+    excerpt:
+      "Amidst the constantly changing world of investment opportunities, real estate is an arena which has always remained a reliable option that consistently ",
+    content: `Amidst the constantly changing world of investment opportunities, real estate is an arena which has always remained a reliable option that consistently offers a safe haven for generating scores of wealth. And with time Dubai has evolved to be one of the most sought-after destinations, giving out terrific gains against lucrative investments. If you are someone who is looking for the best destinations in the emirate to invest in real estate, then you are at the right place. 
  
 <span class="font-bold pb-1 md:text-xl">Why should Dubai be your Preferred Location? </span>
 When it comes to earning high-end returns with relatively economical investments, there is no other better place than the real estate market of Dubai. The city is a global hub for travel and trade, attracting a multitude of expatriates and professionals. This creates a consistent demand for rental properties. 
@@ -1647,16 +1668,16 @@ All in all, no matter whether you are a seasoned investor or an amateur ready to
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-01-10",
-      category: "Real Estate",
-      banner: blog31,
-   },
-   {
-      title:'Understanding Dubai’s Property Laws: A Guide for Foreign Investors',
-      slug:'understanding-dubais-property-laws-a-guide-for-foreign-investors',
-      excerpt:`When investing in real estate, understanding the local property laws is crucial. These laws, along with taxation policies, play a significant role `,
-      content:`When investing in real estate, understanding the local property laws is crucial. These laws, along with taxation policies, play a significant role in determining where an investor can achieve maximum returns. In recent years, Dubai, known as the infrastructure capital of the Middle East, has emerged as one of the world’s leading real estate hubs. The emirate’s liberal property laws and investor-friendly tax policies are major contributors to this growth. This article will guide you through the key laws and regulations you need to know before investing in real estate in Dubai. 
+    author: "ShareSquare",
+    date: "2025-01-10",
+    category: "Real Estate",
+    banner: blog31,
+  },
+  {
+    title: "Understanding Dubai’s Property Laws: A Guide for Foreign Investors",
+    slug: "understanding-dubais-property-laws-a-guide-for-foreign-investors",
+    excerpt: `When investing in real estate, understanding the local property laws is crucial. These laws, along with taxation policies, play a significant role `,
+    content: `When investing in real estate, understanding the local property laws is crucial. These laws, along with taxation policies, play a significant role in determining where an investor can achieve maximum returns. In recent years, Dubai, known as the infrastructure capital of the Middle East, has emerged as one of the world’s leading real estate hubs. The emirate’s liberal property laws and investor-friendly tax policies are major contributors to this growth. This article will guide you through the key laws and regulations you need to know before investing in real estate in Dubai. 
 
  <span class="font-bold pb-1 md:text-xl">An Attractive Opportunity for Foreign Investors</span>
 Foreign nationals are free to purchase real estate in Dubai in specific areas that allow full ownership, like Downtown Dubai, Palm Jumeirah, and Dubai Marina. These zones give buyers complete rights to their property. Owners can sell, rent out, or pass down their property as they wish. But there are specific restrictions and regulations to follow. And these include: 
@@ -1687,16 +1708,17 @@ In a very laymen’s term, to own property in Dubai like in any other city, you 
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
 `,
-      author: "ShareSquare",
-      date: "2025-04-01",
-      category: "Real Estate",
-      banner: blog32,
-   },
-   {
-      title: "The Future of Sports Investments: How Resolute Group is Scoring Big in the Game",
-      slug: "the-future-of-sports-investments-how-resolute-group-is-scoring-big-in-the-game",
-      excerpt: `The sports industry is witnessing a transformative era, with private equity investments reshaping its landscape. As traditional revenue streams evolve,`,
-      content: `The sports industry is witnessing a transformative era, with private equity investments reshaping its landscape. As traditional revenue streams evolve, investors are increasingly turning their attention to emerging leagues and niche sports, recognizing the untapped potential and growth opportunities they present. Resolute Group stands at the forefront of this movement, strategically investing in teams like the Delhi Toofans and Hyderabad Toofans to capitalize on the burgeoning sports market. 
+    author: "ShareSquare",
+    date: "2025-04-01",
+    category: "Real Estate",
+    banner: blog32,
+  },
+  {
+    title:
+      "The Future of Sports Investments: How Resolute Group is Scoring Big in the Game",
+    slug: "the-future-of-sports-investments-how-resolute-group-is-scoring-big-in-the-game",
+    excerpt: `The sports industry is witnessing a transformative era, with private equity investments reshaping its landscape. As traditional revenue streams evolve,`,
+    content: `The sports industry is witnessing a transformative era, with private equity investments reshaping its landscape. As traditional revenue streams evolve, investors are increasingly turning their attention to emerging leagues and niche sports, recognizing the untapped potential and growth opportunities they present. Resolute Group stands at the forefront of this movement, strategically investing in teams like the Delhi Toofans and Hyderabad Toofans to capitalize on the burgeoning sports market. 
 
 In this blog, we will delve into the rising wave of investments in sports, and how Resolute Group is pioneering this transformation with its strategic investment in Delhi Toofans and Hyderabad Toofans.
 
@@ -1732,17 +1754,17 @@ Recognizing the promising future of emerging sports leagues, Resolute Group has 
 
 <span class="font-bold pb-1 md:text-xl">Conclusion</span>
 Resolute Group's strategic investments in the Delhi Toofans and Hyderabad Toofans exemplify a forward-thinking approach to sports investment. By focusing on emerging leagues with high growth potential, Resolute is not only contributing to the development of sports culture but also positioning itself to reap substantial returns in the evolving sports economy. As the industry continues to expand, such visionary investments will undoubtedly play a pivotal role in shaping the future of sports.
-`, 
-      author: "Resolute Corp",
-      date: "2025-04-16",
-      category: "Sports",
-      banner: blog33,
-   },
-   {
-      title: "From Field to the Boardroom: Leadership Lessons from Hockey",
-      slug: "from-field-to-the-boardroom-leadership-lessons-from-hockey",
-      excerpt: `Hockey isn’t just a simple game played with sticks on a turf; it’s a dynamic arena where leadership lessons are born and tested. From intense training sessions to critical`,
-      content: `Hockey isn’t just a simple game played with sticks on a turf; it’s a dynamic arena where leadership lessons are born and tested. From intense training sessions to critical moments on the rink, the sport demands resilience, teamwork, and strategic thinking. These same traits are essential in the boardroom, making hockey a powerful teacher for aspiring leaders in the business world.
+`,
+    author: "Resolute Corp",
+    date: "2025-04-16",
+    category: "Sports",
+    banner: blog33,
+  },
+  {
+    title: "From Field to the Boardroom: Leadership Lessons from Hockey",
+    slug: "from-field-to-the-boardroom-leadership-lessons-from-hockey",
+    excerpt: `Hockey isn’t just a simple game played with sticks on a turf; it’s a dynamic arena where leadership lessons are born and tested. From intense training sessions to critical`,
+    content: `Hockey isn’t just a simple game played with sticks on a turf; it’s a dynamic arena where leadership lessons are born and tested. From intense training sessions to critical moments on the rink, the sport demands resilience, teamwork, and strategic thinking. These same traits are essential in the boardroom, making hockey a powerful teacher for aspiring leaders in the business world.
 
 This blog will explore how the principles of hockey translate into valuable leadership skills and how leaders can apply these lessons to excel in their careers.
 
@@ -1783,12 +1805,12 @@ In business, just like in sports, leaders who seek mentorship and embrace lifelo
 From field to the boardroom, the lessons of hockey resonate deeply in the realm of leadership. Whether it’s leading with accountability, adapting under pressure, or building resilient teams, the principles of hockey offer invaluable insights for leaders at every level. 
 
 At Resolute Corp, we believe that the principles of teamwork, resilience, and strategic leadership which are integral to sports like hockey are also the driving force behind successful investments and businesses. Hyderabad Toofans, a portfolio company of the Resolute Group embodies these values, while pushing the boundaries of Indian hockey and nurturing top-tier talent.
-`, 
-      author: "Resolute Corp",
-      date: "2025-04-16",
-      category: "Sports",
-      banner: blog34,
-   },
+`,
+    author: "Resolute Corp",
+    date: "2025-04-16",
+    category: "Sports",
+    banner: blog34,
+  },
   {
     title: "The Future of Work in India: What Employees Really Want",
     slug: "the-future-of-work-in-india-what-employees-really-want",
@@ -1835,10 +1857,11 @@ The future of work in India belongs to companies that place employee needs at th
     banner: blog35,
   },
   {
-    title: "How ShareSquare Is Unlocking Dubai’s Ultra-Premium Real Estate Market? ",
+    title:
+      "How ShareSquare Is Unlocking Dubai’s Ultra-Premium Real Estate Market? ",
     slug: "how-sharesquare-is-unlocking-dubais-ultra-premium-real-estate-market",
     excerpt: `Dubai’s luxury real estate sector is in a league of its own.The luxury real estate market of Dubai operates independently among international property markets. `,
-    content:`Dubai’s luxury real estate sector is in a league of its own.The luxury real estate market of Dubai operates independently among international property markets. Glamorous skyscrapers along with waterfront houses and high-rise penthouses have transformed the city into a worldwide wealth attraction point. The real estate market in 2024 in Dubai established new transaction value records due to 226,000 transactions which accumulated AED 760.7 billion in total. Dubai transforms into one of the world's leading luxury property markets through taxation benefits alongside political security and capital investment policies.
+    content: `Dubai’s luxury real estate sector is in a league of its own.The luxury real estate market of Dubai operates independently among international property markets. Glamorous skyscrapers along with waterfront houses and high-rise penthouses have transformed the city into a worldwide wealth attraction point. The real estate market in 2024 in Dubai established new transaction value records due to 226,000 transactions which accumulated AED 760.7 billion in total. Dubai transforms into one of the world's leading luxury property markets through taxation benefits alongside political security and capital investment policies.
 
 The high-end market generates massive opportunities but its accessibility has mainly restricted itself to institutions and liquidate individuals with wealth exceeding millions. ShareSquare stands as a platform that disrupts the boundary that has traditionally limited access to high-end investments.
 
@@ -1873,17 +1896,18 @@ This environment creates a perfect storm for investment—but with rising prices
 The ultra-prime property market in Dubai is a treasure chest. However, until now, it has mostly been available to the people with wealth. ShareSquare is helping facilitate change as they have successfully turned luxury real estate into a strategic, accessible, data driven, and calculated investment. Backed by Resolute Corp, ShareSquare is bringing credibility and vision enabling a way for people to invest in luxury prime real estate to participate in owning a piece of their  dream - and to have slice in the returns. If you are considering investing discreetly and smartly, and would like to invest in one of the world’s fast growing cities retracting institutional funds, then it may just be a chance to get involved in the action with ShareSquare. 
 
 Visit <a href="https://sharesquare.ae/" target="_blank" class="font-bold text-blue-500">sharesquare</a> to learn more!
-`, 
+`,
     author: "ShareSquare",
     date: "2025-04-21",
     category: "Real Estate",
     banner: blog36,
   },
   {
-    title: "Building Champions: The Journey of Delhi Toofans Under Resolute Corp’s Vision",
+    title:
+      "Building Champions: The Journey of Delhi Toofans Under Resolute Corp’s Vision",
     slug: "building-champions-the-journey-of-delhi-toofans-under-resolute-corps-vision",
     excerpt: `Gone are the days when cricket used to be the only prominent sport stealing the limelight in India. Today, a new storm is brewing on the volleyball court led by the Delhi Toofans,`,
-    content:`Gone are the days when cricket used to be the only prominent sport stealing the limelight in India. Today, a new storm is brewing on the volleyball court led by the Delhi Toofans, a team that has not only captured hearts but redefined India’s sports narrative. Backed by the strategic vision of Resolute Corp, the Toofans are more than just a sports team. Instead, they are the face of a growing movement towards sports diversification and excellence in the country.
+    content: `Gone are the days when cricket used to be the only prominent sport stealing the limelight in India. Today, a new storm is brewing on the volleyball court led by the Delhi Toofans, a team that has not only captured hearts but redefined India’s sports narrative. Backed by the strategic vision of Resolute Corp, the Toofans are more than just a sports team. Instead, they are the face of a growing movement towards sports diversification and excellence in the country.
 
 In this blog, we will dwell upon the successful journey of the Delhi Toofans under Resolute Corp’s vision.
 
@@ -1912,17 +1936,18 @@ Through its sports arm, Resolute Sports Pvt Ltd., the corporation has not just i
 While finishing second in their debut season is a remarkable feat, the Delhi Toofans’ journey is just beginning. Under Resolute Corp’s continued guidance and support, the team is poised to reach new heights and bring even more glory to the sport. As India opens up to a broader sports culture, teams like Delhi Toofans are setting the standard for what success looks like in the modern era of Indian sports. 
 
 Resolute Corp, known for nurturing innovative ventures across sectors, continues to empower dreams and fuel ambitions. With their steadfast support, Delhi Toofans are not just elevating the game of volleyball but also inspiring a new generation of athletes to aim higher and dream bigger
-`, 
+`,
     author: "Resolute Corp",
     date: "2025-05-07",
     category: "Sports",
     banner: blog37,
   },
   {
-    title: "Understanding Family Offices: Purpose, Responsibilities, and Structures of Wealth Management",
+    title:
+      "Understanding Family Offices: Purpose, Responsibilities, and Structures of Wealth Management",
     slug: "understanding-family-offices",
     excerpt: `In an era of growing financial complexity, ultra-high-net-worth individuals (UHNIs) are increasingly turning to Family Offices to manage their wealth with precision and discretion.`,
-    content:`In an era of growing financial complexity, ultra-high-net-worth individuals (UHNIs) are increasingly turning to Family Offices to manage their wealth with precision and discretion. But what exactly is a Family Office? What are its core responsibilities, and who actually needs one?
+    content: `In an era of growing financial complexity, ultra-high-net-worth individuals (UHNIs) are increasingly turning to Family Offices to manage their wealth with precision and discretion. But what exactly is a Family Office? What are its core responsibilities, and who actually needs one?
 
 Whether you’re considering establishing a Family Office in India or simply want to understand how these institutions function, this blog covers everything from structures to types and key benefits.
 
@@ -1975,8 +2000,8 @@ With growing awareness and financial maturity, India is witnessing the evolution
   {
     title: "The Talent War: How Top Startups Are Winning in 2025",
     slug: "the-talent-war-how-top-startups-are-winning-in-2025",
-    excerpt:`In the ever-evolving ecosystem of business and startups, 2025 marks a pivotal year in the global talent war. The competition for top-tier professionals has never been fiercer.`,
-    content:`In the ever-evolving ecosystem of business and startups, 2025 marks a pivotal year in the global talent war. The competition for top-tier professionals has never been fiercer. Unlike in the past, where large corporations held an upper hand by sheer scale and resources, today’s battle isn’t about who’s the biggest; it’s about who’s the fastest, most purpose-driven, and adaptable. 
+    excerpt: `In the ever-evolving ecosystem of business and startups, 2025 marks a pivotal year in the global talent war. The competition for top-tier professionals has never been fiercer.`,
+    content: `In the ever-evolving ecosystem of business and startups, 2025 marks a pivotal year in the global talent war. The competition for top-tier professionals has never been fiercer. Unlike in the past, where large corporations held an upper hand by sheer scale and resources, today’s battle isn’t about who’s the biggest; it’s about who’s the fastest, most purpose-driven, and adaptable. 
 
 Startups that are winning the talent war have redefined how talent is attracted, nurtured, and retained. From purpose-led missions to people-first cultures, these companies are engineering environments that resonate with the new workforce priorities. Here's a deep dive into the strategies that are giving startups the competitive edge in 2025.
 
@@ -2008,7 +2033,7 @@ Diversity and inclusion are equally non-negotiable. The leading startups of 2025
 The talent war in 2025 is being won not by the biggest players but by the boldest, most adaptive, and purpose-driven startups. These companies understand that attracting and retaining top talent is not a transactional exercise; it’s a deeply strategic one that touches every part of the business, from culture and communication to learning and leadership.
 
 At Resolute Corp, we champion the talent strategies and principles outlined in this blog. Our team embodies innovation, adaptability, and a shared mission to redefine workplace excellence!
-`, 
+`,
     author: "Resolute Corp",
     date: "2025-05-23",
     category: "AI",
@@ -2017,8 +2042,8 @@ At Resolute Corp, we champion the talent strategies and principles outlined in t
   {
     title: "The Rise of Women Entrepreneurs in India",
     slug: "the-rise-of-women-entrepreneurs-in-india",
-    excerpt:`In India’s startup world, the growth is not just quantitative, it is qualitative. They’re building their seats at the table, showing leadership is not about access but creation.`,
-    content:`In India’s startup world, the growth is not just quantitative, it is qualitative. They’re building their seats at the table, showing leadership is not about access but creation. From the field of technology to cosmetics, from biosciences to avant-garde fashion, these women are evidence that anything is possible when goals are set high and bravery is never compromised.
+    excerpt: `In India’s startup world, the growth is not just quantitative, it is qualitative. They’re building their seats at the table, showing leadership is not about access but creation.`,
+    content: `In India’s startup world, the growth is not just quantitative, it is qualitative. They’re building their seats at the table, showing leadership is not about access but creation. From the field of technology to cosmetics, from biosciences to avant-garde fashion, these women are evidence that anything is possible when goals are set high and bravery is never compromised.
 
 There are hours, crucial choices, and true obstacles behind the major successes. These women didn’t just enter ventures, they set off waves of progression. 
 
@@ -2058,17 +2083,17 @@ These are not only inspiring stories, they're also instructive. They illustrate 
 Resolute Corp is a shining example of this dedication through investments in women-owned businesses. One of its portfolio companies is Hair Drama Co., owned by Priyanka Sanghi, that is transforming the hair fashion sector in India. Resolute Corp is promoting innovation and empowering women entrepreneurs to be successful and lead through strategic investments.
 
 Want genuine economic growth? Support women. Finance women. Employ women. And above all, share their stories. 
-`, 
+`,
     author: "Resolute Corp",
     date: "2025-05-30",
     category: "Investment",
     banner: blog40,
   },
-  { 
-    title:'Behind the Brand: Hair Drama Co. and the Rise of Empowered Fashion',
-    slug:'behind-the-brand-hair-drama-co-and-the-rise-of-empowered-fashion',
-    excerpt:`In a world where fashion meets vision, where creativity shapes craftsmanship, and where identity finds its boldest expression, Hair Drama Co. stands as a beacon of empowered fashion.`,
-    content:`In a world where fashion meets vision, where creativity shapes craftsmanship, and where identity finds its boldest expression, Hair Drama Co. stands as a beacon of empowered fashion. A portfolio company of Resolute Corp, Hair Drama Co. redefines what it truly means to be fashionable, fearless, and unapologetically expressive.
+  {
+    title: "Behind the Brand: Hair Drama Co. and the Rise of Empowered Fashion",
+    slug: "behind-the-brand-hair-drama-co-and-the-rise-of-empowered-fashion",
+    excerpt: `In a world where fashion meets vision, where creativity shapes craftsmanship, and where identity finds its boldest expression, Hair Drama Co. stands as a beacon of empowered fashion.`,
+    content: `In a world where fashion meets vision, where creativity shapes craftsmanship, and where identity finds its boldest expression, Hair Drama Co. stands as a beacon of empowered fashion. A portfolio company of Resolute Corp, Hair Drama Co. redefines what it truly means to be fashionable, fearless, and unapologetically expressive.
 
 Let’s go behind the scenes of this innovative brand which is rewriting the narrative!
 
@@ -2114,7 +2139,7 @@ In an industry often driven by fleeting trends, Hair Drama Co. has chosen a diff
 Hair Drama Co. is not just a brand; it is a movement that believes in turning everyday moments into style statements, and ordinary hair accessories into extraordinary emblems of identity. It is a celebration of women, creativity, and the art of storytelling through fashion.
 
 As a proud portfolio company of Resolute Corp, Hair Drama Co. benefits from the robust vision, strategic guidance, and financial strength of the Resolute Group that champions innovation across diverse sectors. The partnership is a natural fit as Resolute Corp believes in building brands that shape culture, and Hair Drama Co. is doing exactly that in the fashion realm.
-`, 
+`,
     author: "Hair Drama Co.",
     date: "2025-05-31",
     category: "Fashion",
@@ -2123,8 +2148,8 @@ As a proud portfolio company of Resolute Corp, Hair Drama Co. benefits from the 
   {
     title: "Why Family Offices Are Investing in Sports and Lifestyle Brands",
     slug: "why-family-offices-are-investing-in-sports-and-lifestyle-brands",
-    excerpt:`Over the past decade, India has seen a steady rise in the number of ultra-high-net-worth individuals (UHNIs), many of whom are turning to family offices to manage their wealth.`,
-    content:`Over the past decade, India has seen a steady rise in the number of ultra-high-net-worth individuals (UHNIs), many of whom are turning to family offices to manage their wealth. A family office is a private entity set up by affluent individuals or families to handle everything from investments to estate planning. As the investment preferences of these offices evolve, a noteworthy trend has emerged — a growing interest in sports and lifestyle brands.
+    excerpt: `Over the past decade, India has seen a steady rise in the number of ultra-high-net-worth individuals (UHNIs), many of whom are turning to family offices to manage their wealth.`,
+    content: `Over the past decade, India has seen a steady rise in the number of ultra-high-net-worth individuals (UHNIs), many of whom are turning to family offices to manage their wealth. A family office is a private entity set up by affluent individuals or families to handle everything from investments to estate planning. As the investment preferences of these offices evolve, a noteworthy trend has emerged — a growing interest in sports and lifestyle brands.
 
 Traditionally focused on real estate, public equities, and fixed income instruments, family offices today are venturing into more dynamic and culturally relevant sectors. Among these, sports teams, fashion ventures, and lifestyle brands are fast becoming attractive destinations for capital. But what’s driving this shift? Let’s explore some of the key reasons behind this trend.
 
@@ -2158,7 +2183,7 @@ The government’s Khelo India initiative which was started in 2017–18 focuses
 As Indian family offices evolve to keep up with a changing world, their investment choices are also adapting. Sectors like sports and lifestyle are no longer considered unconventional; they are seen as strategic, future-oriented bets on India's cultural and economic shifts. In a country where tradition meets trend, family offices are now embracing the best of both worlds – building wealth while staying relevant.
 
 A case in point is Resolute Corp, which is actively investing in both these domains. With ownership of sports franchises like Hyderabad Toofans and Delhi Toofans and lifestyle brands like Hair Drama Co, Resolute Corp exemplifies how family-backed ventures can not only generate strong financial returns but also shape modern consumer narratives.
-`, 
+`,
     author: "Resolute Corp",
     date: "2025-06-18",
     category: "Investment",
@@ -2167,8 +2192,8 @@ A case in point is Resolute Corp, which is actively investing in both these doma
   {
     title: "Understanding Family Office Models",
     slug: "understanding-family-office-models",
-    excerpt:`In an era where wealth is no longer just about accumulation but also about stewardship, the role of family offices has taken centre stage. These bespoke entities manage the complex financial,`,
-    content:`In an era where wealth is no longer just about accumulation but also about stewardship, the role of family offices has taken centre stage. These bespoke entities manage the complex financial, legal, and philanthropic needs of high-net-worth families, ensuring that wealth not only survives but thrives across generations. As India sees a rising tide of ultra-rich families, understanding the nuances of different family office models becomes imperative for those seeking to preserve and grow their legacy.
+    excerpt: `In an era where wealth is no longer just about accumulation but also about stewardship, the role of family offices has taken centre stage. These bespoke entities manage the complex financial,`,
+    content: `In an era where wealth is no longer just about accumulation but also about stewardship, the role of family offices has taken centre stage. These bespoke entities manage the complex financial, legal, and philanthropic needs of high-net-worth families, ensuring that wealth not only survives but thrives across generations. As India sees a rising tide of ultra-rich families, understanding the nuances of different family office models becomes imperative for those seeking to preserve and grow their legacy.
 
 In this blog, we will take you on a ride to explore the anatomy of family offices.
 
@@ -2225,17 +2250,17 @@ The investment strategy of a family office in India is markedly different from t
 In today’s volatile economic climate, the establishment of a family office is not just a strategic financial move but a deeply personal journey. Whether it’s the hands-on approach of an SFO, the collaborative ecosystem of an MFO, or the lean design of an embedded model, family offices are evolving into vital institutions for wealth preservation, legacy building, and purposeful investing.
 
 At Resolute Corp, we embody the spirit of family offices by aligning long-term value creation and purpose-driven investing with a deep commitment to legacy stewardship and ethical entrepreneurship.
-`, 
-      author: "Resolute Corp",
-      date: "2025-06-18",
-      category: "Family Offices",
-      banner: blog43,
+`,
+    author: "Resolute Corp",
+    date: "2025-06-18",
+    category: "Family Offices",
+    banner: blog43,
   },
   {
-      title: "How Resolute Corp is Re-defining the Indian Growth Story",  
-      slug: "how-resolute-corp-is-re-defining-the-indian-growth-story",
-      excerpt:`In today’s dynamic, ever-changing economic landscape, diversification is not just about planning, but it has become a strategic necessity. As market dynamics evolve rapidly across sectors, businesses that place all their bets on a single vertical face heightened risk.`,
-      content:`In today’s dynamic, ever-changing economic landscape, diversification is not just about planning, but it has become a strategic necessity. As market dynamics evolve rapidly across sectors, businesses that place all their bets on a single vertical face heightened risk. Diversification enables companies to spread risk, capture new opportunities, ensure financial stability, and maintain relevance in a fast-changing world.
+    title: "How Resolute Corp is Re-defining the Indian Growth Story",
+    slug: "how-resolute-corp-is-re-defining-the-indian-growth-story",
+    excerpt: `In today’s dynamic, ever-changing economic landscape, diversification is not just about planning, but it has become a strategic necessity. As market dynamics evolve rapidly across sectors, businesses that place all their bets on a single vertical face heightened risk.`,
+    content: `In today’s dynamic, ever-changing economic landscape, diversification is not just about planning, but it has become a strategic necessity. As market dynamics evolve rapidly across sectors, businesses that place all their bets on a single vertical face heightened risk. Diversification enables companies to spread risk, capture new opportunities, ensure financial stability, and maintain relevance in a fast-changing world.
 
 From tech conglomerates to industrial giants, the global trend is clear: resilient growth comes from a diversified portfolio. In India, one of the upcoming corporates that best exemplifies this strategy is Resolute Corp, a forward-thinking investment group whose varied ventures are making waves across industries as diverse as investments, real estate, fashion, and sports.
 
@@ -2276,16 +2301,17 @@ In an era of economic uncertainty and rapid transformation, Resolute Corp offers
 
 By investing across ecosystems, embracing innovation, and staying rooted in Indian realities, Resolute Corp is truly rewriting the Indian growth story – one venture at a time.
 `,
-      author: "Resolute Corp",
-      date: "2025-06-24",
-      category: "Investment",
-      banner: blog44,
-  }, 
+    author: "Resolute Corp",
+    date: "2025-06-24",
+    category: "Investment",
+    banner: blog44,
+  },
   {
-     title:"Why Is Dubai’s Real Estate Still the Smartest Choice for Global Investors in 2025?",
-     slug:`why-is-dubais-real-estate-still-the-smartest-choice-for-global-investors-in-2025`,
-     excerpt:`Dubai is more than a skyline of glass towers and supercars. It is one of the most dynamic, investor-friendly real estate markets in the world. In 2025`,
-     content:`Dubai is more than a skyline of glass towers and supercars. It is one of the most dynamic, investor-friendly real estate markets in the world. In 2025, that reputation remains steadfast, and with active international investors continuing to flow capital into this growing city. 
+    title:
+      "Why Is Dubai’s Real Estate Still the Smartest Choice for Global Investors in 2025?",
+    slug: `why-is-dubais-real-estate-still-the-smartest-choice-for-global-investors-in-2025`,
+    excerpt: `Dubai is more than a skyline of glass towers and supercars. It is one of the most dynamic, investor-friendly real estate markets in the world. In 2025`,
+    content: `Dubai is more than a skyline of glass towers and supercars. It is one of the most dynamic, investor-friendly real estate markets in the world. In 2025, that reputation remains steadfast, and with active international investors continuing to flow capital into this growing city. 
 
 What is even more exciting?  Fractional real estate investment has removed barriers and offered access to everyday investors to high-end real estate they once did not know was possible. 
 
@@ -2353,17 +2379,17 @@ Fractional investing via ShareSquare, powered by Resolute Corp, is an incredible
 ●	Share the responsibility of ownership. 
 
 Resolute Corp is fostering growth across platforms like ShareSquare, utilizing a history of ingenuity and future focus to redefine how global investors engage with markets like Dubai.
-`, 
-      author: "Resolute Corp", 
-      date: "2025-07-09", 
-      category: "Real Estate",
-      banner: blog45, 
-    },
-    {
-      title:'The Power of Multi-Generational Family Offices',
-      slug:'the-power-of-multi-generational-family-offices',
-      excerpt:`In the changing landscape of global wealth management, multi-generational family offices have emerged as powerful entities that not only preserve legacy wealth but also shape economic ecosystems.`,
-      content:`In the changing landscape of global wealth management, multi-generational family offices have emerged as powerful entities that not only preserve legacy wealth but also shape economic ecosystems. In India, where familial bonds run deep and entrepreneurial heritage is often passed down through generations, these family offices are playing a pivotal role in nation-building, capital deployment, and economic resilience.
+`,
+    author: "Resolute Corp",
+    date: "2025-07-09",
+    category: "Real Estate",
+    banner: blog45,
+  },
+  {
+    title: "The Power of Multi-Generational Family Offices",
+    slug: "the-power-of-multi-generational-family-offices",
+    excerpt: `In the changing landscape of global wealth management, multi-generational family offices have emerged as powerful entities that not only preserve legacy wealth but also shape economic ecosystems.`,
+    content: `In the changing landscape of global wealth management, multi-generational family offices have emerged as powerful entities that not only preserve legacy wealth but also shape economic ecosystems. In India, where familial bonds run deep and entrepreneurial heritage is often passed down through generations, these family offices are playing a pivotal role in nation-building, capital deployment, and economic resilience.
 
 In this blog, we explore the role of multi-generational family offices in India's economic growth, the key drivers behind their rise, and how government support and generational shifts are shaping their evolution.
 
@@ -2410,17 +2436,18 @@ These measures help position India as an emerging destination for family office 
 The power of multi-generational family offices lies not only in their ability to steward wealth but in their transformative impact on India’s economy. As they continue to evolve, adopt global best practices, and align their investments with national and social priorities, family offices will remain vital pillars of India’s financial future.
 
 At Resolute Corp, we uphold the core values of multi-generational family offices – strategic capital stewardship, long-term vision, and sustainable impact. Our diversified ventures reflect a legacy-driven approach that contributes meaningfully to India’s evolving economic landscape.
-`, 
-      author: "Resolute Corp",
-      date: "2025-07-10",
-      category: "Family Offices",
-      banner: blog46,
-    }, 
-    {
-      title: "India's New Frontier: How Our Space Economy is Set to Skyrocket by 2030",
-      slug: "indias-new-frontier-how-our-space-economy-is-set-to-skyrocket-by-2030",
-      excerpt: `India's tryst with the stars has always been a story of ambition against odds, from launching its first satellite with parts carried on a bicycle to now piloting a global space mission.`,
-      content:`India's tryst with the stars has always been a story of ambition against odds, from launching its first satellite with parts carried on a bicycle to now piloting a global space mission. The recent launch of the Axiom-4 mission to the International Space Station (ISS), with Indian astronaut Shubhanshu Shukla on board as pilot, marks a powerful new chapter in India's cosmic journey. As we head further toward 2030, India's space economy is not just aiming high; it’s preparing for a lift-off. 
+`,
+    author: "Resolute Corp",
+    date: "2025-07-10",
+    category: "Family Offices",
+    banner: blog46,
+  },
+  {
+    title:
+      "India's New Frontier: How Our Space Economy is Set to Skyrocket by 2030",
+    slug: "indias-new-frontier-how-our-space-economy-is-set-to-skyrocket-by-2030",
+    excerpt: `India's tryst with the stars has always been a story of ambition against odds, from launching its first satellite with parts carried on a bicycle to now piloting a global space mission.`,
+    content: `India's tryst with the stars has always been a story of ambition against odds, from launching its first satellite with parts carried on a bicycle to now piloting a global space mission. The recent launch of the Axiom-4 mission to the International Space Station (ISS), with Indian astronaut Shubhanshu Shukla on board as pilot, marks a powerful new chapter in India's cosmic journey. As we head further toward 2030, India's space economy is not just aiming high; it’s preparing for a lift-off. 
 
 In this blog, we explore India’s space legacy, its projected economic growth, key enablers of this transformation, and the strategic impact it holds for the country and the world.
 
@@ -2465,18 +2492,17 @@ The space race is no longer just a Cold War relic — it’s a new-age frontier 
 <span class="font-bold pb-1 md:text-xl">Conclusion</span>
 From symbolic missions to billion-dollar forecasts, India’s space economy is poised for a meteoric rise. The Axiom-4 mission is more than a headline; it’s a milestone of what's to come. As Shubhanshu Shukla pilots India into a new era of space leadership, one thing is clear: we’re no longer just aiming for the stars — we’re building an economy among them.
 
-At Resolute Corp, we remain committed to tracking such transformative developments that define the future of industry, innovation, and investment.`
-  , 
-  author: "Resolute Corp",
-  date: "2025-07-23",
-  category: "Family Offices",
-  banner: blog47,
-    },
-    {
-      title: "The Rise of Family Offices in India",
-      slug: "the-rise-of-family-offices-in-india",
-      excerpt:`As global wealth expands and intergenerational planning becomes paramount, family offices have emerged as critical vehicles for managing high-net-worth assets.`,
-      content:`As global wealth expands and intergenerational planning becomes paramount, family offices have emerged as critical vehicles for managing high-net-worth assets. While traditional wealth hubs like Singapore, Hong Kong, and Dubai have long dominated this landscape, India is swiftly positioning itself as Asia’s next major wealth hub with projections estimating over 1,500 family offices by 2030.
+At Resolute Corp, we remain committed to tracking such transformative developments that define the future of industry, innovation, and investment.`,
+    author: "Resolute Corp",
+    date: "2025-07-23",
+    category: "Family Offices",
+    banner: blog47,
+  },
+  {
+    title: "The Rise of Family Offices in India",
+    slug: "the-rise-of-family-offices-in-india",
+    excerpt: `As global wealth expands and intergenerational planning becomes paramount, family offices have emerged as critical vehicles for managing high-net-worth assets.`,
+    content: `As global wealth expands and intergenerational planning becomes paramount, family offices have emerged as critical vehicles for managing high-net-worth assets. While traditional wealth hubs like Singapore, Hong Kong, and Dubai have long dominated this landscape, India is swiftly positioning itself as Asia’s next major wealth hub with projections estimating over 1,500 family offices by 2030.
 
 In this blog, we delve into what family offices are, why they’re growing globally, and how India is poised to become a leading destination for them by the end of this decade.
 
@@ -2530,17 +2556,17 @@ India’s family office sector is poised to grow fivefold by 2030, with 1,500+ f
 As wealth continues to concentrate and expand in India, the country’s ascent as Asia’s next wealth hub is not just a possibility; it’s an inevitability. Family offices will be at the forefront of this transformation, serving as the nerve centres of financial strategy, legacy planning, and global integration as India is not just participating in the global wealth game’ it’s preparing to lead it.
 
 At Resolute Corp, we proudly advocate the principles that define successful family offices like structured growth, strategic governance, and a vision that spans generations. With a commitment to inclusive prosperity, we envision a future where wealth creation uplifts not just families but entire communities, fostering a sustainable ecosystem of innovation, legacy, and collective growth.
-`, 
-      author: "Resolute Corp",
-      date: "2025-07-23",
-      category: "Family Offices",
-      banner: blog48,
-    },
-    {
-      title: "India-UK FTA: What India Gains from It",
-      slug: "india-uk-fta-what-india-gains-from-it",
-      excerpt: `The recently signed India-UK Free Trade Agreement (FTA) marks a historic milestone in the economic and diplomatic relations between the two nations. Signed on August 1, 2025, during Prime Minister Narendra Modi's visit to the UK, the deal is being...`,
-      content:`The recently signed India-UK Free Trade Agreement (FTA) marks a historic milestone in the economic and diplomatic relations between the two nations. Signed on August 1, 2025, during Prime Minister Narendra Modi's visit to the UK, the deal is being celebrated not just for its symbolism but also for its far-reaching impact on trade, jobs, technology, and strategic partnerships.
+`,
+    author: "Resolute Corp",
+    date: "2025-07-23",
+    category: "Family Offices",
+    banner: blog48,
+  },
+  {
+    title: "India-UK FTA: What India Gains from It",
+    slug: "india-uk-fta-what-india-gains-from-it",
+    excerpt: `The recently signed India-UK Free Trade Agreement (FTA) marks a historic milestone in the economic and diplomatic relations between the two nations. Signed on August 1, 2025, during Prime Minister Narendra Modi's visit to the UK, the deal is being...`,
+    content: `The recently signed India-UK Free Trade Agreement (FTA) marks a historic milestone in the economic and diplomatic relations between the two nations. Signed on August 1, 2025, during Prime Minister Narendra Modi's visit to the UK, the deal is being celebrated not just for its symbolism but also for its far-reaching impact on trade, jobs, technology, and strategic partnerships.
 
 But what exactly does India stand to gain from this agreement? Let’s break it down in this blog.
 
@@ -2608,17 +2634,17 @@ While the FTA brings several benefits, it also introduces challenges, particular
 The India-UK FTA is more than just a trade agreement; it’s a strategic, economic, and diplomatic leap forward. From tariff-free access in critical sectors to easier labour mobility and technology flows, the deal aligns with India’s larger vision of becoming a global manufacturing and innovation hub.
 
 At Resolute Corp, we closely track global policy shifts, economic collaborations, and trade agreements that shape business ecosystems, bringing you insights that matter for strategic decision-making.
-`, 
-      author: "Resolute Corp",
-      date: "2025-08-14",
-      category: "Economy",
-      banner: blog49,
-   },
-   {
-      title: "How Hair Accessories Are Powering Self‑Expression in Gen Z ",
-      slug: "hair-accessories-are-powering-self-expression-in-gen-z",
-      excerpt: `In an era when visual identity matters more than ever, Gen Z is rewriting the rule book — from the top of their heads. Hair accessories aren’t just styling aids any longer.`,
-      content: `In an era when visual identity matters more than ever, Gen Z is rewriting the rule book — from the top of their heads. Hair accessories aren’t just styling aids any longer. They’re crowns of confidence, instruments of self‑expression, and assertions of personality. Here at Resolute Corp, we believe in spending a decade giving this generation the accessories that can increase in style and identity.
+`,
+    author: "Resolute Corp",
+    date: "2025-08-14",
+    category: "Economy",
+    banner: blog49,
+  },
+  {
+    title: "How Hair Accessories Are Powering Self‑Expression in Gen Z ",
+    slug: "hair-accessories-are-powering-self-expression-in-gen-z",
+    excerpt: `In an era when visual identity matters more than ever, Gen Z is rewriting the rule book — from the top of their heads. Hair accessories aren’t just styling aids any longer.`,
+    content: `In an era when visual identity matters more than ever, Gen Z is rewriting the rule book — from the top of their heads. Hair accessories aren’t just styling aids any longer. They’re crowns of confidence, instruments of self‑expression, and assertions of personality. Here at Resolute Corp, we believe in spending a decade giving this generation the accessories that can increase in style and identity.
 
 <span class="font-bold pb-1 md:text-xl">The Rise of Hair Accessories as Identity Markers</span>
 From barrettes and clips to scrunchies and statement pins, hair accessories are a low-stakes, high-impact way to upgrade everyday hair looks. They’re how Gen Z plays with aesthetic, mood, and cultural identity. There might be a neon claw clip that screams playful rebellion. Softness and nostalgia might be symbolized by a satin bow.
@@ -2662,16 +2688,16 @@ It isn't about striving for perfection; it is about being intentional. Regardles
 
 Hair Drama Co. backed by Resolute Corp aims to be the one-stop shop for all things Gen Z, and self-expression with a focus on creativity, inclusivity, and innovation. We recognize the importance of charms, which gives each unique person to put their own spin on their look and mood, one small but mighty piece at a time.
 `,
-      author: "Resolute Corp",
-      date: "2025-08-13",
-      category: "Fashion",
-      banner: blog50,
-   },
-   {
-      title: "An Income Source for Retired Individuals",
-      slug: "income-source-for-retired-individuals",
-      excerpt: `When we think of retirement, we tend to think of relaxation, the funds to enable it, and the ability to enjoy the rewards of a life of work. However, for many Indians who are now retired,`,
-      content:`When we think of retirement, we tend to think of relaxation, the funds to enable it, and the ability to enjoy the rewards of a life of work. However, for many Indians who are now retired, the reality is very different—especially with the rising cost of healthcare, daily living expenses (and perhaps an expensive lifestyle), and a pension amount that is limited and not able to support the growing costs of retirement. This is where a Reverse Mortgage Loan (RML) comes in to address these issues—in essence, your largest asset (your home) turned into an opportunity for income. 
+    author: "Resolute Corp",
+    date: "2025-08-13",
+    category: "Fashion",
+    banner: blog50,
+  },
+  {
+    title: "An Income Source for Retired Individuals",
+    slug: "income-source-for-retired-individuals",
+    excerpt: `When we think of retirement, we tend to think of relaxation, the funds to enable it, and the ability to enjoy the rewards of a life of work. However, for many Indians who are now retired,`,
+    content: `When we think of retirement, we tend to think of relaxation, the funds to enable it, and the ability to enjoy the rewards of a life of work. However, for many Indians who are now retired, the reality is very different—especially with the rising cost of healthcare, daily living expenses (and perhaps an expensive lifestyle), and a pension amount that is limited and not able to support the growing costs of retirement. This is where a Reverse Mortgage Loan (RML) comes in to address these issues—in essence, your largest asset (your home) turned into an opportunity for income. 
 
 <span class="font-bold pb-1 md:text-xl">What is a Reverse Mortgage Loan?</span>
 In basic terms, you can think of a reverse mortgage loan much like a home mortgage, but minus the loan to buy. A homeowner above 60 years of age can pledge their house with a financial institution and receive regular payments (monthly, quarterly, or lump sum) from the bank. Additionally, you can stay in the home for the rest of your life. 
@@ -2699,16 +2725,16 @@ Resolute Corp is dedicated to empowering people with the information they need t
 <span class="font-bold pb-1 md:text-xl">Conclusion </span>
 Ultimately, retirement must be about comfort, dignity, and peace of mind. A reverse mortgage loan provides retired individuals with the capacity to convert their lifetime investment—their home—into a secure income stream without sacrificing security or autonomy. At Resolute Corp, it is our contention that financial freedom in the golden years is not only an option but a birthright. Retirees can strike the perfect balance between living in the present and safeguarding the future by taking into account options like RMLs.
 `,
-      author: "Resolute Corp",
-      date: "2025-08-29",
-      category: "Investment",
-      banner: blog51,
-   },
-   {
-      title: " Inside Delhi Toofans’ Training Camp for PVL Season 4",
-      slug: `inside-delhi-toofans-training-camp-pvl-season-4`,
-      excerpt:`As Prime Volleyball League (PVL) Season 4 approaches, the Delhi Toofans are already in their training camp: refining technique, building cohesion, and preparing mentally to compete at the highest level. `,
-      content:`As Prime Volleyball League (PVL) Season 4 approaches, the Delhi Toofans are already in their training camp: refining technique, building cohesion, and preparing mentally to compete at the highest level. This year, there is a renewed energy, spirit, and vitality within the squad, as they push themselves harder than ever to rise above past challenges and claim the championship. Let’s revisit the Toofans’ journey so far, explore their Season 4 training preparations, and reflect on the team’s larger aspirations.
+    author: "Resolute Corp",
+    date: "2025-08-29",
+    category: "Investment",
+    banner: blog51,
+  },
+  {
+    title: " Inside Delhi Toofans’ Training Camp for PVL Season 4",
+    slug: `inside-delhi-toofans-training-camp-pvl-season-4`,
+    excerpt: `As Prime Volleyball League (PVL) Season 4 approaches, the Delhi Toofans are already in their training camp: refining technique, building cohesion, and preparing mentally to compete at the highest level. `,
+    content: `As Prime Volleyball League (PVL) Season 4 approaches, the Delhi Toofans are already in their training camp: refining technique, building cohesion, and preparing mentally to compete at the highest level. This year, there is a renewed energy, spirit, and vitality within the squad, as they push themselves harder than ever to rise above past challenges and claim the championship. Let’s revisit the Toofans’ journey so far, explore their Season 4 training preparations, and reflect on the team’s larger aspirations.
 
       <img src="${Training1}" alt="Delhi Toofans" class="w-auto h-auto object-cover" />
 
@@ -2733,16 +2759,16 @@ Even with strong preparation, the Toofans must address persistent challenges lik
 <span class="font-bold pb-1 md:text-xl">Conclusion </span>
 The Delhi Toofans’ journey from a lesser-known team to the finalists in Season 3 already defines a success story. Their training camp for Season 4 reflects serious ambition: refining skills, building mental toughness, and planning with strategic clarity. Under Resolute Corp’s stewardship, these efforts promise more than victories; they promise a transformation in how India treats non-cricket sports. As the PVL Season 4 unfolds, all eyes will be on the Toofans, not just to watch them play, but to see champions being made`,
 
-      author: "Resolute Corp",
-      date: "2025-09-19",
-      category: "Sports",
-      banner: blog52,
-   },
-   {
-      title: "Redefining Talent Acquisition in 2025 ",
-      slug: `redefining-talent-acquisition-in-2025`,
-      excerpt:`The recruitment world is rapidly evolving. Old-school hiring practices – manual resume screening, boilerplate outreach, and lengthy interviewing periods – are no longer sufficient to keep up with the talent market in today's age.`,
-      content:`The recruitment world is rapidly evolving. Old-school hiring practices – manual resume screening, boilerplate outreach, and lengthy interviewing periods – are no longer sufficient to keep up with the talent market in today's age. As companies sprint to discover rare skills quicker, wiser, and more equitably, generative AI (GenAI) has become a game-changer.
+    author: "Resolute Corp",
+    date: "2025-09-19",
+    category: "Sports",
+    banner: blog52,
+  },
+  {
+    title: "Redefining Talent Acquisition in 2025 ",
+    slug: `redefining-talent-acquisition-in-2025`,
+    excerpt: `The recruitment world is rapidly evolving. Old-school hiring practices – manual resume screening, boilerplate outreach, and lengthy interviewing periods – are no longer sufficient to keep up with the talent market in today's age.`,
+    content: `The recruitment world is rapidly evolving. Old-school hiring practices – manual resume screening, boilerplate outreach, and lengthy interviewing periods – are no longer sufficient to keep up with the talent market in today's age. As companies sprint to discover rare skills quicker, wiser, and more equitably, generative AI (GenAI) has become a game-changer.
 
 At Resolute Corp, we envision 2025 as the year when human know-how meets GenAI and empowers businesses to hire not just quicker but also with more accuracy and diversity.
 
@@ -2793,17 +2819,17 @@ For technology and IT companies, stakes are even greater. The right individuals 
 
 At Resolute Corp, we assist companies in leveraging AI ethically so each step of hiring strikes a balance between efficiency and ethics, automation and authenticity. Together we can reimagine talent acquisition and unleash the complete potential of human-AI partnership.
 
-`, 
-      author: "Resolute Corp",
-      date: "2025-09-19",
-      category: "AI",
-      banner: blog53,
-   },
-   {
-      title: "Tradition, Market Trends, and Investor Sentiment This Diwali",
-      slug: "tradition-market-trends-and-investor-sentiment-this-diwali",
-      excerpt: `Every Diwali, Indian stock exchanges open for one special hour of trading, known as Muhurat Trading, to mark the start of the Samvat calendar, the new Hindu financial year. In 2025, this session will be held on October 21 from 1:45 pm to 2:45 pm.`,
-      content: `Every Diwali, Indian stock exchanges open for one special hour of trading, known as Muhurat Trading, to mark the start of the Samvat calendar, the new Hindu financial year. In 2025, this session will be held on October 21 from 1:45 pm to 2:45 pm. 
+`,
+    author: "Resolute Corp",
+    date: "2025-09-19",
+    category: "AI",
+    banner: blog53,
+  },
+  {
+    title: "Tradition, Market Trends, and Investor Sentiment This Diwali",
+    slug: "tradition-market-trends-and-investor-sentiment-this-diwali",
+    excerpt: `Every Diwali, Indian stock exchanges open for one special hour of trading, known as Muhurat Trading, to mark the start of the Samvat calendar, the new Hindu financial year. In 2025, this session will be held on October 21 from 1:45 pm to 2:45 pm.`,
+    content: `Every Diwali, Indian stock exchanges open for one special hour of trading, known as Muhurat Trading, to mark the start of the Samvat calendar, the new Hindu financial year. In 2025, this session will be held on October 21 from 1:45 pm to 2:45 pm. 
 
 In this blog, we explore what Muhurat Trading is, its historical roots, evolving market practices, and how investor sentiment shapes this symbolic yet actively watched session.
 
@@ -2856,17 +2882,17 @@ Muhurat Trading 2025 offers a fascinating confluence of tradition and modern mar
 While it remains rooted in centuries-old beliefs and carries symbolic weight, Muhurat also provides a snapshot of investor optimism, shifting patterns, and behavioral cues. Whether small investors place token trades or seasoned funds reposition themselves, the session sets the tone of an auspicious start to the financial year.
 
 In this Diwali, Muhurat Trading remains a celebration of continuity and market participation, where ancient customs meet today’s capital markets. At Resolute Corp, we keep you informed about such insightful market traditions and trends, helping you make smarter investment decisions
-`, 
+`,
     author: "Resolute Corp",
-      date: "2025-10-17",
-      category: "Investment",
-      banner: blog54,
+    date: "2025-10-17",
+    category: "Investment",
+    banner: blog54,
   },
-   {
-      title: "Strategic Allocation Between Gold and Silver",
-      slug: "strategic-allocation-between-gold-and-silver",
-      excerpt: `As the year 2025 continues to unfold, precious metals like good and silver are regaining investor attention. Many analysts now see gold reaching up to ₹1,65,000 per 10 grams and silver touching around ₹1,90,000 per kg by year-end. `,
-      content: `As the year 2025 continues to unfold, precious metals like good and silver are regaining investor attention. Many analysts now see gold reaching up to ₹1,65,000 per 10 grams and silver touching around ₹1,90,000 per kg by year-end. These predictions, though ambitious, reflect the intense bullishness driven by global uncertainty, central bank flows, and inflationary pressures. 
+  {
+    title: "Strategic Allocation Between Gold and Silver",
+    slug: "strategic-allocation-between-gold-and-silver",
+    excerpt: `As the year 2025 continues to unfold, precious metals like good and silver are regaining investor attention. Many analysts now see gold reaching up to ₹1,65,000 per 10 grams and silver touching around ₹1,90,000 per kg by year-end. `,
+    content: `As the year 2025 continues to unfold, precious metals like good and silver are regaining investor attention. Many analysts now see gold reaching up to ₹1,65,000 per 10 grams and silver touching around ₹1,90,000 per kg by year-end. These predictions, though ambitious, reflect the intense bullishness driven by global uncertainty, central bank flows, and inflationary pressures. 
 
 But how should one allocate between gold and silver? In this blog, let us examine the rationale, risks, and a suggested ratio.
 
@@ -2921,16 +2947,16 @@ Follow these steps in order to manage the risks of investing.
 
 At Resolute Corp, we remain committed to delivering accurate, timely, and insightful details on every key development shaping the Indian economy and its investment landscape.
 `,
-      author: "Resolute Corp",
-      date: "2025-10-18",
-      category: "Investment",
-      banner: blog55,
-   },
-   {
-      title: "A Defining Moment for Volleyball in India",
-      slug: "defining-moment-for-volleyball-in-india",
-      excerpt: `Indian sports are experiencing a subtle revolution. In the past, cricket no longer appealed to the general population, but now new competitors are putting the spotlight on different sports – volleyball is blowing that window open.`,
-      content: `<span class="font-bold pb-1 md:text-xl">Introduction</span>
+    author: "Resolute Corp",
+    date: "2025-10-18",
+    category: "Investment",
+    banner: blog55,
+  },
+  {
+    title: "A Defining Moment for Volleyball in India",
+    slug: "defining-moment-for-volleyball-in-india",
+    excerpt: `Indian sports are experiencing a subtle revolution. In the past, cricket no longer appealed to the general population, but now new competitors are putting the spotlight on different sports – volleyball is blowing that window open.`,
+    content: `<span class="font-bold pb-1 md:text-xl">Introduction</span>
 
 Indian sports are experiencing a subtle revolution. In the past, cricket no longer appealed to the general population, but now new competitors are putting the spotlight on different sports – volleyball is blowing that window open. The Prime Volleyball League (PVL) Season 4 is gearing up to take place from October 2 to October 26, 2025, and the interest and enthusiasm have never been higher.
 
@@ -2999,16 +3025,16 @@ For Resolute Corp, this is not ownership of a team. It's about building the futu
 
 Season 4 is not merely about a league - it's about repositioning Indian volleyball globally.
 `,
-      author: "Resolute Corp",
-      date: "2025-10-01",
-      category: "Sports",
-      banner: blog56,
-   },
-   {
-      title: "India’s Festival Economy:How Big Is the Market in 2025?",
-      slug: "indias-festival-economy-how-big-is-the-market-in-2025",
-      excerpt: `As lights flickered across millions of homes this Diwali, India’s festival economy illuminated with record-breaking numbers. The 2025 festive season marked not just a celebration of tradition but also a powerful demonstration of India’s growing consumption power.`,
-      content: `As lights flickered across millions of homes this Diwali, India’s festival economy illuminated with record-breaking numbers. The 2025 festive season marked not just a celebration of tradition but also a powerful demonstration of India’s growing consumption power.
+    author: "Resolute Corp",
+    date: "2025-10-01",
+    category: "Sports",
+    banner: blog56,
+  },
+  {
+    title: "India’s Festival Economy:How Big Is the Market in 2025?",
+    slug: "indias-festival-economy-how-big-is-the-market-in-2025",
+    excerpt: `As lights flickered across millions of homes this Diwali, India’s festival economy illuminated with record-breaking numbers. The 2025 festive season marked not just a celebration of tradition but also a powerful demonstration of India’s growing consumption power.`,
+    content: `As lights flickered across millions of homes this Diwali, India’s festival economy illuminated with record-breaking numbers. The 2025 festive season marked not just a celebration of tradition but also a powerful demonstration of India’s growing consumption power.
 
 According to the Confederation of All India Traders (CAIT), total Diwali sales in 2025 touched a historic ₹6.05 lakh crore, reflecting a massive 25% increase from the previous year’s ₹4.25 lakh crore. This surge underscores the deep economic pulse of India’s festive spirit where culture and commerce go hand in hand. Read this blog to discover how India’s festive spirit translates into record-breaking sales, shifting consumer trends, and a booming festival economy that continues to power the nation’s growth story.
 
@@ -3056,16 +3082,16 @@ With growing digital adoption, a preference for local goods, and expanding rural
 
 At Resolute Corp, we continue to bring you valuable insights into such transformative market trends while keeping you informed, inspired, and ready to navigate the evolving business landscape of modern India.
 `,
-      author: "Resolute Corp",
-      date: "2025-10-31",
-      category: "Economy",
-      banner: blog57,
-   },
-   {
-      title: "How India Is Positioning Itself as a Global Semiconductor Hub",
-      slug: "how-india-is-positioning-itself-as-a-global-semiconductor-hub",
-      excerpt: `The semiconductor industry is the invisible engine powering the digital world from smartphones and cars to satellites and supercomputers. As global demand for chips skyrockets, nations are competing to establish resilient and innovative supply chains.`,
-      content: `The semiconductor industry is the invisible engine powering the digital world from smartphones and cars to satellites and supercomputers. As global demand for chips skyrockets, nations are competing to establish resilient and innovative supply chains. Once a heavy importer of chips, India is now fast emerging as a global semiconductor hub, thanks to a combination of policy support, private investments, and technological innovation.
+    author: "Resolute Corp",
+    date: "2025-10-31",
+    category: "Economy",
+    banner: blog57,
+  },
+  {
+    title: "How India Is Positioning Itself as a Global Semiconductor Hub",
+    slug: "how-india-is-positioning-itself-as-a-global-semiconductor-hub",
+    excerpt: `The semiconductor industry is the invisible engine powering the digital world from smartphones and cars to satellites and supercomputers. As global demand for chips skyrockets, nations are competing to establish resilient and innovative supply chains.`,
+    content: `The semiconductor industry is the invisible engine powering the digital world from smartphones and cars to satellites and supercomputers. As global demand for chips skyrockets, nations are competing to establish resilient and innovative supply chains. Once a heavy importer of chips, India is now fast emerging as a global semiconductor hub, thanks to a combination of policy support, private investments, and technological innovation.
 
 In this blog, we’ll explore how India’s semiconductor journey is evolving from strategic government initiatives and large-scale private investments to the opportunities and challenges shaping its path toward global leadership.
 
@@ -3126,16 +3152,16 @@ As the world looks for diversified, sustainable, and secure semiconductor supply
 
 At Resolute Corp, we continue to keep you informed about such transformative developments shaping India’s industrial and technological future.
 `,
-      author: "Resolute Corp",
-      date: "2025-11-14",
-      category: "Economy",
-      banner: blog58,
-   },
-   {
-      title: "How Companies Are Redefining Talent Acquisition in 2025",
-      slug: "how-companies-are-redefining-talent-acquisition-in-2025",
-      excerpt: `In today's fiercely competitive job market, no organization can afford to depend on traditional criteria for hiring alone. At Resolute Corp, redefining talent acquisition is all about moving beyond skills to agility, data-driven decision-making, and human experience.`,
-      content: `In today's fiercely competitive job market, no organization can afford to depend on traditional criteria for hiring alone. At Resolute Corp, redefining talent acquisition is all about moving beyond skills to agility, data-driven decision-making, and human experience. The year 2025 marks a tipping point: firms that focus on what candidates can do, how they think, and how they fit will outpace their peers. 
+    author: "Resolute Corp",
+    date: "2025-11-14",
+    category: "Economy",
+    banner: blog58,
+  },
+  {
+    title: "How Companies Are Redefining Talent Acquisition in 2025",
+    slug: "how-companies-are-redefining-talent-acquisition-in-2025",
+    excerpt: `In today's fiercely competitive job market, no organization can afford to depend on traditional criteria for hiring alone. At Resolute Corp, redefining talent acquisition is all about moving beyond skills to agility, data-driven decision-making, and human experience.`,
+    content: `In today's fiercely competitive job market, no organization can afford to depend on traditional criteria for hiring alone. At Resolute Corp, redefining talent acquisition is all about moving beyond skills to agility, data-driven decision-making, and human experience. The year 2025 marks a tipping point: firms that focus on what candidates can do, how they think, and how they fit will outpace their peers. 
 
       <span class="font-bold pb-1 md:text-xl">1. Skills-Based Hiring Takes Center Stage</span>
 Skills-based hiring is fast replacing degree- or years-of-experience-based hiring. In 2025, organizations are placing a premium on certifications, micro-credentials, simulations, and assessments that test ability over pedigree. According to one analysis, traditional degree requirements for AI and green job roles are declining, while skill signals are gaining prominence.
@@ -3182,16 +3208,17 @@ Implementing a dashboard-led recruitment system at Resolute Corp allows for rapi
 The age of hiring by checkbox is well and truly over. In 2025, talent acquisition is smarter, faster, and more 'human' than ever. The challenge and opportunity for Resolute Corp lie in integrating this evolution: skills-based hiring, AI-enabled processes, rich candidate experiences, diversity and sustainability mindsets, continuous learning, and data-led decisions.
 By moving beyond skills and embracing this new paradigm, Resolute Corp. not only attracts talent but also actually builds a resilient and future-ready workforce.
 `,
-      author: "Resolute Corp",
-      date: "2025-11-13",
-      category: "HR",
-      banner: blog59,
-   },
-   {
-      title: "India’s Beauty Boom: How the Nation Is Powering a $34-Billion Market",
-      slug: "indias-beauty-boom-how-the-nation-is-powering-a-34-billion-market",
-      excerpt: `If you ever scroll through your feed and notice how many Indian women and men are talking about serums, tints, or that perfect waterproof eyeliner,`,
-      content: `If you ever scroll through your feed and notice how many Indian women and men are talking about serums, tints, or that perfect waterproof eyeliner, you've witnessed a silent revolution. Beauty in India is no longer just about looking good; it's about feeling empowered, experimenting with products, and making smarter, ingredient-aware choices.
+    author: "Resolute Corp",
+    date: "2025-11-13",
+    category: "HR",
+    banner: blog59,
+  },
+  {
+    title:
+      "India’s Beauty Boom: How the Nation Is Powering a $34-Billion Market",
+    slug: "indias-beauty-boom-how-the-nation-is-powering-a-34-billion-market",
+    excerpt: `If you ever scroll through your feed and notice how many Indian women and men are talking about serums, tints, or that perfect waterproof eyeliner,`,
+    content: `If you ever scroll through your feed and notice how many Indian women and men are talking about serums, tints, or that perfect waterproof eyeliner, you've witnessed a silent revolution. Beauty in India is no longer just about looking good; it's about feeling empowered, experimenting with products, and making smarter, ingredient-aware choices.
 
 What's fascinating is how this form of personal expression has evolved into a $34 billion economic movement. According to a report, the Beauty and Personal Care (BPC) market of India is projected to touch $34 billion by 2028, growing at an impressive CAGR of 10-11%. This momentum positions India as one of the world's fastest-growing beauty markets, where wellness, technology, and entrepreneurship beautifully intertwine. 
 
@@ -3240,17 +3267,19 @@ From our analysis, we have identified three key areas of opportunity:
 As India continues to define its beauty identity, Resolute believes that brands leading with empathy, authenticity, and environmental intelligence will be the ones shaping the next chapter of the global beauty industry. 
 
 One such case in our portfolio is Hair Drama Co, a first-of-its-kind in India's hair fashion category." Brand Overview: Established in 2015, Hair Drama Co. aims to revolutionize the hair accessory market by designing and producing high-quality, handcrafted hair accessories that compel style aficionados to accessorize with purpose. As the first Indian hair fashion brand to collaborate with Disney India, Barbie, and Netflix’s Emily in Paris, the journey for Hair Drama Co. is all about creativity meeting commerce. Its story reflects the same spirit that’s driving India’s beauty evolution - innovation, empowerment, and self-expression through style.
-`, 
-      author: 'Resolute Corp',
-      category: 'Fashion',
-      date: '2025-12-05',
-      banner: blog60,
-    },
-    {
-        title: "India’s Role in Global Mergers and Acquisitions (M&A) in 2025:This Year's Snapshot and Future Outlook",
-        slug: "indias-role-in-global-mergers-and-acquisitions-ma-in-2025-this-years-snapshot-and-future-outlook",
-        excerpt: "It is 2025, and India has a strong foothold in the international Mergers and Acquisitions (M&A) arena, driven by strong domestic trends, sectoral diversification, and a growth in cross-border deals.",
-        content:`It is 2025, and India has a strong foothold in the international Mergers and Acquisitions (M&A) arena, driven by strong domestic trends, sectoral diversification, and a growth in cross-border deals. In a largely unpredictable world for the global macroeconomic environment and changing trade policies, this transactional spin points to the growing significance of India in real deal flows - a tale that investors, corporates, and strategists cannot afford to overlook.
+`,
+    author: "Resolute Corp",
+    category: "Fashion",
+    date: "2025-12-05",
+    banner: blog60,
+  },
+  {
+    title:
+      "India’s Role in Global Mergers and Acquisitions (M&A) in 2025:This Year's Snapshot and Future Outlook",
+    slug: "indias-role-in-global-mergers-and-acquisitions-ma-in-2025-this-years-snapshot-and-future-outlook",
+    excerpt:
+      "It is 2025, and India has a strong foothold in the international Mergers and Acquisitions (M&A) arena, driven by strong domestic trends, sectoral diversification, and a growth in cross-border deals.",
+    content: `It is 2025, and India has a strong foothold in the international Mergers and Acquisitions (M&A) arena, driven by strong domestic trends, sectoral diversification, and a growth in cross-border deals. In a largely unpredictable world for the global macroeconomic environment and changing trade policies, this transactional spin points to the growing significance of India in real deal flows - a tale that investors, corporates, and strategists cannot afford to overlook.
 
 <span class="font-bold pb-1 md:text-xl">India’s M&A Boom in 2025: Key Highlights and Growth Drivers</span>
 
@@ -3312,18 +3341,18 @@ References-
 <a href="https://www.pwc.com/gx/en/services/deals/trends.html" target="_blank">PWC</a> 
 <a href="https://www.ey.com/en_in/newsroom/2025/11/india-s-m-a-activity-surges-to-us-26-billion-in-q3-2025-defying-global-volatility" target="_blank">EY</a> 
 <a href="https://www.india-briefing.com/news/indias-ma-outlook-in-2025-37316.html/" target="_blank"> India Briefing</a>
-`,  
-      author: 'Resolute Corp',
-      category: 'Economy',
-      date: '2025-12-16',
-      banner: blog61,
-        
-    },
-    {
-      title: 'The Yen Carry Trade Is Back in Motion: How Japan’s Rate Shift Is Rewiring Global Capital Flows',
-      slug: 'the-yen-carry-trade-is-back-in-motion-how-japans-rate-shift-is-rewiring-global-capital-flows',
-      excerpt:`For the first time in decades, Japan is stepping away from ultra-low interest rates. And with this shift, global markets are beginning to feel the ripple effects.`,
-      content:`For the first time in decades, Japan is stepping away from ultra-low interest rates. And with this shift, global markets are beginning to feel the ripple effects. Investors around the world who once depended on Japan’s cheap borrowing environment are now watching closely as the yen carry trade regains momentum and reshapes the flow of global money.
+`,
+    author: "Resolute Corp",
+    category: "Economy",
+    date: "2025-12-16",
+    banner: blog61,
+  },
+  {
+    title:
+      "The Yen Carry Trade Is Back in Motion: How Japan’s Rate Shift Is Rewiring Global Capital Flows",
+    slug: "the-yen-carry-trade-is-back-in-motion-how-japans-rate-shift-is-rewiring-global-capital-flows",
+    excerpt: `For the first time in decades, Japan is stepping away from ultra-low interest rates. And with this shift, global markets are beginning to feel the ripple effects.`,
+    content: `For the first time in decades, Japan is stepping away from ultra-low interest rates. And with this shift, global markets are beginning to feel the ripple effects. Investors around the world who once depended on Japan’s cheap borrowing environment are now watching closely as the yen carry trade regains momentum and reshapes the flow of global money.
 
 Before we understand how this affects countries like India, let’s break down the concept and the forces behind this renewed activity.
 
@@ -3395,16 +3424,18 @@ Japan’s policy shift marks the return of one of the most influential forces in
 
 As the world enters a new monetary cycle, understanding this dynamic is not just helpful but essential for investors, corporates, and policymakers who want to stay ahead. For readers seeking more detail, regular Bank of Japan announcements and reports from international institutions such as the International Monetary Fund and the Bank for International Settlements provide data on cross‑border flows and currency markets. At Resolute Corp, we are committed to keeping you updated about the trends, shifts, and opportunities shaping today’s global financial landscape.
 `,
-      author: 'Resolute Corp',
-      category: 'Economy',
-      date: '2025-12-14',
-      banner: blog62,
-    },
-    {
-      title: 'Goldman Sachs Upgrades Indian Stock Markets to Overweight Category: What it means for Investors?',
-      slug: 'goldman-sachs-upgrades-indian-stock-markets-to-overweight-category-what-it-means-for-investors',
-      excerpt:'India’s equity markets have received a renewed endorsement from global investors. In November 2025, Goldman Sachs upgraded Indian equities from “Neutral” to “Overweight,” signalling',
-      content:`India’s equity markets have received a renewed endorsement from global investors. In November 2025, Goldman Sachs upgraded Indian equities from “Neutral” to “Overweight,” signalling improved confidence in the country’s earnings outlook, policy environment, and long-term growth potential. The global investment bank has also set a Nifty 50 target of 29,000 by the end of 2026, indicating an upside of nearly 14% from current levels.
+    author: "Resolute Corp",
+    category: "Economy",
+    date: "2025-12-14",
+    banner: blog62,
+  },
+  {
+    title:
+      "Goldman Sachs Upgrades Indian Stock Markets to Overweight Category: What it means for Investors?",
+    slug: "goldman-sachs-upgrades-indian-stock-markets-to-overweight-category-what-it-means-for-investors",
+    excerpt:
+      "India’s equity markets have received a renewed endorsement from global investors. In November 2025, Goldman Sachs upgraded Indian equities from “Neutral” to “Overweight,” signalling",
+    content: `India’s equity markets have received a renewed endorsement from global investors. In November 2025, Goldman Sachs upgraded Indian equities from “Neutral” to “Overweight,” signalling improved confidence in the country’s earnings outlook, policy environment, and long-term growth potential. The global investment bank has also set a Nifty 50 target of 29,000 by the end of 2026, indicating an upside of nearly 14% from current levels.
 
 This upgrade reflects a shift in market sentiment following a period of relative underperformance. In this blog, we explore what Goldman Sachs’ overweight upgrade means for investors and highlight the key sectors positioned to benefit from India’s next phase of stock market growth.
 
@@ -3443,17 +3474,19 @@ e) Together, these sectors present a balanced mix of stability and growth for lo
 The upgrade by Goldman Sachs reflects confidence in India’s ability to deliver sustained earnings growth despite global uncertainties. With improving earnings, supportive policies, stabilising valuations, and strong domestic participation, Indian equities are well-positioned for the next phase of expansion.
 
 At Resolute Corp, we believe that informed investment decisions are built on understanding long-term fundamentals, sectoral opportunities, and evolving market dynamics. This may be an opportune moment for you to align your portfolios with India’s next phase of growth.
-`, 
-      author: 'Resolute Corp',
-      category: 'Investment',
-      date: '2025-12-18',
-      banner: blog63,
-    },
-    {
-      title: 'Bridging Skills Gaps with Data-Led Upskilling & Development Programs',
-      slug: 'bridging-skills-gaps-with-data-led-upskilling-development-programs',
-      excerpt:'In this post-modern digital economy, businesses around the world are facing a harsh truth – skills gaps have never been wider. The unprecedented fever of technological pace, like AI,',
-      content:`In this post-modern digital economy, businesses around the world are facing a harsh truth – skills gaps have never been wider. The unprecedented fever of technological pace, like AI, big data, automation, and cloud have already spun industries in ways that just weren’t possible before, transforming highly-skilled workers into the fastest growing asset demand, which is heavily outpacing its supply. This divide is very real, impeding innovation, slowing productivity, and even jeopardizing the long-term competitiveness of companies around the world. What's the solution? Forward-looking strategies with data-led upskilling and workforce development. In this blog, we will explore why closing the skills gap matters and how data-driven training can help.
+`,
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2025-12-18",
+    banner: blog63,
+  },
+  {
+    title:
+      "Bridging Skills Gaps with Data-Led Upskilling & Development Programs",
+    slug: "bridging-skills-gaps-with-data-led-upskilling-development-programs",
+    excerpt:
+      "In this post-modern digital economy, businesses around the world are facing a harsh truth – skills gaps have never been wider. The unprecedented fever of technological pace, like AI,",
+    content: `In this post-modern digital economy, businesses around the world are facing a harsh truth – skills gaps have never been wider. The unprecedented fever of technological pace, like AI, big data, automation, and cloud have already spun industries in ways that just weren’t possible before, transforming highly-skilled workers into the fastest growing asset demand, which is heavily outpacing its supply. This divide is very real, impeding innovation, slowing productivity, and even jeopardizing the long-term competitiveness of companies around the world. What's the solution? Forward-looking strategies with data-led upskilling and workforce development. In this blog, we will explore why closing the skills gap matters and how data-driven training can help.
 
       <span class="font-bold pb-1 md:text-xl">Why Are Skills Gaps a Strategic Threat to Business Growth?</span> 
 
@@ -3519,17 +3552,18 @@ It definitely cannot be addressed solely by one group of stakeholders, because t
 In an era where organisational success is increasingly determined by digital capability, data-led upskilling and development programmes are not just a competitive advantage, they’re inevitable. By embracing analytics, personalized learning, and a culture of continuous improvement, today’s leader will close the skills gap, spark workforce potential, and deliver sustainable growth.
 
 At Resolute Corp, we are firm believers that building resilient talent ecosystems that fuel business innovation is a strategic necessity. With the right insights and adaptive training frameworks, organizations can future-proof their workforce and thrive in the era of digital disruption. 
-`, 
-      author: 'Resolute Corp',
-      category: 'Economy',
-      date: '2025-12-25',
-      banner: blog64,
-    },
-    {
-        title: 'The Business of Sports Sponsorship: How a USD 151 Billion Market Is Redefining the Global Economy',
-        slug: 'the-business-of-sports-sponsorship-how-a-usd-151-billion-market-is-redefining-the-global-economy',
-        excerpt: `Sport today is no longer limited to stadiums, scoreboards, or seasonal tournaments. It has evolved into a powerful platform that influences consumer behaviour, drives technological innovation, and reshapes national economies. At the heart of this transformation lies sports sponsorship,`,
-        content: `Sport today is no longer limited to stadiums, scoreboards, or seasonal tournaments. It has evolved into a powerful platform that influences consumer behaviour, drives technological innovation, and reshapes national economies. At the heart of this transformation lies sports sponsorship, a market projected to reach USD 151.4 billion by 2032, growing at a CAGR of 7.1% from 2023 onwards.
+`,
+    author: "Resolute Corp",
+    category: "Economy",
+    date: "2025-12-25",
+    banner: blog64,
+  },
+  {
+    title:
+      "The Business of Sports Sponsorship: How a USD 151 Billion Market Is Redefining the Global Economy",
+    slug: "the-business-of-sports-sponsorship-how-a-usd-151-billion-market-is-redefining-the-global-economy",
+    excerpt: `Sport today is no longer limited to stadiums, scoreboards, or seasonal tournaments. It has evolved into a powerful platform that influences consumer behaviour, drives technological innovation, and reshapes national economies. At the heart of this transformation lies sports sponsorship,`,
+    content: `Sport today is no longer limited to stadiums, scoreboards, or seasonal tournaments. It has evolved into a powerful platform that influences consumer behaviour, drives technological innovation, and reshapes national economies. At the heart of this transformation lies sports sponsorship, a market projected to reach USD 151.4 billion by 2032, growing at a CAGR of 7.1% from 2023 onwards.
 
 Let us explore how sports sponsorship has become a strategic business investment, a branding ecosystem, and a catalyst for economic development, particularly in emerging markets like India.
 
@@ -3616,17 +3650,18 @@ For countries like India, it acts as a catalyst for infrastructure, employment, 
 As sports continue to evolve into a year-round, digitally amplified industry, sponsorship will remain one of the most powerful tools shaping the future of both sport and the global economy.
 
 At Resolute Corp, this vision translates into action. By actively supporting and fostering strategic investments across India’s sporting ecosystem, Resolute Corp is committed to building newer platforms that nurture talent, strengthen infrastructure, and contribute to the long-term growth of Indian sports.
-`,  
-      author: 'Resolute Corp',
-      category: 'Sports',
-      date: '2026-01-07',
-      banner: blog65,
-    },
-    {
-      title: 'Economic Impact of New Leagues: How Franchise Sports Are Changing India’s Financial Playbook',
-      slug: 'economic-impact-of-new-leagues-how-franchise-sports-are-changing-indias-financial-playbook',
-      excerpt:`Over the past fifteen years, India has witnessed a new shift in how sport functions within the economy. What began with the Indian Premier League (IPL) in 2008 has evolved into a multi-sport, franchise-driven ecosystem spanning kabaddi, football, volleyball, hockey, chess, and women’s sports.`,
-      content: `Over the past fifteen years, India has witnessed a new shift in how sport functions within the economy. What began with the Indian Premier League (IPL) in 2008 has evolved into a multi-sport, franchise-driven ecosystem spanning kabaddi, football, volleyball, hockey, chess, and women’s sports.
+`,
+    author: "Resolute Corp",
+    category: "Sports",
+    date: "2026-01-07",
+    banner: blog65,
+  },
+  {
+    title:
+      "Economic Impact of New Leagues: How Franchise Sports Are Changing India’s Financial Playbook",
+    slug: "economic-impact-of-new-leagues-how-franchise-sports-are-changing-indias-financial-playbook",
+    excerpt: `Over the past fifteen years, India has witnessed a new shift in how sport functions within the economy. What began with the Indian Premier League (IPL) in 2008 has evolved into a multi-sport, franchise-driven ecosystem spanning kabaddi, football, volleyball, hockey, chess, and women’s sports.`,
+    content: `Over the past fifteen years, India has witnessed a new shift in how sport functions within the economy. What began with the Indian Premier League (IPL) in 2008 has evolved into a multi-sport, franchise-driven ecosystem spanning kabaddi, football, volleyball, hockey, chess, and women’s sports.
 
 Today, leagues such as the Hockey India League (HIL), Pro Kabaddi League (PKL), Indian Super League (ISL), Women’s Premier League (WPL), and Prime Volleyball League (PVL) are no longer just sporting competitions. They are structured commercial platforms that generate revenue, attract capital, create employment, and position sport as a serious contributor to India’s GDP.
 
@@ -3662,16 +3697,17 @@ Franchise-based leagues have fundamentally reshaped India’s sports economy. Th
 
 At Resolute Corp, we actively support and foster strategic investments in franchise-led sports platforms, recognising their power to strengthen India’s sports economy, unlock long-term value, and build sustainable ecosystems for the future of sport.
 `,
-      author: 'Resolute Corp',
-      category: 'Sports',
-      date: '2026-01-14',
-      banner: blog66,
-    },
-    {
-      title: 'India’s Rising Capital Markets: What India’s Dominance in Global IPOs Means for Investors',
-      slug: 'indias-rising-capital-markets-what-indias-dominance-in-global-ipos-means-for-investors',
-      excerpt:`India has emerged as one of the leading global markets in terms of Initial Public Offerings (IPOs) over the past decade. This depicts a commendable evolution of India’s financial landscape.`,
-      content: `India has emerged as one of the leading global markets in terms of Initial Public Offerings (IPOs) over the past decade. This depicts a commendable evolution of India’s financial landscape. In turn, it has led to several positive changes including the deepening of capital markets, an enhanced regulatory capacity, and the growing participation of domestic investors. Market growth can be cyclical as well. 
+    author: "Resolute Corp",
+    category: "Sports",
+    date: "2026-01-14",
+    banner: blog66,
+  },
+  {
+    title:
+      "India’s Rising Capital Markets: What India’s Dominance in Global IPOs Means for Investors",
+    slug: "indias-rising-capital-markets-what-indias-dominance-in-global-ipos-means-for-investors",
+    excerpt: `India has emerged as one of the leading global markets in terms of Initial Public Offerings (IPOs) over the past decade. This depicts a commendable evolution of India’s financial landscape.`,
+    content: `India has emerged as one of the leading global markets in terms of Initial Public Offerings (IPOs) over the past decade. This depicts a commendable evolution of India’s financial landscape. In turn, it has led to several positive changes including the deepening of capital markets, an enhanced regulatory capacity, and the growing participation of domestic investors. Market growth can be cyclical as well. 
 However, India’s rising capital markets are a result of structural changes such as economic growth, financial reforms and changing behavior in terms of savings. Let us break down these factors:
 
 <span class="font-bold pb-1 md:text-xl">Structural Factors behind India’s IPO boom</span>
@@ -3718,17 +3754,18 @@ Sectoral diversification depicts the expansion in the market driven by innovatio
 India has been topping charts in terms of global IPO activity, and this is a significant milestone for the economy. It is an indicator of macroeconomic strength. For stakeholders, it creates substantial opportunities but also demands financial awareness, regulation and discipline. Ultimately, outcomes will depend on how far this rise translates into sustainable and inclusive economic growth. 
 
 At Resolute Corp, we are committed to delivering insights on all significant financial and economic trends that influence the investment landscape. Understanding the overall effect of such trends facilitates investment companies to invest in a better and wiser manner.
-`,  
-      author: 'Resolute Corp',
-      category: 'Investment',
-      date: '2026-01-21',
-      banner: blog67
-    },
-    {
-      title: 'India’s Union Budget 2026-27: Industry and Individual Expectations, Key Themes, and Growth Outlook',
-      slug: 'indias-union-budget-2026-27-industry-and-individual-expectations-key-themes-and-growth-outlook',
-      excerpt:`India’s Union Budget 2026-27 is one of the most anticipated fiscal policy events of the year. It will be presented by the Finance Minister on the 1st of February. As the government is a pivotal macroeconomic entity, `,
-      content:`India’s Union Budget 2026-27 is one of the most anticipated fiscal policy events of the year. It will be presented by the Finance Minister on the 1st of February. As the government is a pivotal macroeconomic entity, the Budget shapes fiscal priorities, industry planning and growth outcomes for the year ahead. Forecasts from global and domestic agencies project continued steady expansion and growth across sectors.
+`,
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-01-21",
+    banner: blog67,
+  },
+  {
+    title:
+      "India’s Union Budget 2026-27: Industry and Individual Expectations, Key Themes, and Growth Outlook",
+    slug: "indias-union-budget-2026-27-industry-and-individual-expectations-key-themes-and-growth-outlook",
+    excerpt: `India’s Union Budget 2026-27 is one of the most anticipated fiscal policy events of the year. It will be presented by the Finance Minister on the 1st of February. As the government is a pivotal macroeconomic entity, `,
+    content: `India’s Union Budget 2026-27 is one of the most anticipated fiscal policy events of the year. It will be presented by the Finance Minister on the 1st of February. As the government is a pivotal macroeconomic entity, the Budget shapes fiscal priorities, industry planning and growth outcomes for the year ahead. Forecasts from global and domestic agencies project continued steady expansion and growth across sectors.
 
 <span class="font-bold pb-1 md:text-xl">Understanding the Union Budget: Key Concepts</span>
 
@@ -3817,16 +3854,16 @@ For investors and businesses alike, the Union Budget remains a key signal of pol
 
 	At Resolute Corp, we remain committed to delivering timely, data-driven insights on key financial and economic developments that shape the investment landscape. This will enable investment firms to make informed and forward-looking decisions.
 `,
-      author: 'Resolute Corp',
-      category: 'Investment',
-      date: '2026-01-31',
-      banner: blog68
-    },
-    {
-      title: 'India’s FDI in 2026: The Forces Driving Long-Term Growth',
-      slug: 'indias-fdi-in-2026-the-forces-driving-long-term-growth',
-      excerpt: `India’s Foreign Direct Investment (FDI) landscape is entering a new phase of structural expansion. In 2026, FDI inflows are expected to remain strong, potentially surpassing previous records,`,
-      content: `India’s Foreign Direct Investment (FDI) landscape is entering a new phase of structural expansion. In 2026, FDI inflows are expected to remain strong, potentially surpassing previous records, supported by resilient macroeconomic performance, strategic industrial policies, and deepening global economic integration.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-01-31",
+    banner: blog68,
+  },
+  {
+    title: "India’s FDI in 2026: The Forces Driving Long-Term Growth",
+    slug: "indias-fdi-in-2026-the-forces-driving-long-term-growth",
+    excerpt: `India’s Foreign Direct Investment (FDI) landscape is entering a new phase of structural expansion. In 2026, FDI inflows are expected to remain strong, potentially surpassing previous records,`,
+    content: `India’s Foreign Direct Investment (FDI) landscape is entering a new phase of structural expansion. In 2026, FDI inflows are expected to remain strong, potentially surpassing previous records, supported by resilient macroeconomic performance, strategic industrial policies, and deepening global economic integration.
 Between April 2000 and September 2025, India received US$ 764.06 billion in equity FDI, spanning 175 countries, 33 states/UTs, and 63 sectors. Gross FDI inflows have crossed US$ 1.12 trillion, with FY25 witnessing a 13% increase to US$ 50 billion. Additionally, FDI equity inflows for FY26 (April–September 2025) grew by 18% year-on-year to US$ 35.18 billion, led by services and IT.
 As we move into 2026, five key forces are shaping India’s long-term FDI trajectory. Let us explore them in some detail. 
 
@@ -3863,16 +3900,17 @@ Addressing these will be critical to sustaining long-term FDI momentum.
 India’s FDI landscape in 2026 is shaped by structural transformation rather than short-term inflows. With strong policy reforms, manufacturing incentives, digital leadership, and green transition, India is steadily consolidating its position as a premier global investment destination.
 At Resolute Corp, we strive to bring forward India’s growth story. Follow our journey as we continue to decode trends, identify opportunities, and support informed investment decisions in India’s rapidly transforming economy.
 `,
-      author: 'Resolute Corp',
-      category: 'Investment',
-      date: '2026-02-13',
-      banner: blog69
-    },
-    {
-      title: 'Decoding Consumer Behaviour in 2026: How Evolving Preferences Are Reshaping Demand Across Sectors',
-      slug:'decoding-consumer-behaviour-in-2026-how-evolving-preferences-are-reshaping-demand-across-sectors',
-      excerpt:`Consumer behaviour in 2026 is changing dramatically as a result of economic instability, technological developments, health consciousness, and shifting values. For the corporation, too, there is a necessity to ascertain these`,
-      content:`Consumer behaviour in 2026 is changing dramatically as a result of economic instability, technological developments, health consciousness, and shifting values. For the corporation, too, there is a necessity to ascertain these changed tides and follow them. At Resolute Corp, we analyze the major changes that are shaping consumer habits, buying trends, industry needs, and strategic business blueprint in 2026. 
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-02-13",
+    banner: blog69,
+  },
+  {
+    title:
+      "Decoding Consumer Behaviour in 2026: How Evolving Preferences Are Reshaping Demand Across Sectors",
+    slug: "decoding-consumer-behaviour-in-2026-how-evolving-preferences-are-reshaping-demand-across-sectors",
+    excerpt: `Consumer behaviour in 2026 is changing dramatically as a result of economic instability, technological developments, health consciousness, and shifting values. For the corporation, too, there is a necessity to ascertain these`,
+    content: `Consumer behaviour in 2026 is changing dramatically as a result of economic instability, technological developments, health consciousness, and shifting values. For the corporation, too, there is a necessity to ascertain these changed tides and follow them. At Resolute Corp, we analyze the major changes that are shaping consumer habits, buying trends, industry needs, and strategic business blueprint in 2026. 
 
 <span class="font-bold pb-1 md:text-xl">Economic Shifts and Price-Conscious Consumer Spending</span>
 
@@ -3922,16 +3960,17 @@ This trend is further reinforced by the rise of digital payment methods as well 
 <span class="font-bold pb-1 md:text-xl">Conclusion</span>
 In 2026, the consumer landscape is defined by a mixture of value-conscious, digitally-driven, empowered, health-centric, and trust-related loyalty. Embracing digital innovation, value through personalization, and aligning with consumer values will set companies apart in the competitive 2026 market.
 `,
-      author: 'Resolute Corp',
-      category: 'Investment',
-      date: '2026-02-19',
-      banner: blog70
-    },
-    {
-      title:'Dubai Real Estate in 2026-27: Market Outlook, Investment Trends, and Emerging Opportunities',
-      slug: 'dubai-real-estate-in-2026-27-market-outlook-investment-trends-and-emerging-opportunities',
-      excerpt: `Dubai Real Estate in 2026-27: Market Outlook, Investment Trends, and Emerging Opportunities the sector has not only exceeded expectations but also reinforced `,
-      content: `Dubai’s real estate market enters 2026 with remarkable momentum and a clear shift toward long-term sustainability. After recording Dh917 billion in transactions in 2025, the sector has not only exceeded expectations but also reinforced Dubai’s status as one of the world’s most dynamic investment destinations.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-02-19",
+    banner: blog70,
+  },
+  {
+    title:
+      "Dubai Real Estate in 2026-27: Market Outlook, Investment Trends, and Emerging Opportunities",
+    slug: "dubai-real-estate-in-2026-27-market-outlook-investment-trends-and-emerging-opportunities",
+    excerpt: `Dubai Real Estate in 2026-27: Market Outlook, Investment Trends, and Emerging Opportunities the sector has not only exceeded expectations but also reinforced `,
+    content: `Dubai’s real estate market enters 2026 with remarkable momentum and a clear shift toward long-term sustainability. After recording Dh917 billion in transactions in 2025, the sector has not only exceeded expectations but also reinforced Dubai’s status as one of the world’s most dynamic investment destinations.
 In this blog, we explore the market outlook for 2026–27, the key investment trends shaping Dubai’s property landscape, and the emerging opportunities redefining how global investors access the market.
  
 <span class="font-bold pb-1 md:text-xl">A Market Defined by Scale and Confidence</span>
@@ -3976,16 +4015,16 @@ Technology platforms offering verified listings, transaction-backed pricing insi
 Dubai’s real estate sector in 2026-27 reflects a market that has matured beyond speculation into one defined by strategic growth, technological innovation, and investor accessibility. With sustained demand, evolving ownership models, and policy clarity, the emirate continues to set benchmarks for global real estate markets.
 At Resolute Corp, we are committed to enabling seamless access to the UAE property market through fractional investing via ShareSquare, allowing investors to participate in real estate ownership without operational hassles while building diversified portfolios.
 `,
-      author: 'Resolute Corp',
-      category: 'Investment',
-      date: '2026-02-26',
-      banner: blog71
-    },
-    {
-        title:'The India AI Impact Summit 2026: Key Takeaways',
-        slug: 'india-ai-impact-summit-2026',
-        excerpt: `The India AI Impact Summit 2026 marked a defining moment in the country’s technological journey. Held in New Delhi in February 2026, the summit brought together global technology leaders, policymakers, investors,`,
-        content: `The India AI Impact Summit 2026 marked a defining moment in the country’s technological journey. Held in New Delhi in February 2026, the summit brought together global technology leaders, policymakers, investors, and researchers to discuss the future of artificial intelligence and its transformative role in economic growth, governance, and social development.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-02-26",
+    banner: blog71,
+  },
+  {
+    title: "The India AI Impact Summit 2026: Key Takeaways",
+    slug: "india-ai-impact-summit-2026",
+    excerpt: `The India AI Impact Summit 2026 marked a defining moment in the country’s technological journey. Held in New Delhi in February 2026, the summit brought together global technology leaders, policymakers, investors,`,
+    content: `The India AI Impact Summit 2026 marked a defining moment in the country’s technological journey. Held in New Delhi in February 2026, the summit brought together global technology leaders, policymakers, investors, and researchers to discuss the future of artificial intelligence and its transformative role in economic growth, governance, and social development.
 It also signalled India’s arrival as a serious contender in the global AI race. With investment commitments approaching hundreds of billions of dollars, landmark partnerships, and a strong policy consensus on responsible AI, the event demonstrated that India is not merely adopting AI but also shaping its global trajectory. 
 Let us explore the summit’s key takeaways, including investment commitments, global partnerships, and India’s emerging role in shaping responsible AI governance.
 
@@ -4020,16 +4059,17 @@ The India AI Impact Summit 2026 has set the stage for a new phase in India’s t
 As investments translate into implementation and partnerships mature into ecosystems, AI is likely to become a central driver of India’s economic growth story in the coming decade. More importantly, India’s emphasis on responsible and inclusive AI could position it as a global model for how technology can be harnessed not just for efficiency, but for societal progress.
 At Resolute Corp, we are dedicated to tracking such pivotal developments and bringing you timely insights that shape India’s evolving technology and innovation landscape.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-03-06',
-        banner: blog72
-    },
-    {
-        title:'India Inc.’s Billion-Dollar Deals: What’s Driving the New Era of Corporate Consolidation',
-        slug: 'india-inc-billion-dollar-deals-whats-driving-the-new-era-of-corporate-consolidation',
-        excerpt:`India Inc. is entering a new phase of corporate consolidation marked by a surge in billion-dollar mergers and acquisitions. In the first nine months of 2025 alone, India recorded over $26 billion in M&A deals,`,
-        content:`India Inc. is entering a new phase of corporate consolidation marked by a surge in billion-dollar mergers and acquisitions. In the first nine months of 2025 alone, India recorded over $26 billion in M&A deals, with total transaction value expected to rise further as large strategic deals continue to dominate the market.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-03-06",
+    banner: blog72,
+  },
+  {
+    title:
+      "India Inc.’s Billion-Dollar Deals: What’s Driving the New Era of Corporate Consolidation",
+    slug: "india-inc-billion-dollar-deals-whats-driving-the-new-era-of-corporate-consolidation",
+    excerpt: `India Inc. is entering a new phase of corporate consolidation marked by a surge in billion-dollar mergers and acquisitions. In the first nine months of 2025 alone, India recorded over $26 billion in M&A deals,`,
+    content: `India Inc. is entering a new phase of corporate consolidation marked by a surge in billion-dollar mergers and acquisitions. In the first nine months of 2025 alone, India recorded over $26 billion in M&A deals, with total transaction value expected to rise further as large strategic deals continue to dominate the market.
 This wave of consolidation reflects more than short-term opportunistic transactions. Instead, it signals a structural shift toward large, strategic acquisitions aimed at scale, global expansion, and long-term value creation. 
 In this blog, we examine the key forces driving India Inc.’s billion-dollar deal wave, the sectors leading this consolidation, and what it signals for the future of corporate growth and investment.
 
@@ -4076,16 +4116,17 @@ India Inc.’s surge in billion-dollar deals signals a fundamental transformatio
 As businesses adapt to evolving economic realities and global supply chain shifts, India is solidifying its position as one of the world’s most dynamic transaction economies.
 At Resolute Corp, we continuously track India’s evolving economic and business landscape, bringing complex market developments and growth trends to you in clear and accessible insights.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-03-11',
-        banner: blog73
-    },
-    {
-        title: 'Impact of Iran Conflict on Indian Energy Needs: Here’s What You Need to Know',
-        slug: 'impact-of-iran-conflict-on-indian-energy-needs-heres-what-you-need-to-know',
-        excerpt: `The escalating geopolitical tensions involving Iran, Israel, and the United States have once again highlighted the fragile nature of global energy supply chains. `,
-        content: `The escalating geopolitical tensions involving Iran, Israel, and the United States have once again highlighted the fragile nature of global energy supply chains. As hostilities intensified in early 2026, one of the world’s most critical energy chokepoints, the Strait of Hormuz came under severe pressure, raising concerns across international markets.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-03-11",
+    banner: blog73,
+  },
+  {
+    title:
+      "Impact of Iran Conflict on Indian Energy Needs: Here’s What You Need to Know",
+    slug: "impact-of-iran-conflict-on-indian-energy-needs-heres-what-you-need-to-know",
+    excerpt: `The escalating geopolitical tensions involving Iran, Israel, and the United States have once again highlighted the fragile nature of global energy supply chains. `,
+    content: `The escalating geopolitical tensions involving Iran, Israel, and the United States have once again highlighted the fragile nature of global energy supply chains. As hostilities intensified in early 2026, one of the world’s most critical energy chokepoints, the Strait of Hormuz came under severe pressure, raising concerns across international markets.
 For India, the implications are particularly significant. As the world’s third-largest consumer of crude oil and a country that imports nearly 85-90% of its oil and around 60% of its LPG, disruptions in the Persian Gulf can quickly translate into domestic economic challenges.
 This blog explores how the ongoing war could affect India’s energy needs, the sectors most vulnerable to disruptions, and the strategies the government is adopting to safeguard energy security.
 
@@ -4129,16 +4170,17 @@ The Strait of Hormuz is where 20% of the global oil flows till it reaches its de
 As global energy markets remain interconnected and vulnerable to geopolitical developments, proactive policy responses and long-term strategic planning will be essential in ensuring India’s energy stability in an increasingly uncertain world.
 At Resolute Corp, we track global geopolitical developments and their economic implications, bringing complex global events and their impact on markets and industries to you in clear and accessible insights.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-03-19',
-        banner: blog74
-    },
-    {
-        title:'Strengthening Energy Security: India’s Move toward Self-reliant Cooking Fuel amid West Asia Crisis',
-        slug: 'strengthening-energy-security-indias-move-toward-self-reliant-cooking-fuel-amid-west-asia-crisis',
-        excerpt:`Global energy systems are often shaped not in times of stability, but in moments of disruption. The recent escalation of conflict in West Asia, coupled with the closure of the Strait of Hormuz has created significant uncertainty`,
-        content:`Global energy systems are often shaped not in times of stability, but in moments of disruption. The recent escalation of conflict in West Asia, coupled with the closure of the Strait of Hormuz has created significant uncertainty in the supply of Liquefied Petroleum Gas (LPG). For India, where a substantial portion of cooking fuel is import-dependent, this disruption has had immediate economic and social implications.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-03-19",
+    banner: blog74,
+  },
+  {
+    title:
+      "Strengthening Energy Security: India’s Move toward Self-reliant Cooking Fuel amid West Asia Crisis",
+    slug: "strengthening-energy-security-indias-move-toward-self-reliant-cooking-fuel-amid-west-asia-crisis",
+    excerpt: `Global energy systems are often shaped not in times of stability, but in moments of disruption. The recent escalation of conflict in West Asia, coupled with the closure of the Strait of Hormuz has created significant uncertainty`,
+    content: `Global energy systems are often shaped not in times of stability, but in moments of disruption. The recent escalation of conflict in West Asia, coupled with the closure of the Strait of Hormuz has created significant uncertainty in the supply of Liquefied Petroleum Gas (LPG). For India, where a substantial portion of cooking fuel is import-dependent, this disruption has had immediate economic and social implications.
 Yet, within this crisis lies an opportunity. India’s response signals not merely a short-term adjustment, but a deeper structural shift toward self-reliance in cooking fuel. The evolving strategy reflects a broader vision: reducing import dependence while advancing cleaner and more sustainable alternatives.
 In this blog, we examine the impact of the West Asia crisis on India’s cooking fuel supply while exploring the country’s strategic shift toward alternative energy sources like DME, biogas, and electric cooking.
 
@@ -4183,16 +4225,17 @@ Equally important is the need to create awareness and encourage behavioural shif
 The West Asia crisis has served as a critical reminder of the interconnectedness of global energy systems and domestic resilience. For India, it has exposed vulnerabilities but also illuminated pathways forward. What began as a supply disruption has the potential to become a catalyst for systemic change. The task ahead is clear: to transform opportunity into action, and action into lasting self-reliance.
 At Resolute Corp, we welcome these shifts as essential steps toward building a resilient, sustainable, and self-reliant energy ecosystem for India’s future.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-03-26',
-        banner: blog75
-    },
-    {
-        title:'India’s Energy Diversification Explained: Here’s What You Need to Know in 2026',
-        slug:"indias-energy-diversification-explained-heres-what-you-need-to-know-in-2026",
-        excerpt:`While global headlines remain fixated on geopolitical tensions around the world, a more strategic transformation is unfolding for India’s energy diversification.`, 
-        content:`While global headlines remain fixated on geopolitical tensions around the world, a more strategic transformation is unfolding for India’s energy diversification.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-03-26",
+    banner: blog75,
+  },
+  {
+    title:
+      "India’s Energy Diversification Explained: Here’s What You Need to Know in 2026",
+    slug: "indias-energy-diversification-explained-heres-what-you-need-to-know-in-2026",
+    excerpt: `While global headlines remain fixated on geopolitical tensions around the world, a more strategic transformation is unfolding for India’s energy diversification.`,
+    content: `While global headlines remain fixated on geopolitical tensions around the world, a more strategic transformation is unfolding for India’s energy diversification.
 
 In 2026, India is no longer dependent on a single region for its oil and energy needs. Instead, it is actively building a multi-source energy model, balancing cost, risk, and geopolitical leverage. With crude now sourced from over 40 countries and alternative trade routes gaining importance, India’s energy strategy is becoming more resilient, flexible, and future-ready.
 
@@ -4261,16 +4304,17 @@ India’s evolving energy strategy reflects a broader transformation from depend
 
 In 2026 when the world is increasingly defined by uncertainty, this shift positions India not just as a consumer of energy, but as a strategic player shaping global energy dynamics. At Resolute Corp, we remain committed to decoding interesting economic and geopolitical developments, bringing clarity to the trends shaping global markets and India’s growth story.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-04-04',
-        banner: blog76
-    },
-    {
-        title:'Decoding Market Signals: A Complete Guide to Stock Selection in 2026',
-        slug: 'decoding-market-signals-a-complete-guide-to-stock-selection-in-2026',
-        excerpt:`In the world of investments, choosing the right stock is often mistaken for choosing strong companies. But before it is too late you must understand that stock selection in 2026 is less about picking the strongest company and more about decoding what the market is trying to tell you.`,
-        content:`In the world of investments, choosing the right stock is often mistaken for choosing strong companies. But before it is too late you must understand that stock selection in 2026 is less about picking the strongest company and more about decoding what the market is trying to tell you. 
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-04-04",
+    banner: blog76,
+  },
+  {
+    title:
+      "Decoding Market Signals: A Complete Guide to Stock Selection in 2026",
+    slug: "decoding-market-signals-a-complete-guide-to-stock-selection-in-2026",
+    excerpt: `In the world of investments, choosing the right stock is often mistaken for choosing strong companies. But before it is too late you must understand that stock selection in 2026 is less about picking the strongest company and more about decoding what the market is trying to tell you.`,
+    content: `In the world of investments, choosing the right stock is often mistaken for choosing strong companies. But before it is too late you must understand that stock selection in 2026 is less about picking the strongest company and more about decoding what the market is trying to tell you. 
 From shifting investor sentiment to sector-wise changes, the signals are clearly visible now. Investors who can read these signals will make better decisions. This guide breaks them down in a simple and structured way. Follow along as we take you through an engaging journey on how to select the right stocks in 2026.
 
 <span class="font-bold pb-1 md:text-xl">The Big Picture: A Market in Transition</span>
@@ -4334,16 +4378,16 @@ Even strong stocks need the right entry point. Timing plays a critical role in r
 The market in 2026 is more disciplined and selective. It is only rewarding clarity, strength, and consistency. As a result, investors need to move beyond short-term trends and a structured and informed approach is essential.
 Those who understand market signals will make better and informed choices. And over time, that makes all the difference. Through Resolute Insights, we decode market trends often.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-04-13',
-        banner: blog77
-    },
-    {
-        title: 'Nifty Fell 10% in March – Panic or Opportunity?',
-        slug: 'nifty-fell-10-in-march-panic-or-opportunity',
-        excerpt: `March 2026 was a turbulent month for Indian equities, as the Nifty 50 corrected by over 10%. For many investors, this sudden fall triggered concern and uncertainty about what lies ahead. However, market corrections often demand`,
-        content: `March 2026 was a turbulent month for Indian equities, as the Nifty 50 corrected by over 10%. For many investors, this sudden fall triggered concern and uncertainty about what lies ahead. However, market corrections often demand a deeper understanding rather than immediate reaction.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-04-13",
+    banner: blog77,
+  },
+  {
+    title: "Nifty Fell 10% in March – Panic or Opportunity?",
+    slug: "nifty-fell-10-in-march-panic-or-opportunity",
+    excerpt: `March 2026 was a turbulent month for Indian equities, as the Nifty 50 corrected by over 10%. For many investors, this sudden fall triggered concern and uncertainty about what lies ahead. However, market corrections often demand`,
+    content: `March 2026 was a turbulent month for Indian equities, as the Nifty 50 corrected by over 10%. For many investors, this sudden fall triggered concern and uncertainty about what lies ahead. However, market corrections often demand a deeper understanding rather than immediate reaction.
 In this blog, we decode the recent Nifty plunge, its underlying causes, and what it truly means for investors navigating today’s volatile environment. Because while markets may appear unstable in the short term, they often reveal opportunities for those who look beyond the noise.
 
 <span class="font-bold pb-1 md:text-xl">What Caused the Sharp Fall?</span> 
@@ -4382,16 +4426,16 @@ A 10% correction in the Nifty may seem alarming, but it is also a natural part o
 Markets have historically rewarded patience, discipline, and clarity of thought. The real question is not whether the market will recover, but whether investors are prepared to benefit from that recovery.
 At Resolute Corp, we remain committed to bringing timely insights on evolving market scenarios, helping investors make informed and confident decisions.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-04-24',
-        banner: blog78
-    },
-    {
-        title: 'The New Income Tax Act: What Actually Changes for Your Money',
-        slug: 'the-new-income-tax-act-what-actually-changes-for-your-money',
-        excerpt: `Gone are the days when understanding India’s income tax system felt unnecessarily complex and layered. With the introduction of the Income Tax Act, 2025 the country is moving toward a simpler, more structured, and modern tax framework.`,
-        content: `Gone are the days when understanding India’s income tax system felt unnecessarily complex and layered. With the introduction of the Income Tax Act, 2025 the country is moving toward a simpler, more structured, and modern tax framework.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-04-24",
+    banner: blog78,
+  },
+  {
+    title: "The New Income Tax Act: What Actually Changes for Your Money",
+    slug: "the-new-income-tax-act-what-actually-changes-for-your-money",
+    excerpt: `Gone are the days when understanding India’s income tax system felt unnecessarily complex and layered. With the introduction of the Income Tax Act, 2025 the country is moving toward a simpler, more structured, and modern tax framework.`,
+    content: `Gone are the days when understanding India’s income tax system felt unnecessarily complex and layered. With the introduction of the Income Tax Act, 2025 the country is moving toward a simpler, more structured, and modern tax framework.
 
 But beyond the policy language, one question matters most: what actually changes for your money?
 Stay tuned so that we can break down the key shifts and what they mean for salaried individuals, investors, and businesses in practical terms.
@@ -4451,16 +4495,17 @@ For salaried individuals, it means simpler filing. For investors, clearer rules.
 
 At Resolute Corp, we remain committed to simplifying such new developments, helping you understand what they truly mean for your finances and decisions.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-04-30',
-        banner: blog79
-    },
-    {
-        title: 'From Salary to Wealth: How India’s Workforce is Relearning Money in 2026',
-        slug: 'from-salary-to-wealth-how-indias-workforce-is-relearning-money-in-2026',
-        excerpt: `For decades, Indian households followed a familiar financial formula: earn, save, and protect wealth through fixed deposits, gold, and insurance. Financial security was largely built around preservation rather than participation.`,
-        content: `For decades, Indian households followed a familiar financial formula: earn, save, and protect wealth through fixed deposits, gold, and insurance. Financial security was largely built around preservation rather than participation.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-04-30",
+    banner: blog79,
+  },
+  {
+    title:
+      "From Salary to Wealth: How India’s Workforce is Relearning Money in 2026",
+    slug: "from-salary-to-wealth-how-indias-workforce-is-relearning-money-in-2026",
+    excerpt: `For decades, Indian households followed a familiar financial formula: earn, save, and protect wealth through fixed deposits, gold, and insurance. Financial security was largely built around preservation rather than participation.`,
+    content: `For decades, Indian households followed a familiar financial formula: earn, save, and protect wealth through fixed deposits, gold, and insurance. Financial security was largely built around preservation rather than participation.
 But in 2026, that mindset is changing. India’s workforce and households are now moving beyond simply earning wealth toward actively creating wealth. A new generation of digitally aware and financially informed investors is reshaping how Indians have traditionally viewed money and wealth creation.
 In this blog, we will decode how India’s financial landscape is evolving in 2026 and also guide you on how to participate in this shift more effectively.
 
@@ -4500,17 +4545,17 @@ Sustainable wealth creation depends not only on earning more, but also on invest
 India’s workforce is not abandoning savings. It is redefining what financial security truly means. The modern Indian investor understands that long-term stability is no longer built only through saving carefully, but through investing intelligently.
 This shift reflects a deeper transformation in mindset – from preserving money to compounding it, from depending entirely on salary to building ownership, and from financial caution alone to informed financial participation.
 At Resolute Corp, we bring you the latest financial and investment-related trends from India and around the world.
-`, 
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-05-12',
-        banner: blog80
-    },
-    {
-        title: 'The Psychology Behind Spending and Investing',
-        slug: 'the-psychology-behind-spending-and-investing',
-        excerpt:`There was a time when spending felt real. You would open your wallet, count the notes, and hand over cash to buy something. Every purchase carried an emotional pause. That hesitation often acted as a natural checkpoint between desire and decision.`,
-        content:`There was a time when spending felt real. You would open your wallet, count the notes, and hand over cash to buy something. Every purchase carried an emotional pause. That hesitation often acted as a natural checkpoint between desire and decision.
+`,
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-05-12",
+    banner: blog80,
+  },
+  {
+    title: "The Psychology Behind Spending and Investing",
+    slug: "the-psychology-behind-spending-and-investing",
+    excerpt: `There was a time when spending felt real. You would open your wallet, count the notes, and hand over cash to buy something. Every purchase carried an emotional pause. That hesitation often acted as a natural checkpoint between desire and decision.`,
+    content: `There was a time when spending felt real. You would open your wallet, count the notes, and hand over cash to buy something. Every purchase carried an emotional pause. That hesitation often acted as a natural checkpoint between desire and decision.
 But today, that friction has disappeared. A quick UPI scan, a tap on the phone, or a saved card on an e-commerce platform have made payments instant. Money now moves within seconds, often without even giving us the emotional pause to reflect.
 In the age of instant payments, money has evolved from something tangible and emotionally felt into something abstract, invisible, and incredibly easy to part with. While this shift has made life easier, it has also quietly changed our financial behaviour in ways many people fail to notice.
 In this blog, we will talk about how spending has become easier than earning, how to deal with this shift, and why investing has become more important than ever.
@@ -4547,16 +4592,16 @@ But it also gives rise to immense opportunities. Because if spending can happen 
 The modern financial winner is not the person who simply earns more. It is the person who understands how money behaves and learns to behave wisely with it.
 At Resolute Corp, we are dedicated to helping you navigate the changing psychology of money and make smarter financial decisions for the future.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-05-25',
-        banner: blog81
-    },
-    {
-        title: 'SIP vs Lump Sum in 2026: What Actually Works in Volatile Markets?',
-        slug: 'sip-vs-lump-sum-in-2026-what-actually-works-in-volatile-markets',
-        excerpt: `Markets in 2026 are anything but predictable. Geopolitical tensions remain elevated while inflation continues to shape central bank decisions. As a result, equity markets are moving between optimism and uncertainty, often within the same week.`,
-        content:`Markets in 2026 are anything but predictable. Geopolitical tensions remain elevated while inflation continues to shape central bank decisions. As a result, equity markets are moving between optimism and uncertainty, often within the same week.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-05-25",
+    banner: blog81,
+  },
+  {
+    title: "SIP vs Lump Sum in 2026: What Actually Works in Volatile Markets?",
+    slug: "sip-vs-lump-sum-in-2026-what-actually-works-in-volatile-markets",
+    excerpt: `Markets in 2026 are anything but predictable. Geopolitical tensions remain elevated while inflation continues to shape central bank decisions. As a result, equity markets are moving between optimism and uncertainty, often within the same week.`,
+    content: `Markets in 2026 are anything but predictable. Geopolitical tensions remain elevated while inflation continues to shape central bank decisions. As a result, equity markets are moving between optimism and uncertainty, often within the same week.
 In such an environment, one question continues to dominate investor conversations: Should you invest through SIP or put your money in as a lump sum? It is a valid question. After all, nobody wants to invest a significant amount only to watch markets correct the next day. At the same time, delaying investment could mean missing a meaningful rally.
 The truth is that there is no universally perfect answer. The better strategy depends on your financial position, and investment horizon. Let us break it down.
 
@@ -4700,16 +4745,17 @@ In volatile markets like 2026, SIP generally offers stronger emotional comfort, 
 For many investors, a hybrid model may offer the most practical balance because ultimately, wealth creation is rarely about choosing the perfect entry. It is about staying invested long enough for compounding to do its work. 
 At Resolute Corp, we simplify complex financial conversations so that better investment decisions become easier, clearer, and more actionable for you.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-05-26',
-        banner: blog82
-    },
-    {
-        title: 'Interest Rates, Inflation, and You: How RBI Policies Impact Your Investments in 2026',
-        slug: 'interest-rates-inflation-and-you-how-rbi-policies-impact-your-investments-in-2026',
-        excerpt: `India’s investment playbook in 2026 is being shaped by an interesting blend of monetary policy, inflationary pressures, and global uncertainty. Decisions taken by the Reserve Bank of India (RBI) today directly influence bond yields, equity valuations, `,
-        content: `India’s investment playbook in 2026 is being shaped by an interesting blend of monetary policy, inflationary pressures, and global uncertainty. Decisions taken by the Reserve Bank of India (RBI) today directly influence bond yields, equity valuations, fixed deposit returns, borrowing costs, and ultimately, the real value of long-term wealth.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-05-26",
+    banner: blog82,
+  },
+  {
+    title:
+      "Interest Rates, Inflation, and You: How RBI Policies Impact Your Investments in 2026",
+    slug: "interest-rates-inflation-and-you-how-rbi-policies-impact-your-investments-in-2026",
+    excerpt: `India’s investment playbook in 2026 is being shaped by an interesting blend of monetary policy, inflationary pressures, and global uncertainty. Decisions taken by the Reserve Bank of India (RBI) today directly influence bond yields, equity valuations, `,
+    content: `India’s investment playbook in 2026 is being shaped by an interesting blend of monetary policy, inflationary pressures, and global uncertainty. Decisions taken by the Reserve Bank of India (RBI) today directly influence bond yields, equity valuations, fixed deposit returns, borrowing costs, and ultimately, the real value of long-term wealth.
 In its recent Monetary Policy Committee (MPC) meetings for FY 2026-27, the RBI maintained the repo rate at 5.25%, retaining a neutral stance amid an increasingly uncertain global environment. Persistent geopolitical tensions, elevated crude oil prices, and inflation risks are forcing investors to rethink portfolio positioning. As a result, understanding how RBI policies affect different asset classes becomes essential for making informed financial decisions. In this blog, we will break it down for you.
 
 <span class="font-bold pb-1 md:text-xl">RBI’s Latest Monetary Policy</span>
@@ -4812,16 +4858,17 @@ Policy cycles evolve. Markets react quickly. Portfolio rigidity can become a dis
 RBI policies in 2026 are shaping far more than interest rates. They are influencing inflation expectations, market sentiment, borrowing costs, and the long-term purchasing power of capital. For investors, this is not an environment for simplistic decisions based solely on returns. It is an environment that rewards disciplined asset allocation, quality-focused investing, and a strong understanding of macroeconomic signals.
 At Resolute Corp, we believe the strongest portfolios are built not merely by reacting to markets, but by understanding the forces that move them.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-05-31',
-        banner: blog83
-    },
-    {
-        title: 'Gold, FD, or Stock Market: Which Asset Truly Protects You Against Inflation in 2026?',
-        slug: 'gold-fd-or-stock-market-which-asset-truly-protects-you-against-inflation-in-2026',
-        excerpt:`Have you ever heard your parents or grandparents say that they could once buy bags full of groceries with the same amount of money that today barely covers a small purchase? That gradual decline in the purchasing power of money is called inflation.`,
-        content: `Have you ever heard your parents or grandparents say that they could once buy bags full of groceries with the same amount of money that today barely covers a small purchase? That gradual decline in the purchasing power of money is called inflation. 
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-05-31",
+    banner: blog83,
+  },
+  {
+    title:
+      "Gold, FD, or Stock Market: Which Asset Truly Protects You Against Inflation in 2026?",
+    slug: "gold-fd-or-stock-market-which-asset-truly-protects-you-against-inflation-in-2026",
+    excerpt: `Have you ever heard your parents or grandparents say that they could once buy bags full of groceries with the same amount of money that today barely covers a small purchase? That gradual decline in the purchasing power of money is called inflation.`,
+    content: `Have you ever heard your parents or grandparents say that they could once buy bags full of groceries with the same amount of money that today barely covers a small purchase? That gradual decline in the purchasing power of money is called inflation. 
 It quietly reduces the purchasing power of your money year after year. The groceries you buy, the school fees you pay, the fuel you consume, and the lifestyle you enjoy all become progressively more expensive over time. 
 This raises a critical question for investors in 2026 – which asset truly protects wealth against inflation: gold, FDs (Fixed Deposits), or the stock market? Let's examine how each asset class has performed and what role it should play in a modern portfolio.
 
@@ -4961,16 +5008,16 @@ The answer to the question as to which asset works best against inflation depend
 The reality is that inflation protection does not come from a single asset. It comes from a thoughtfully diversified portfolio where each asset performs a different role.
 At Resolute Corp, we believe successful investing is not about choosing between gold, FDs, or equities. It is about understanding what each asset is designed to do and building a portfolio that can withstand inflation, uncertainty, and changing market cycles while continuing to grow over the long term.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-06-12',
-        banner: blog84
-    },
-    {
-        title: 'Why Smart Investors Are Looking at Dubai Real Estate in 2026',
-        slug: 'why-smart-investors-are-looking-at-dubai-real-estate-in-2026',
-        excerpt:`In 2026, investors are increasingly recognizing that relying solely on a single source of income is often not enough to achieve long-term financial goals. `,
-        content: `In 2026, investors are increasingly recognizing that relying solely on a single source of income is often not enough to achieve long-term financial goals. As a result, more individuals are turning towards asset classes that can generate stable income, preserve capital, and create long-term wealth. Among these, real estate continues to stand out as one of the most reliable investment avenues.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-06-12",
+    banner: blog84,
+  },
+  {
+    title: "Why Smart Investors Are Looking at Dubai Real Estate in 2026",
+    slug: "why-smart-investors-are-looking-at-dubai-real-estate-in-2026",
+    excerpt: `In 2026, investors are increasingly recognizing that relying solely on a single source of income is often not enough to achieve long-term financial goals. `,
+    content: `In 2026, investors are increasingly recognizing that relying solely on a single source of income is often not enough to achieve long-term financial goals. As a result, more individuals are turning towards asset classes that can generate stable income, preserve capital, and create long-term wealth. Among these, real estate continues to stand out as one of the most reliable investment avenues.
 And when it comes to global real estate markets, Dubai has emerged as one of the most compelling opportunities. Why? Let us start with the numbers.
 A per a report published by Gulf News, Dubai's property market recorded an impressive Dh176.7 billion in sales across nearly 48,000 transactions in the first quarter of 2026. Even more telling is that over 70% of transaction value and volume came from off-plan properties, signalling strong investor confidence in the city's future growth story.
 But what exactly is driving this surge? Why are investors from across the globe increasingly choosing Dubai over traditional real estate markets? Let us break it down.
@@ -5042,16 +5089,16 @@ Dubai's property market is no longer driven solely by speculation or short-term 
 From tax-free income and strong rental yields to Golden Visas, off-plan opportunities, fractional ownership, and tokenized real estate, Dubai offers multiple pathways for investors seeking growth and diversification.
 For smart investors in 2026, Dubai is not just a real estate market. It is increasingly becoming a strategic asset allocation decision. At Resolute Corp, we believe the best investment opportunities emerge where strong fundamentals meet long-term vision. Dubai's real estate market continues to demonstrate both.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-06-19',
-        banner: blog85
-    },
-    {
-        title: 'India’s Aerospace & Defence Boom: The Multi-Decade Opportunity',
-        slug: 'india-aerospace-and-defence-boom-the-multi-decade-opportunity',
-        excerpt: `For decades, India's aerospace and defence sector was largely viewed through the lens of national security and strategic capability. Today, it is emerging as a powerful economic engine, a manufacturing opportunity, and a long-term investment theme.`,
-        content: `For decades, India's aerospace and defence sector was largely viewed through the lens of national security and strategic capability. Today, it is emerging as a powerful economic engine, a manufacturing opportunity, and a long-term investment theme.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-06-19",
+    banner: blog85,
+  },
+  {
+    title: "India’s Aerospace & Defence Boom: The Multi-Decade Opportunity",
+    slug: "india-aerospace-and-defence-boom-the-multi-decade-opportunity",
+    excerpt: `For decades, India's aerospace and defence sector was largely viewed through the lens of national security and strategic capability. Today, it is emerging as a powerful economic engine, a manufacturing opportunity, and a long-term investment theme.`,
+    content: `For decades, India's aerospace and defence sector was largely viewed through the lens of national security and strategic capability. Today, it is emerging as a powerful economic engine, a manufacturing opportunity, and a long-term investment theme.
 
 What makes this transformation particularly compelling is that it is being driven by multiple structural tailwinds simultaneously: rising geopolitical uncertainty, a global aerospace supply chain reset, India's push for self-reliance, growing defence budgets, and an unprecedented boom in commercial aviation.
 
@@ -5100,16 +5147,16 @@ The aerospace and defence boom reflects a larger shift underway in India’s eco
 
 The story is still unfolding, and at Resolute Corp, we remain committed to tracking these transformations and keeping you informed on the trends shaping India’s long-term growth journey.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-06-25',
-        banner: blog86
-    },
-    {
-        title: "Your Investment Playbook for FY2027: What's Hot, What's Not",
-        slug: 'your-investment-playbook-for-fy2027-whats-hot-whats-not',
-        excerpt:`The beginning of every financial year brings with it one fundamental question for investors: Where should I invest now? FY2027, however, is unlike most years.`,
-        content: `The beginning of every financial year brings with it one fundamental question for investors: Where should I invest now? FY2027, however, is unlike most years.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-06-25",
+    banner: blog86,
+  },
+  {
+    title: "Your Investment Playbook for FY2027: What's Hot, What's Not",
+    slug: "your-investment-playbook-for-fy2027-whats-hot-whats-not",
+    excerpt: `The beginning of every financial year brings with it one fundamental question for investors: Where should I invest now? FY2027, however, is unlike most years.`,
+    content: `The beginning of every financial year brings with it one fundamental question for investors: Where should I invest now? FY2027, however, is unlike most years.
 Global markets continue to navigate geopolitical tensions in the Middle East, persistent inflationary pressures, and rapid technological disruption led by AI. Yet, despite these headwinds, India continues to stand out as one of the world's fastest-growing major economies as investor confidence remains strong.
 In this blog, we break down key sectors and asset classes that are best positioned to outperform in FY2027, and why they deserve a place in your investment portfolio.
 
@@ -5160,16 +5207,17 @@ History has repeatedly shown that periods of uncertainty often create the most r
 India's investment story continues to be supported by strong economic fundamentals, policy reforms, rising global confidence, and increasing participation from both domestic and international investors. While short-term volatility is inevitable, long-term wealth is rarely built by reacting to headlines; it is built by staying invested in fundamentally strong opportunities.
 At Resolute Corp, we remain committed to helping investors cut through the noise with research-backed insights, market perspectives, and actionable investment ideas, so that you can make informed decisions and participate confidently in India's evolving growth story.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-06-29',
-        banner: blog87
-    },
-    {
-        title: 'Post-War Inflation and the Indian Economy: What FY2026-27 Could Look Like',
-        slug: 'post-war-inflation-and-the-indian-economy-what-fy2026-27-could-look-like',
-        excerpt: `The US-Israel-Iran war and the broader instability across West Asia may seem under control for now, but its economic aftershocks are only beginning to unfold.`,
-        content: `The US-Israel-Iran war and the broader instability across West Asia may seem under control for now, but its economic aftershocks are only beginning to unfold.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-06-29",
+    banner: blog87,
+  },
+  {
+    title:
+      "Post-War Inflation and the Indian Economy: What FY2026-27 Could Look Like",
+    slug: "post-war-inflation-and-the-indian-economy-what-fy2026-27-could-look-like",
+    excerpt: `The US-Israel-Iran war and the broader instability across West Asia may seem under control for now, but its economic aftershocks are only beginning to unfold.`,
+    content: `The US-Israel-Iran war and the broader instability across West Asia may seem under control for now, but its economic aftershocks are only beginning to unfold.
 
 Whenever a major conflict disrupts one of the world's largest energy-producing regions, the consequences ripple far beyond the battlefield. Oil prices rise, shipping routes become uncertain, freight costs increase and the risk of inflation looms large.
 
@@ -5272,16 +5320,17 @@ While short-term volatility is inevitable, India's structural growth drivers con
 
 At Resolute Corp, we remain committed to bringing you research-backed market insights, macroeconomic analysis, and investment perspectives that help you stay informed and navigate uncertainty with confidence.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-07-10',
-        banner: blog88
-    },
-    {
-        title:"Why the Future of Sports Investing Will Be Built on Data, Not Instinct",
-        slug: "why-the-future-of-sports-investing-will-be-built-on-data-not-instinct",
-        excerpt: `Sports has always been viewed through the lens of passion, performance, and fandom. Investors often backed a franchise because of its star players, growing popularity, or emotional appeal. That, however, is changing rapidly.`,
-        content: `Sports has always been viewed through the lens of passion, performance, and fandom. Investors often backed a franchise because of its star players, growing popularity, or emotional appeal. That, however, is changing rapidly.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-07-10",
+    banner: blog88,
+  },
+  {
+    title:
+      "Why the Future of Sports Investing Will Be Built on Data, Not Instinct",
+    slug: "why-the-future-of-sports-investing-will-be-built-on-data-not-instinct",
+    excerpt: `Sports has always been viewed through the lens of passion, performance, and fandom. Investors often backed a franchise because of its star players, growing popularity, or emotional appeal. That, however, is changing rapidly.`,
+    content: `Sports has always been viewed through the lens of passion, performance, and fandom. Investors often backed a franchise because of its star players, growing popularity, or emotional appeal. That, however, is changing rapidly.
 
 In 2026, sport is emerging as one of the world's fastest-growing investment opportunities. But unlike previous decades, successful investments are increasingly being driven not by instinct, but by data.
 
@@ -5346,16 +5395,17 @@ As AI, analytics, and digital infrastructure become central to modern sport, inv
 
 At Resolute Corp, we believe the next generation of investment opportunities will emerge where technology, data, and structural growth converge. We remain committed to bringing you research-backed insights that help you identify these evolving trends early and invest with greater clarity and confidence.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-07-13',
-        banner: blog89
-    },
-    {
-        title:"Why the World's Biggest Investors Are Betting on Cities, Not Countries",
-        slug:"why-the-worlds-biggest-investors-are-betting-on-cities-not-countries",
-        excerpt:`For decades, investors evaluated opportunities by asking a simple question: Which country is growing the fastest? Today, that question is gradually changing`,
-        content:`For decades, investors evaluated opportunities by asking a simple question: Which country is growing the fastest? Today, that question is gradually changing. 
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-07-13",
+    banner: blog89,
+  },
+  {
+    title:
+      "Why the World's Biggest Investors Are Betting on Cities, Not Countries",
+    slug: "why-the-worlds-biggest-investors-are-betting-on-cities-not-countries",
+    excerpt: `For decades, investors evaluated opportunities by asking a simple question: Which country is growing the fastest? Today, that question is gradually changing`,
+    content: `For decades, investors evaluated opportunities by asking a simple question: Which country is growing the fastest? Today, that question is gradually changing. 
 Today, institutional investors, sovereign wealth funds, multinational corporations, venture capital firms, and real estate developers are asking something far more specific: Which cities are creating the most economic value?
 Whether it is Dubai positioning itself as the West Asia's financial gateway, GIFT City emerging as India's global financial hub, Bengaluru driving India's technology revolution, or Singapore becoming Asia's innovation capital, investment decisions are becoming increasingly city-centric rather than country-centric.
 The reason is simple. Cities are no longer just administrative centres. They have become the engines of innovation, talent, entrepreneurship, finance, and long-term wealth creation.
@@ -5433,16 +5483,17 @@ The cities that invest in innovation, sustainability, education and connectivity
 For investors, this represents an important strategic shift. The next decade may belong not simply to the countries with the highest GDP growth but to the cities creating the strongest ecosystems for innovation, entrepreneurship and capital formation.
 At Resolute Corp, we believe understanding these structural shifts is essential for making informed investment decisions. We remain committed to bringing you research-backed insights that help you identify emerging opportunities and stay ahead in an increasingly dynamic global investment landscape.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-07-27',
-        banner: blog90
-    },
-    {
-        title:'The 10-Minute Wardrobe? What Fashion on Quick Commerce Says About the Future of Retail',
-        slug: 'the-10-minute-wardrobe-what-fashion-on-quick-commerce-says-about-the-future-of-retail',
-        excerpt:`Forgot to buy a formal shirt for tomorrow's meeting? Need activewear before an evening workout? Or perhaps you saw a trend online and want to wear it an evening party.`,
-        content:`Forgot to buy a formal shirt for tomorrow's meeting? Need activewear before an evening workout? Or perhaps you saw a trend online and want to wear it an evening party.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-07-27",
+    banner: blog90,
+  },
+  {
+    title:
+      "The 10-Minute Wardrobe? What Fashion on Quick Commerce Says About the Future of Retail",
+    slug: "the-10-minute-wardrobe-what-fashion-on-quick-commerce-says-about-the-future-of-retail",
+    excerpt: `Forgot to buy a formal shirt for tomorrow's meeting? Need activewear before an evening workout? Or perhaps you saw a trend online and want to wear it an evening party.`,
+    content: `Forgot to buy a formal shirt for tomorrow's meeting? Need activewear before an evening workout? Or perhaps you saw a trend online and want to wear it an evening party.
 Until recently, fashion shopping rarely worked this way. Fashion was built around discovery, browsing, trials, and anticipation. Quick commerce, on the other hand, was designed around urgency. Groceries, medicines, and daily essentials naturally belonged in a rapid-delivery ecosystem.
 But in 2026, that distinction is beginning to disappear. India's quick-commerce market has evolved rapidly from a convenience-led experiment into a major retail channel. 
 And fashion is increasingly finding its place within this ecosystem. So, are we entering the era of the 10-minute wardrobe? More importantly, what does fashion's growing presence on quick commerce tell us about the future of retail? Let us find out.
@@ -5485,16 +5536,17 @@ The rise of fashion on quick commerce reflects a much larger transformation in r
 
 At Resolute Corp, we believe the future of fashion will be shaped by brands that listen closely to changing consumer behaviour and evolve with it. As technology continues to redefine how India discovers, purchases, and experiences fashion, one thing is certain: the next retail revolution may arrive much faster than we expect.
 `,
-        author: 'Resolute Corp',
-        category: 'Investment',
-        date: '2026-07-20',
-        banner: blog91
-    },
-    {
-        title: "Indian Hair Fashion Is Going Global. Here's What It Tells Us About the Next Phase of the Market",
-        slug: 'indian-hair-fashion-is-going-global',
-        excerpt: `India's hair care and hair fashion industry is no longer just serving domestic consumers; it is gradually becoming a global growth story. According to a recent report by Mordor Intelligence, India's hair care market is valued at USD 4.1 billion in 2026 and is projected to reach USD 5.19 billion by 2031, growing at a CAGR of 4.73%.`,
-        content: `India's hair care and hair fashion industry is no longer just serving domestic consumers; it is gradually becoming a global growth story. According to a recent report by Mordor Intelligence, India's hair care market is valued at USD 4.1 billion in 2026 and is projected to reach USD 5.19 billion by 2031, growing at a CAGR of 4.73%.
+    author: "Resolute Corp",
+    category: "Investment",
+    date: "2026-07-20",
+    banner: blog91,
+  },
+  {
+    title:
+      "Indian Hair Fashion Is Going Global. Here's What It Tells Us About the Next Phase of the Market",
+    slug: "indian-hair-fashion-is-going-global",
+    excerpt: `India's hair care and hair fashion industry is no longer just serving domestic consumers; it is gradually becoming a global growth story. According to a recent report by Mordor Intelligence, India's hair care market is valued at USD 4.1 billion in 2026 and is projected to reach USD 5.19 billion by 2031, growing at a CAGR of 4.73%.`,
+    content: `India's hair care and hair fashion industry is no longer just serving domestic consumers; it is gradually becoming a global growth story. According to a recent report by Mordor Intelligence, India's hair care market is valued at USD 4.1 billion in 2026 and is projected to reach USD 5.19 billion by 2031, growing at a CAGR of 4.73%.
 Within this, premium and luxury segments are expanding even faster, supported by rising disposable incomes, digital-first consumers, and increasing preference for specialized products over mass-market offerings. More importantly, Indian brands are beginning to prove that they can compete as well as succeed on the world's biggest retail shelves.
 In this blog, we explore how Indian brands are making their mark globally and what this tells us about the next phase of the market.
 
@@ -5536,10 +5588,9 @@ The global opportunity for Indian hair fashion has already begun. Hair Drama Co.
 As premium consumption rises, digital commerce expands, AI transforms consumer experiences, and global retailers seek differentiated brands, Indian companies have an opportunity to compete on the strength of innovation, design, and craftsmanship rather than cost alone.
 At Resolute Corp, we believe that the next phase of India's hair fashion market will not be defined by scale alone; it will be shaped by brands that understand their audience, build distinctive identities, and create products that resonate across borders.
 `,
-        author: 'Resolute Corp',
-        category: 'Fashion',
-        date: '2026-08-08',
-        banner: blog92
-    },
+    author: "Resolute Corp",
+    category: "Fashion",
+    date: "2026-08-08",
+    banner: blog92,
+  },
 ];
-

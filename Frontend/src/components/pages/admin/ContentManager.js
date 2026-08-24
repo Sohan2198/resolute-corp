@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAdmin } from '../../../contexts/AdminContext';
 
 const ContentManager = () => {
-  const { logout, isLoggedIn } = useAdmin();
+  const { logout, isLoggedIn, authLoading } = useAdmin();
   const navigate = useNavigate();
 
-  if (!isLoggedIn) {
-    navigate('/admin');
-    return null;
-  }
+  useEffect(() => {
+    if (!authLoading && !isLoggedIn) {
+      navigate('/admin');
+    }
+  }, [authLoading, isLoggedIn, navigate]);
+
+  if (authLoading || !isLoggedIn) return null;
 
   const handleLogout = () => {
     logout();

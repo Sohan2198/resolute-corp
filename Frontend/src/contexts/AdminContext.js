@@ -1,38 +1,27 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
+import { auth } from '../firebase';
 
 const AdminContext = createContext(null);
 
 export const AdminProvider = ({ children }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
 
   useEffect(() => {
-    // Check if user is already logged in on mount
-    const loggedInStatus = localStorage.getItem('resolute_admin_logged_in');
-    if (loggedInStatus === 'true') {
-      setIsLoggedIn(true);
-    }
+    const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
+      setUser(firebaseUser);
+      setAuthLoading(false);
+    });
+    return unsubscribe;
   }, []);
 
-  const login = (id, password) => {
-    // Read credentials from env, or use defaults
-    const adminId = process.env.REACT_APP_ADMIN_ID || 'resolute';
-    const adminPass = process.env.REACT_APP_ADMIN_PASS || 'resolute@2024';
+  const login = (email, password) => signInWithEmailAndPassword(auth, email, password);
 
-    if (id === adminId && password === adminPass) {
-      setIsLoggedIn(true);
-      localStorage.setItem('resolute_admin_logged_in', 'true');
-      return true;
-    }
-    return false;
-  };
-
-  const logout = () => {
-    setIsLoggedIn(false);
-    localStorage.removeItem('resolute_admin_logged_in');
-  };
+  const logout = () => signOut(auth);
 
   return (
-    <AdminContext.Provider value={{ isLoggedIn, login, logout }}>
+    <AdminContext.Provider value={{ isLoggedIn: !!user, authLoading, login, logout }}>
       {children}
     </AdminContext.Provider>
   );

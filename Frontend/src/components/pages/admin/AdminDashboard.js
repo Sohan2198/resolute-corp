@@ -5,7 +5,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../../firebase';
 
 const AdminDashboard = () => {
-  const { logout, isLoggedIn } = useAdmin();
+  const { logout, isLoggedIn, authLoading } = useAdmin();
   const navigate = useNavigate();
   const [totalPosts, setTotalPosts] = useState('—');
   const [totalCategories, setTotalCategories] = useState('—');
@@ -29,10 +29,13 @@ const AdminDashboard = () => {
   }, [isLoggedIn]);
 
   // Redirect if not logged in
-  if (!isLoggedIn) {
-    navigate('/admin');
-    return null;
-  }
+  useEffect(() => {
+    if (!authLoading && !isLoggedIn) {
+      navigate('/admin');
+    }
+  }, [authLoading, isLoggedIn, navigate]);
+
+  if (authLoading || !isLoggedIn) return null;
 
   const handleLogout = () => {
     logout();

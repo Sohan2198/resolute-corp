@@ -5,15 +5,81 @@ import 'react-quill/dist/quill.snow.css';
 import { useAdmin } from '../../../contexts/AdminContext';
 import { collection, getDocs, doc, setDoc, deleteDoc, query, orderBy } from 'firebase/firestore';
 import { db } from '../../../firebase';
+import htmlEditButton from 'quill-html-edit-button';
 
 // Allow pasting images as base64 inside editor content
 const ImageBlot = Quill.import('formats/image');
 ImageBlot.sanitize = (url) => url; // allow base64 and http urls
 Quill.register(ImageBlot, true);
+Quill.register('modules/htmlEditButton', htmlEditButton);
+
+// Quill has no native table format, so pasted <table> markup gets stripped by
+// its HTML-to-Delta converter. Preserve it verbatim as a raw HTML embed instead.
+const BlockEmbed = Quill.import('blots/block/embed');
+class RawHtmlBlot extends BlockEmbed {
+  static create(html) {
+    const node = super.create();
+    node.innerHTML = html;
+    return node;
+  }
+  static value(node) {
+    return node.innerHTML;
+  }
+}
+RawHtmlBlot.blotName = 'rawHtml';
+RawHtmlBlot.tagName = 'div';
+RawHtmlBlot.className = 'ql-raw-html';
+Quill.register(RawHtmlBlot);
+
+// Pasted tables (Word/Excel/Sheets/a webpage) carry their own inline styles and
+// attributes. Rebuild every table with this fixed look instead of preserving
+// whatever the source used, so tables are visually consistent across posts.
+const TABLE_CELL_STYLE = {
+  th: 'border: 1px solid #000; padding: 10px; text-align: left;',
+  td: 'border: 1px solid #000; padding: 10px;',
+};
+
+const normalizeTableHtml = (tableNode) => {
+  const rowsHtml = Array.from(tableNode.querySelectorAll('tr')).map(tr => {
+    const cellsHtml = Array.from(tr.children)
+      .filter(cell => cell.tagName === 'TH' || cell.tagName === 'TD')
+      .map(cell => {
+        const tag = cell.tagName.toLowerCase();
+        const colspan = cell.hasAttribute('colspan') ? ` colspan="${cell.getAttribute('colspan')}"` : '';
+        const rowspan = cell.hasAttribute('rowspan') ? ` rowspan="${cell.getAttribute('rowspan')}"` : '';
+        return `<${tag} style="${TABLE_CELL_STYLE[tag]}"${colspan}${rowspan}>${cell.innerHTML}</${tag}>`;
+      })
+      .join('');
+    return `<tr>${cellsHtml}</tr>`;
+  }).join('');
+  return `<table style="border-collapse: collapse; width: 100%;"><tbody>${rowsHtml}</tbody></table>`;
+};
+
+// Shared by the banner upload input and the editor's image-paste handler.
+const resizeImageFile = (file, maxWidth = 1200, quality = 0.8) => new Promise((resolve) => {
+  const reader = new FileReader();
+  reader.onload = (event) => {
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      let { width, height } = img;
+      if (width > maxWidth) {
+        height = Math.round((height * maxWidth) / width);
+        width = maxWidth;
+      }
+      canvas.width = width;
+      canvas.height = height;
+      canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+      resolve(canvas.toDataURL('image/webp', quality));
+    };
+    img.src = event.target.result;
+  };
+  reader.readAsDataURL(file);
+});
 
 
 const BlogManager = () => {
-  const { logout, isLoggedIn } = useAdmin();
+  const { logout, isLoggedIn, authLoading } = useAdmin();
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const [editingPost, setEditingPost] = useState(null);
@@ -40,11 +106,12 @@ const BlogManager = () => {
   });
 
   useEffect(() => {
+    if (authLoading) return;
     if (!isLoggedIn) {
       navigate('/admin');
       return;
     }
-    
+
     const fetchPosts = async () => {
       try {
         const q = query(collection(db, 'blogs'), orderBy('date', 'desc'));
@@ -60,7 +127,7 @@ const BlogManager = () => {
     };
     
     fetchPosts();
-  }, [isLoggedIn, navigate]);
+  }, [authLoading, isLoggedIn, navigate]);
 
   const handleLogout = () => {
     logout();
@@ -174,38 +241,25 @@ const BlogManager = () => {
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const img = new Image();
-      img.onload = () => {
-        const canvas = document.createElement('canvas');
-        let width = img.width;
-        let height = img.height;
-        
-        // Resize if it's too large (e.g. max 1200px width)
-        const MAX_WIDTH = 1200;
-        if (width > MAX_WIDTH) {
-          height = Math.round((height * MAX_WIDTH) / width);
-          width = MAX_WIDTH;
-        }
-
-        canvas.width = width;
-        canvas.height = height;
-
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, width, height);
-
-        // Convert to webp with 0.8 quality
-        const dataUrl = canvas.toDataURL('image/webp', 0.8);
-        setFormData(prev => ({ ...prev, banner: dataUrl }));
-      };
-      img.src = event.target.result;
-    };
-    reader.readAsDataURL(file);
+    resizeImageFile(file).then(dataUrl => setFormData(prev => ({ ...prev, banner: dataUrl })));
   };
 
   const quillRef = useRef(null);
+
+  // Quill has no native table format, so a pasted <table> (from Word/Excel/Sheets/a
+  // webpage) gets flattened line-by-line by its default matchers, which also breaks
+  // pasting a table alongside other content in the same clipboard payload (e.g. an
+  // image pasted right after it). Rebuild it with the standard table style and
+  // preserve it via the raw-html blot.
+  useEffect(() => {
+    const quill = quillRef.current?.getEditor();
+    if (!quill) return;
+
+    quill.clipboard.addMatcher('table', (node) => {
+      const Delta = Quill.import('delta');
+      return new Delta().insert({ rawHtml: normalizeTableHtml(node) });
+    });
+  }, []);
 
   const quillModules = {
     toolbar: [
@@ -220,6 +274,15 @@ const BlogManager = () => {
       ['link', 'image', 'video'],
       ['clean']
     ],
+    htmlEditButton: {
+      debug: false,
+      msg: 'Edit HTML directly',
+      okText: 'Save',
+      cancelText: 'Cancel',
+      buttonHTML: '&lt;/&gt;',
+      buttonTitle: 'Show HTML source',
+      syntax: false,
+    },
     clipboard: {
       matchVisual: false,
     },
@@ -233,6 +296,7 @@ const BlogManager = () => {
     'blockquote', 'code-block',
     'list', 'bullet', 'indent',
     'link', 'image', 'video',
+    'rawHtml',
   ];
 
   // Date Helpers
@@ -258,6 +322,8 @@ const BlogManager = () => {
   );
   
   const sortedPosts = [...filteredPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  if (authLoading || !isLoggedIn) return null;
 
   return (
     <div className="flex h-screen bg-gray-100 font-sans">
@@ -466,7 +532,7 @@ const BlogManager = () => {
                     onChange={handleContentChange} 
                     modules={quillModules}
                     formats={quillFormats}
-                    className="h-96 border-none"
+                    className="h-[500px] flex flex-col border-none [&_.ql-container]:flex-grow [&_.ql-container]:overflow-y-auto [&_.ql-toolbar]:shrink-0"
                   />
                 </div>
                 <p className="text-xs text-gray-500 mt-2">The excerpt is automatically generated from the first few lines of content.</p>
@@ -527,13 +593,13 @@ const BlogManager = () => {
                     <td className="py-5 px-8 text-sm text-right space-x-4">
                       <button 
                         onClick={() => editPost(post)}
-                        className="text-[#0E4669] hover:text-blue-700 font-medium opacity-0 group-hover:opacity-100 transition-opacity"
+                        className="text-[#0E4669] hover:text-blue-700 font-medium transition-colors"
                       >
                         Edit
                       </button>
                       <button 
                         onClick={() => handleDelete(post.slug)}
-                        className="text-red-500 hover:text-red-700 font-medium opacity-0 group-hover:opacity-100 transition-opacity"
+                        className="text-red-500 hover:text-red-700 font-medium transition-colors"
                       >
                         Delete
                       </button>
