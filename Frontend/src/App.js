@@ -14,6 +14,8 @@ import PressReleases from './components/pages/media/PressReleases';
 import EventsHighlights from './components/pages/media/EventsHighlights';
 import SchemeOfArrangement from './components/pages/media/SchemeOfArrangement';
 import Pitch from './components/pages/media/Pitch';
+import ResoluteSports from './components/pages/resolutesports/ResoluteSports';
+import SponsorshipPrivacyNotice from './components/pages/resolutesports/SponsorshipPrivacyNotice';
 import { Suspense } from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -62,6 +64,10 @@ function App() {
               <Route path="press-releases" element={<PressReleases />} />
               <Route path="scheme-of-arrangement" element={<SchemeOfArrangement />} />
             </Route>
+
+            {/* Resolute Sports landing page (has its own header and footer) */}
+            <Route path="/resolutesports" element={<ResoluteSports />} />
+            <Route path="/sponsorship-privacy-notice" element={<SponsorshipPrivacyNotice />} />
 
             {/* Admin Routes (No public Header/Footer) */}
             <Route path="/admin" element={<AdminLogin />} />
