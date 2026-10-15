@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
-import './ResoluteSports.css';
+import './SponsorshipPrivacyNotice.css';
 import resoluteLogo from '../../../assets/portfolio/logo.png';
-import dtLogo from '../../../assets/portfolio/dt-logo.jpg';
 
-/* Sponsorship Privacy Notice v1.0 (13-Oct-2026), from the client's DOCX.
-   Linked from the consent checkbox and footer of /resolutesports. */
+/* Sponsorship Privacy Notice v1.0 (13-Oct-2026), from the client's DOCX, styled
+   like the Word document. Linked from the consent checkbox and footer of /resolutesports. */
 const PAGE_TITLE = 'Sponsorship Privacy Notice | Resolute Sports';
 const GRIEVANCE_EMAIL = 'grievance@resolutecorp.in';
 
@@ -18,28 +17,21 @@ export default function SponsorshipPrivacyNotice() {
   }, []);
 
   return (
-    <div className="pvl-s5">
-      <header className="site scrolled">
-        <div className="wrap">
-          <div className="brand">
-            <a href="/resolutesports" aria-label="Resolute Sports sponsorship page"><img className="rs" src={resoluteLogo} alt="Resolute Corp Bharat Private Limited" height="36" /></a>
-            <span className="sep" aria-hidden="true"></span>
-            <img className="dt" src={dtLogo} alt="Delhi Toofans" width="50" height="50" />
-          </div>
-          <div className="hdr-cta">
-            <a className="btn btn-primary btn-sm" href="/resolutesports">Sponsorship page</a>
-          </div>
-        </div>
-      </header>
+    <div className="rs-privacy">
+      <div className="pn-page">
+        <header className="pn-header">
+          <a href="/resolutesports" aria-label="Resolute Sports sponsorship page">
+            <img src={resoluteLogo} alt="Resolute Corp Bharat Private Limited" width="132" height="44" />
+          </a>
+        </header>
 
-      <main className="policy">
-        <div className="wrap">
-          <span className="label">Privacy notice</span>
-          <h1>Sponsorship Privacy Notice</h1>
-          <p className="policy-meta">
-            Resolute Sports Private Limited · Applicable to: RSPL Website<br />
-            Effective date: 13 October 2026 · Version 1.0
-          </p>
+        <main>
+          <div className="pn-title">
+            <h1>Privacy Notice</h1>
+            <p className="pn-subtitle">Resolute Sports Private Limited — Sponsorship Privacy Notice</p>
+            <p className="pn-meta">Applicable to: RSPL Website</p>
+            <p className="pn-meta">Effective Date: 13 October 2026</p>
+          </div>
 
           <p>
             <strong>Resolute Sports Private Limited (RSPL)</strong> (“Resolute Sports”, “we”, “us” or the “Company”) respects the privacy of individuals who submit their personal data through the sponsorship enquiry form on its website. This Privacy Notice explains how Resolute Sports collects, uses and Processes your personal data when you request the sponsorship deck or express interest in potential business collaborations, investments and sponsorship opportunities.
@@ -50,9 +42,9 @@ export default function SponsorshipPrivacyNotice() {
 
           <h2>1. Categories of Personal Data We Collect</h2>
           <p>We may Process the following types of your personal data in connection with your submission through the sponsorship enquiry form:</p>
-          <table className="spec">
+          <table className="pn-table">
             <tbody>
-              <tr><th>Category</th><th>Data elements</th></tr>
+              <tr><th>Category</th><th>Data Elements</th></tr>
               <tr><td>Personal Identification Details</td><td>Name</td></tr>
               <tr><td>Contact Details</td><td>Email address &amp; Phone Number</td></tr>
             </tbody>
@@ -60,7 +52,7 @@ export default function SponsorshipPrivacyNotice() {
 
           <h2>2. Purposes of Processing</h2>
           <p>We will Process your personal data for the following business, legitimate and lawful purposes:</p>
-          <table className="spec">
+          <table className="pn-table">
             <tbody>
               <tr><th>Purpose</th><th>Details</th></tr>
               <tr>
@@ -88,7 +80,7 @@ export default function SponsorshipPrivacyNotice() {
 
           <h2>3. Data Sharing</h2>
           <p>We may disclose and transfer your personal data to the following entities for the following purposes:</p>
-          <table className="spec">
+          <table className="pn-table">
             <tbody>
               <tr><th>Recipient</th><th>Purpose</th></tr>
               <tr>
@@ -138,17 +130,12 @@ export default function SponsorshipPrivacyNotice() {
             <li>That if you withdraw your consent, Resolute may not be able to continue Processing your personal data for reviewing, evaluating and responding to your submission through the “Sponsorship” page</li>
           </ol>
           <p><strong>Language Access:</strong> You may request this consent statement and Privacy Notice in English or any of the 22 languages specified in the Eighth Schedule to the Constitution of India, as applicable.</p>
-        </div>
-      </main>
+        </main>
 
-      <footer className="site">
-        <div className="wrap">
-          <div className="legal">
-            <span>© 2026 Resolute Sports Private Limited. All rights reserved.</span>
-            <span><a href="/resolutesports">Back to sponsorship page</a></span>
-          </div>
-        </div>
-      </footer>
+        <footer className="pn-footer">
+          Resolute Sports Private Limited | Website Sponsorship Privacy Notice
+        </footer>
+      </div>
     </div>
   );
 }

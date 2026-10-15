@@ -1,0 +1,41 @@
+/* Sponsorship Privacy Notice: matches the client's Word document
+   (Calibri, blue #2375B7 title/headings/table headers, grey #595959 meta,
+   #8C8C8C table borders). Scoped under .rs-privacy. */
+.rs-privacy{
+  --pn-blue:#2375B7; --pn-grey:#595959; --pn-border:#8C8C8C; --pn-ink:#000000;
+  background:#FFFFFF;color:var(--pn-ink);
+  font-family:Calibri, Carlito, "Segoe UI", Arial, sans-serif;font-size:16px;line-height:1.5;
+}
+.rs-privacy *{font-family:inherit;box-sizing:border-box}  /* beat index.css "* { font-family: Poppins }" */
+.rs-privacy .pn-page{max-width:860px;margin:0 auto;padding:28px 32px 40px}
+
+.rs-privacy .pn-header img{display:block;width:132px;height:auto}
+
+.rs-privacy .pn-title{text-align:center;margin:28px 0 30px}
+.rs-privacy h1{font-size:30px;font-weight:700;color:var(--pn-blue);text-transform:uppercase;letter-spacing:.02em;margin:0 0 6px}
+.rs-privacy .pn-subtitle{font-size:16.5px;color:var(--pn-grey);margin:0 0 4px}
+.rs-privacy .pn-meta{font-size:13.5px;color:var(--pn-grey);margin:0}
+
+.rs-privacy h2{font-size:20px;font-weight:700;color:var(--pn-blue);margin:30px 0 10px}
+.rs-privacy p{margin:0 0 12px}
+.rs-privacy a{color:var(--pn-blue);text-decoration:underline}
+.rs-privacy strong{font-weight:700}
+.rs-privacy ul,.rs-privacy ol{margin:0 0 12px 24px;padding:0}
+.rs-privacy ul{list-style:disc}
+.rs-privacy ol.alpha{list-style:lower-alpha}
+.rs-privacy li{margin-bottom:4px}
+
+.rs-privacy .pn-table{width:100%;border-collapse:collapse;font-size:15px;margin:4px 0 14px}
+.rs-privacy .pn-table th,.rs-privacy .pn-table td{border:1px solid var(--pn-border);padding:7px 10px;text-align:left;vertical-align:top}
+.rs-privacy .pn-table th{background:var(--pn-blue);color:#FFFFFF;font-weight:700}
+.rs-privacy .pn-table td:first-child{width:34%}
+.rs-privacy .pn-table ul{margin:0 0 0 18px}
+
+.rs-privacy .pn-footer{margin-top:36px;padding-top:12px;border-top:1px solid #D9D9D9;text-align:center;font-size:12px;color:var(--pn-grey)}
+
+@media (max-width:640px){
+  .rs-privacy .pn-page{padding:20px 16px 32px}
+  .rs-privacy h1{font-size:24px}
+  .rs-privacy .pn-table{font-size:14px}
+  .rs-privacy .pn-table td:first-child{width:40%}
+}

@@ -271,24 +271,3 @@
   .pvl-s5 .cta{padding:64px 0}
   .pvl-s5 .sticky{display:block}
 }
-
-/* Sponsorship Privacy Notice page */
-.pvl-s5 .policy{padding:140px 0 80px}
-.pvl-s5 .policy .wrap{max-width:900px}
-.pvl-s5 .policy h1{font-size:clamp(34px,4.4vw,52px);margin-bottom:12px}
-.pvl-s5 .policy h2{font-size:clamp(24px,2.6vw,30px);margin:46px 0 14px}
-.pvl-s5 .policy p{margin-bottom:14px}
-.pvl-s5 .policy a{color:var(--brand);text-decoration:underline}
-.pvl-s5 .policy-meta{font-family:var(--label);font-size:15px;letter-spacing:.04em;color:var(--muted);padding-bottom:24px;margin-bottom:28px !important;border-bottom:1px solid var(--line)}
-.pvl-s5 .policy ul,.pvl-s5 .policy ol{margin:0 0 16px 22px}
-.pvl-s5 .policy ol.alpha{list-style:lower-alpha}
-.pvl-s5 .policy li{margin-bottom:6px}
-.pvl-s5 .policy .spec{margin:6px 0 10px}
-.pvl-s5 .policy .spec td{vertical-align:top}
-.pvl-s5 .policy .spec td:first-child{width:34%;font-weight:600;color:var(--navy)}
-.pvl-s5 .policy .spec ul{margin:0 0 0 18px}
-.pvl-s5 footer.site .legal:only-child{margin-top:0;border-top:0;padding-top:0}
-@media (max-width:640px){
-  .pvl-s5 .policy{padding:110px 0 60px}
-  .pvl-s5 .policy .spec td:first-child{width:40%}
-}
