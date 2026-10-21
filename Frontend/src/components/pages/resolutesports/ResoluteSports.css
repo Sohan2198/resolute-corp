@@ -256,7 +256,10 @@
   .pvl-s5 .brand .sep{display:none}
   .pvl-s5 .brand .dt{width:40px;height:40px}
   .pvl-s5 .brand .rs{height:30px}
-  .pvl-s5 .hdr-cta .btn-outline{display:none}
+  .pvl-s5 header.site .wrap{gap:10px}
+  .pvl-s5 .brand{gap:10px}
+  .pvl-s5 .hdr-cta{gap:6px}
+  .pvl-s5 .hdr-cta .btn-sm{padding:9px 11px;font-size:13px;letter-spacing:.04em;white-space:nowrap}
   .pvl-s5 .hero{padding-top:110px;padding-bottom:70px}
   .pvl-s5 .lead-card{padding:28px 22px 24px}
   .pvl-s5 .row{grid-template-columns:1fr}
@@ -270,4 +273,11 @@
   .pvl-s5 .card{padding:32px 24px}
   .pvl-s5 .cta{padding:64px 0}
   .pvl-s5 .sticky{display:block}
+}
+@media (max-width:380px){
+  .pvl-s5 .wrap{padding:0 14px}
+  .pvl-s5 .brand{gap:8px}
+  .pvl-s5 .brand .rs{height:24px}
+  .pvl-s5 .brand .dt{width:34px;height:34px}
+  .pvl-s5 .hdr-cta .btn-sm{padding:8px 9px;font-size:12px;letter-spacing:.02em}
 }
