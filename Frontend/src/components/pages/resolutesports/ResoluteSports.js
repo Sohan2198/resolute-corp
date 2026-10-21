@@ -29,7 +29,9 @@ const DT_LOGO = dtLogo;
 const KICKOFF = Date.parse('2026-11-30T00:00:00+05:30');  // 30 Nov 2026, IST
 const PAGE_TITLE = 'Sponsor Delhi Toofans in PVL Season 5 | Resolute Sports';
 const PAGE_DESCRIPTION = 'Sponsor Delhi Toofans in PVL Season 5. Action begins 30 November 2026. Download the official Season 5 deck.';
-const FAIL_MSG = 'We could not send this right now. Please email contact@resolutesports.in or call us.';
+const PHONE_DISPLAY = '+91 87994 59334';
+const PHONE_HREF = 'tel:+918799459334';
+const FAIL_MSG = `We could not send this right now. Please email contact@resolutesports.in or call us on ${PHONE_DISPLAY}.`;
 const SUBMIT_LABEL = 'Download deck & request call';
 
 /* Content */
@@ -219,9 +221,7 @@ function SiteHeader() {
           {NAV.map(([href, text]) => <a key={href} href={href}>{text}</a>)}
         </nav>
         <div className="hdr-cta">
-          {/* Temporarily hidden until the real phone number is available
-          <a className="btn btn-outline btn-sm" href="tel:+910000000000">Call us</a>
-          */}
+          <a className="btn btn-outline btn-sm" href={PHONE_HREF}>Call us</a>
           <a className="btn btn-primary btn-sm" href="#lead">Get deck</a>
         </div>
       </div>
@@ -779,6 +779,7 @@ export default function ResoluteSports() {
               <p>Owner of Delhi Toofans and Hyderabad Toofans, Prime Volleyball League</p>
               <p>Ahmedabad, India</p>
               <p><a href="mailto:contact@resolutesports.in">contact@resolutesports.in</a></p>
+              <p><a href={PHONE_HREF}>{PHONE_DISPLAY}</a></p>
             </div>
             <div>
               <h4>Site map</h4>
