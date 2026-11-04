@@ -21,6 +21,7 @@ const GOOGLE_FORM_FIELDS = {
   // utm_campaign, utm_content, utm_term, gclid: add entry codes here if the form has them
 };
 const LEAD_EMAIL_API = '/api/send-lead-email';
+const GA4_ID = 'G-0L39WG9237';  // Google Analytics 4 property for this page
 const DECK_URL = '/PVL-Season-5-Sponsorship-Deck.pdf';    // replace with the approved deck URL
 const PRIVACY_URL = '/sponsorship-privacy-notice';
 const LOGO_PRIMARY = resoluteLogo;
@@ -265,6 +266,7 @@ function LeadForm({ interest, setInterest, budget, setBudget, track, onSent }) {
   const step1Ref = useRef(null);
   const step2Ref = useRef(null);
   const focusOnStep = useRef(false);
+  /* form_start is sent automatically by GA4 enhanced measurement, so it is not sent here. */
 
   useEffect(() => {
     if (!focusOnStep.current) return;
@@ -292,7 +294,12 @@ function LeadForm({ interest, setInterest, budget, setBudget, track, onSent }) {
     const e = step1Errors();
     setErrors(e);
     setStatus('');
-    if (!Object.keys(e).length) goStep(2);
+    if (Object.keys(e).length) {
+      ga4Event('form_validation_error', { form_id: 'leadForm', form_step: 1, error_fields: Object.keys(e).join(',') });
+      return;
+    }
+    ga4Event('form_step_complete', { form_id: 'leadForm', form_step: 1 });
+    goStep(2);
   };
 
   const onSubmit = e => {
@@ -306,7 +313,10 @@ function LeadForm({ interest, setInterest, budget, setBudget, track, onSent }) {
     if (!budget) e2.budget = 'Select a budget range.';
     if (!consent || !age) e2.consent = 'Please tick both consent boxes to continue.';
     setErrors(e2);
-    if (Object.keys(e2).length) return;
+    if (Object.keys(e2).length) {
+      ga4Event('form_validation_error', { form_id: 'leadForm', form_step: 2, error_fields: Object.keys(e2).join(',') });
+      return;
+    }
 
     const b = BUDGETS.find(x => x.value === budget);
     const payload = {
@@ -336,11 +346,30 @@ function LeadForm({ interest, setInterest, budget, setBudget, track, onSent }) {
       gclid: track.gclid,
     });
 
+    const gaLead = {
+      form_id: 'leadForm',
+      lead_interest: payload.interest,
+      lead_budget: payload.budget_range,
+      lead_score: payload.lead_score,
+      utm_source: track.utm_source,
+      utm_medium: track.utm_medium,
+      utm_campaign: track.utm_campaign,
+    };
+    ga4Event('form_submit', gaLead);
+
     setSending(true);
     send(payload)
       .then(() => emailLead(payload))
-      .then(emailed => { setSending(false); onSent({ email: payload.email, emailed }); })
-      .catch(() => { setSending(false); setStatus(FAIL_MSG); });
+      .then(emailed => {
+        setSending(false);
+        ga4Event('generate_lead', { ...gaLead, deck_emailed: emailed });
+        onSent({ email: payload.email, emailed });
+      })
+      .catch(() => {
+        setSending(false);
+        ga4Event('form_submit_error', { form_id: 'leadForm' });
+        setStatus(FAIL_MSG);
+      });
   };
 
   const textField = (id, name, label, type, extra) => (
@@ -501,6 +530,27 @@ function ThankYouDialog({ sent, onClose }) {
   );
 }
 
+/* Google Analytics 4 for this page only. The site-wide tag in public/index.html
+   uses a different property; this adds the Resolute Sports one on top of it. */
+function loadGa4() {
+  window.dataLayer = window.dataLayer || [];
+  if (!window.gtag) window.gtag = function gtag() { window.dataLayer.push(arguments); };
+  if (!document.querySelector(`script[src*="gtag/js?id=${GA4_ID}"]`)) {
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`;
+    document.head.appendChild(s);
+    window.gtag('js', new Date());
+  }
+  window.gtag('config', GA4_ID);
+}
+
+/* Sends a GA4 event to this page's property. Never pass personal data
+   (name, email, phone, company): Google Analytics does not allow it. */
+function ga4Event(name, params = {}) {
+  if (typeof window.gtag === 'function') window.gtag('event', name, { ...params, send_to: GA4_ID });
+}
+
 export default function ResoluteSports() {
   const [interest, setInterest] = useState('');
   const [budget, setBudget] = useState('');
@@ -530,6 +580,7 @@ export default function ResoluteSports() {
     meta.setAttribute('content', PAGE_DESCRIPTION);
     if (!prefersReducedMotion()) html.style.scrollBehavior = 'smooth';
     window.dataLayer = window.dataLayer || [];
+    loadGa4();
     return () => {
       document.title = prevTitle;
       if (prevDesc === null) meta.remove(); else meta.setAttribute('content', prevDesc);
