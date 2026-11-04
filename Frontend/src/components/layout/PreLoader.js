@@ -8,7 +8,7 @@ const PreLoader = () => {
          preLoaderAnim();
     },[]);
   return (
-    <div className='preloader fixed top-0 left-0 w-full h-full flex justify-center items-center opacity-100'>
+    <div className='legacy-preloader fixed top-0 left-0 w-full h-full flex justify-center items-center opacity-100'>
         <div className="gif-container animate-pulse ">
            <img src={loadergif} alt='Loading....' className='md:w-full md:h-full w-[350px] h-[100px] object-cover object-center' />
         </div>

@@ -1,4 +1,4 @@
-.preloader{
+.legacy-preloader{
     background: white;
     position: fixed;
     bottom: 0;
@@ -10,7 +10,7 @@
     align-items: center;
     overflow: hidden;
 }
-.preloader .gif-container img {
+.legacy-preloader .gif-container img {
     width: 100%; 
     height: 100vh;
   }

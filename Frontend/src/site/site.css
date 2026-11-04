@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Additions to the design stylesheet (design.css) for parts the design package did not include:
+   the embedded pitch form and careers portal, the blog index and article pages, and "Coming soon".
+   Same tokens, spacing and brand diagonals as the design. Scoped to .rg like design.css.
+   ========================================================================== */
+
+/* Wrappers around injected HTML must not affect layout */
+.rg .rg-contents { display: contents; }
+
+/* The app's global stylesheet sets Poppins on every element; let the design's font stack apply instead */
+.rg, .rg * { font-family: inherit; }
+
+/* Fix for the design: on the Portfolio "Explore our ventures" deck, the venture cards (sticky and transformed)
+   were painted over the number rail, cutting its hover labels in half. Keep the rail and its labels on top. */
+@media (min-width: 1280px) {
+  .rg .ventures__nav { position: relative; z-index: 5; }
+}
+
+/* Fix for the design: home hero. The outgoing slide's text left with the same long delays as the incoming text
+   (so both were visible together), and the tilted hidden words could peek out of their clip on long titles.
+   Outgoing text now leaves quickly, then the inactive caption is hidden completely. Entrances are unchanged. */
+.rg .hero__caption { visibility: hidden; transition: visibility 0s linear 0.5s; }
+.rg .hero__caption.is-active { visibility: visible; transition-delay: 0s; }
+.rg .hero__caption:not(.is-active) .hero__word > i { transition-duration: 0.4s; transition-delay: 0s; }
+.rg .hero__caption:not(.is-active) .eyebrow,
+.rg .hero__caption:not(.is-active) .hero__lead,
+.rg .hero__caption:not(.is-active) .hero__actions { transition-duration: 0.35s; transition-delay: 0s; }
+
+/* Fix for the design: home hero on short screens (most laptops: 1366x657, 1536x730 browser windows, small phones).
+   The hero is one screen tall with its text centred, so a tall text block ran under the header and into the
+   01 / 04 slide counter and its buttons. On short screens only, the title scales with the screen height and the
+   spacing tightens a little; taller screens keep the design's sizes exactly. */
+@media (min-width: 701px) and (max-height: 880px) {
+  .rg .hero__title { font-size: min(clamp(38px, 6.6vw, 108px), 11svh); margin: 16px 0 20px; }
+  .rg .hero__actions { margin-top: 26px; }
+  .rg .hero__caption { padding-bottom: calc(clamp(96px, 9vw, 128px) + 90px); }
+}
+@media (min-width: 701px) and (max-height: 700px) {
+  .rg .hero__title { font-size: min(clamp(38px, 6.6vw, 108px), 10svh); }
+  .rg .hero__lead { font-size: 18px; }
+}
+@media (max-width: 700px) and (max-height: 760px) {
+  .rg .hero__title { font-size: min(38px, 5.1svh); margin: 12px 0 14px; }
+  .rg .hero__lead { font-size: 15px; }
+  .rg .hero__actions { margin-top: 20px; }
+  .rg .hero__caption { padding-bottom: 122px; }
+}
+
+/* Home "About us" photo on phones: the "Founded in Ahmedabad" badge covered the top of the RESOLUTE sign in the
+   photo. Move it up to the photo's top edge on phones only. */
+@media (max-width: 700px) {
+  .rg .about__badge { top: 0; }
+}
+
+/* Pitch form (Microsoft Forms) and careers portal (Keka) ------------------- */
+.rg .embed { position: relative; background: var(--color-white); }
+.rg .embed iframe { display: block; width: 100%; border: 0; }
+.rg .connect__form-wrap--embed { padding: clamp(14px, 2vw, 28px); }
+.rg .embed--form iframe { height: 960px; }
+.rg .connect__card--single { grid-template-columns: 1fr; }
+.rg .connect__card--single .connect__intro { display: grid; gap: 0 60px; }
+.rg .connect__card--single .tabs { justify-self: start; }
+@media (min-width: 960px) {
+  .rg .connect__card--single .connect__intro { grid-template-columns: 1.2fr 0.8fr; align-items: end; }
+  .rg .connect__card--single .tabs,
+  .rg .connect__card--single .connect__pane { grid-column: 1; }
+  .rg .connect__card--single .connect__contact,
+  .rg .connect__card--single .connect__social { grid-column: 2; }
+  .rg .connect__card--single .connect__contact { grid-row: 2; align-self: end; margin-bottom: 14px; }
+}
+.rg .connect__embed { margin-top: clamp(24px, 3vw, 40px); }
+.rg .embed--jobs { border-top: 4px solid var(--color-blue); box-shadow: 0 26px 50px rgba(16, 57, 133, 0.1); }
+.rg .embed--jobs iframe { height: max(1100px, 100vh); }
+
+/* Blog index ---------------------------------------------------------------- */
+.rg .blog-index__tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; margin: 44px 0 0; }
+.rg .blog-index__tools .filter-chips { margin: 0; }
+.rg .blog-index__search input {
+  width: min(320px, 100%); padding: 12px 18px; font: inherit; font-size: 14px; color: var(--color-ink);
+  background: var(--color-white); border: 1.5px solid var(--color-line); border-radius: 0; outline: none;
+  transition: border-color 0.3s;
+}
+.rg .blog-index__search input:focus { border-color: var(--color-cyan); }
+.rg .blog__grid--index { margin-top: 36px; scroll-margin-top: calc(var(--header-h) + 24px); }
+@media (min-width: 1100px) { .rg .blog__grid--index { grid-template-columns: repeat(3, 1fr); } }
+.rg .blog-card--image { padding-top: 0; }
+.rg .blog-card__image { display: block; margin: 0 -26px 6px; overflow: hidden; aspect-ratio: 16 / 9; background: var(--color-tint); }
+.rg .blog-card__image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease-out); }
+.rg .blog-card:hover .blog-card__image img { transform: scale(1.05); }
+.rg .blog-card__excerpt {
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  font-size: 14.5px; line-height: 1.6; color: var(--color-text);
+}
+.rg .blog-index__status { display: flex; align-items: center; gap: 14px; padding: 60px 0; color: var(--color-text); grid-column: 1 / -1; }
+.rg .spinner { width: 28px; height: 28px; border: 3px solid var(--color-line); border-top-color: var(--color-cyan); border-radius: 50%; animation: rg-spin 0.9s linear infinite; }
+@keyframes rg-spin { to { transform: rotate(360deg); } }
+.rg .pagination { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 50px; }
+.rg .pagination button {
+  min-width: 44px; height: 44px; padding: 0 14px; font-size: 14px; font-weight: 600; color: var(--color-navy);
+  background: var(--color-white); border: 1.5px solid var(--color-line); transition: all 0.3s;
+}
+.rg .pagination button:hover:not(:disabled) { border-color: var(--color-cyan); }
+.rg .pagination button.is-active { color: var(--color-white); background: var(--color-navy); border-color: var(--color-navy); }
+.rg .pagination button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* Blog article ---------------------------------------------------------------- */
+.rg .article { padding-top: clamp(50px, 6vw, 90px); }
+.rg .article__container { max-width: calc(860px + 2 * var(--gutter)); }
+.rg .article__title { margin-top: 18px; font-size: clamp(30px, 4vw, 52px); font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; color: var(--color-navy); }
+.rg .article__meta { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 22px; font-size: 14px; font-weight: 600; color: #6b7684; }
+.rg .article__meta time { color: var(--color-blue); }
+.rg .article__banner { width: 100%; margin-top: 36px; clip-path: var(--cut-lg); }
+.rg .article__body { margin-top: 40px; font-size: 17px; line-height: 1.8; color: var(--color-text); overflow-wrap: break-word; }
+.rg .article__body > * + * { margin-top: 1.1em; }
+.rg .article__body h1, .rg .article__body h2, .rg .article__body h3, .rg .article__body h4 { margin-top: 1.6em; line-height: 1.25; font-weight: 600; color: var(--color-navy); }
+.rg .article__body h1 { font-size: 32px; }
+.rg .article__body h2 { font-size: 27px; }
+.rg .article__body h3 { font-size: 22px; }
+.rg .article__body h4 { font-size: 19px; }
+.rg .article__body p { margin-bottom: 0; }
+.rg .article__body a { color: var(--color-blue); text-decoration: underline; text-underline-offset: 3px; }
+.rg .article__body a:hover { color: var(--color-navy); }
+.rg .article__body ul, .rg .article__body ol { padding-left: 1.4em; }
+.rg .article__body ul { list-style: disc; }
+.rg .article__body ol { list-style: decimal; }
+.rg .article__body li + li { margin-top: 0.4em; }
+.rg .article__body img { height: auto; margin: 1.6em auto; }
+.rg .article__body blockquote { padding: 4px 0 4px 22px; border-left: 4px solid var(--color-cyan); color: var(--color-navy); font-style: italic; }
+.rg .article__body table { width: 100%; border-collapse: collapse; font-size: 15px; display: block; overflow-x: auto; }
+.rg .article__body th, .rg .article__body td { padding: 10px 14px; border: 1px solid var(--color-line); text-align: left; vertical-align: top; }
+.rg .article__body th { color: var(--color-navy); background: var(--color-tint); }
+.rg .article__body strong, .rg .article__body b { color: var(--color-ink); font-weight: 600; }
+.rg .article__back { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--color-line); }
+/* Posts written in the admin panel: justified text and left-aligned headings, as on the previous blog page.
+   The editor's alignment classes are ignored, as they were before; line breaks inside paragraphs are kept. */
+.rg .article__body { text-align: justify; white-space: pre-wrap; }
+.rg .article__body .article__spacer { display: none; }
+.rg .article__body .article__heading { margin-top: 1.9em; font-size: 20px; font-weight: 600; line-height: 1.4; text-align: left; color: var(--color-navy); }
+.rg .article__body .article__heading strong, .rg .article__body .article__heading b { color: inherit; }
+.rg .article__body .article__heading--main { margin-top: 2.4em; font-size: 25px; line-height: 1.3; }
+.rg .article__body .article__heading--main::before { content: ""; display: block; width: 36px; height: 2px; margin-bottom: 14px; background: var(--color-cyan); }
+.rg .article__body .article__heading + * { margin-top: 0.55em; }
+.rg .article__body > .article__heading:first-child { margin-top: 0; }
+/* Older posts (migrated from the first blog) mark their headings with these utility classes */
+.rg .article__body .font-bold { color: var(--color-navy); }
+
+/* Events and highlights: coming soon ------------------------------------------------ */
+.rg .coming-soon { display: grid; justify-items: start; gap: 18px; margin-top: 44px; padding: clamp(30px, 4vw, 56px); background: var(--color-white); border-left: 4px solid var(--color-cyan); }
+.rg .coming-soon p { max-width: 560px; font-size: 17px; color: var(--color-text); }

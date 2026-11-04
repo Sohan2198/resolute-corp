@@ -1,0 +1,1271 @@
+{
+  "home": {
+    "path": "/",
+    "title": "Resolute Corp | Diversified Investment Group in India",
+    "description": "Ahmedabad-based investment group with ventures in real estate, fashion and sports: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#organization",
+          "name": "Resolute Corp Bharat Private Limited",
+          "alternateName": [
+            "Resolute Group",
+            "Resolute Corp",
+            "Resolutecorp"
+          ],
+          "url": "https://www.resolutecorp.in/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "/assets/img/logo-resolute.png",
+            "width": 600,
+            "height": 200
+          },
+          "image": "/assets/img/banner-1.jpg",
+          "description": "Resolute Corp is a diversified investment and venture-building group creating sustainable value across real estate, fashion and sports.",
+          "slogan": "Progress is vitality",
+          "email": "contact@resolutecorp.in",
+          "telephone": "+91-6353106274",
+          "foundingLocation": {
+            "@type": "Place",
+            "name": "Ahmedabad, India"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ahmedabad",
+            "addressRegion": "Gujarat",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.9929562,
+            "longitude": 72.4992223
+          },
+          "areaServed": [
+            "IN",
+            "AE"
+          ],
+          "knowsAbout": [
+            "Investment management",
+            "Real estate",
+            "Fashion and lifestyle brands",
+            "Sports franchises"
+          ],
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "general enquiries",
+              "email": "contact@resolutecorp.in",
+              "telephone": "+91-6353106274",
+              "areaServed": "IN",
+              "availableLanguage": "English"
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/company/resolutecorp/",
+            "https://www.instagram.com/resolute.corp/",
+            "https://www.facebook.com/people/Resolute-Corp/61559078189329/"
+          ],
+          "subOrganization": [
+            {
+              "@id": "https://www.resolutecorp.in/#sharesquare"
+            },
+            {
+              "@id": "https://www.resolutecorp.in/#hair-drama-co"
+            },
+            {
+              "@id": "https://www.resolutecorp.in/#resolute-sports"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#sharesquare",
+          "name": "ShareSquare",
+          "url": "https://sharesquare.ae/",
+          "description": "A fractional real estate investment platform for premium properties in the UAE.",
+          "areaServed": "AE",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#hair-drama-co",
+          "name": "Hair Drama Co.",
+          "alternateName": "Hair Drama Company",
+          "url": "https://www.hairdramacompany.com/",
+          "foundingDate": "2015",
+          "description": "A holistic hair fashion brand creating luxurious, handmade hair accessories for women and girls.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "founder": {
+            "@id": "https://www.resolutecorp.in/#priyanka-sanghi"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#resolute-sports",
+          "name": "Resolute Sports Private Limited",
+          "description": "Owner of the Delhi Toofans and Hyderabad Toofans franchises.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "subOrganization": [
+            {
+              "@id": "https://www.resolutecorp.in/#delhi-toofans"
+            },
+            {
+              "@id": "https://www.resolutecorp.in/#hyderabad-toofans"
+            }
+          ]
+        },
+        {
+          "@type": "SportsTeam",
+          "@id": "https://www.resolutecorp.in/#delhi-toofans",
+          "name": "Delhi Toofans",
+          "sport": "Volleyball",
+          "url": "https://delhitoofans.com/",
+          "description": "Prime Volleyball League franchise owned by Resolute Sports; award winners in every season since its 2024 debut.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        },
+        {
+          "@type": "SportsTeam",
+          "@id": "https://www.resolutecorp.in/#hyderabad-toofans",
+          "name": "Hyderabad Toofans",
+          "sport": "Hockey",
+          "url": "https://hyderabadtoofans.net/",
+          "description": "Hockey India League franchise owned by Resolute Sports; bronze medallists in Hockey India League 2025–26.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.resolutecorp.in/#website",
+          "url": "https://www.resolutecorp.in/",
+          "name": "Resolute Group",
+          "publisher": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/#webpage",
+          "url": "https://www.resolutecorp.in/",
+          "name": "Resolute Corp | Diversified Investment Group in India",
+          "description": "Ahmedabad-based investment group with ventures in real estate, fashion and sports: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "/assets/img/banner-1.jpg"
+          }
+        },
+        {
+          "@type": "Blog",
+          "@id": "/blog#blog",
+          "url": "/blog",
+          "name": "Perspectives on investing, markets and growth",
+          "publisher": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "inLanguage": "en-IN"
+        }
+      ]
+    }
+  },
+  "about": {
+    "path": "/about",
+    "title": "About Us | Resolute Corp, Diversified Investment Group",
+    "description": "Resolute Group invests in, builds and manages businesses across real estate, fashion and sports in India and the UAE, led by Managing Director Alok Sanghi.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "AboutPage",
+          "@id": "https://www.resolutecorp.in/about#webpage",
+          "url": "https://www.resolutecorp.in/about",
+          "name": "About Us | Resolute Corp, Diversified Investment Group",
+          "description": "Resolute Group invests in, builds and manages businesses across real estate, fashion and sports in India and the UAE, led by Managing Director Alok Sanghi.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/about#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/about#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "About",
+              "item": "https://www.resolutecorp.in/about"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "portfolio": {
+    "path": "/portfolio",
+    "title": "Portfolio | Ventures in Real Estate, Fashion and Sports",
+    "description": "Explore Resolute Group's four ventures: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans, across real estate, fashion and sports.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://www.resolutecorp.in/portfolio#webpage",
+          "url": "https://www.resolutecorp.in/portfolio",
+          "name": "Portfolio | Ventures in Real Estate, Fashion and Sports",
+          "description": "Explore Resolute Group's four ventures: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans, across real estate, fashion and sports.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/portfolio#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/portfolio#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://www.resolutecorp.in/portfolio"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#sharesquare",
+          "name": "ShareSquare",
+          "url": "https://sharesquare.ae/",
+          "description": "A fractional real estate investment platform for premium properties in the UAE.",
+          "areaServed": "AE",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#hair-drama-co",
+          "name": "Hair Drama Co.",
+          "alternateName": "Hair Drama Company",
+          "url": "https://www.hairdramacompany.com/",
+          "foundingDate": "2015",
+          "description": "A holistic hair fashion brand creating luxurious, handmade hair accessories for women and girls.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "founder": {
+            "@id": "https://www.resolutecorp.in/#priyanka-sanghi"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#resolute-sports",
+          "name": "Resolute Sports Private Limited",
+          "description": "Owner of the Delhi Toofans and Hyderabad Toofans franchises.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "subOrganization": [
+            {
+              "@id": "https://www.resolutecorp.in/#delhi-toofans"
+            },
+            {
+              "@id": "https://www.resolutecorp.in/#hyderabad-toofans"
+            }
+          ]
+        },
+        {
+          "@type": "SportsTeam",
+          "@id": "https://www.resolutecorp.in/#delhi-toofans",
+          "name": "Delhi Toofans",
+          "sport": "Volleyball",
+          "url": "https://delhitoofans.com/",
+          "description": "Prime Volleyball League franchise owned by Resolute Sports; award winners in every season since its 2024 debut.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        },
+        {
+          "@type": "SportsTeam",
+          "@id": "https://www.resolutecorp.in/#hyderabad-toofans",
+          "name": "Hyderabad Toofans",
+          "sport": "Hockey",
+          "url": "https://hyderabadtoofans.net/",
+          "description": "Hockey India League franchise owned by Resolute Sports; bronze medallists in Hockey India League 2025–26.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        }
+      ]
+    }
+  },
+  "sharesquare": {
+    "path": "/portfolio/sharesquare",
+    "title": "ShareSquare | Resolute Group Portfolio",
+    "description": "ShareSquare is a fractional real estate investment platform for premium properties in the UAE, a Resolute Group venture. Seamless, transparent and secure.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/portfolio/sharesquare#webpage",
+          "url": "https://www.resolutecorp.in/portfolio/sharesquare",
+          "name": "ShareSquare | Resolute Group Portfolio",
+          "description": "ShareSquare is a fractional real estate investment platform for premium properties in the UAE, a Resolute Group venture. Seamless, transparent and secure.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/portfolio/sharesquare#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://www.resolutecorp.in/#sharesquare"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/portfolio/sharesquare#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://www.resolutecorp.in/portfolio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "ShareSquare",
+              "item": "https://www.resolutecorp.in/portfolio/sharesquare"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#sharesquare",
+          "name": "ShareSquare",
+          "url": "https://sharesquare.ae/",
+          "description": "A fractional real estate investment platform for premium properties in the UAE.",
+          "areaServed": "AE",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        }
+      ]
+    }
+  },
+  "hairDramaCo": {
+    "path": "/portfolio/hair-drama-co",
+    "title": "Hair Drama Co. | Resolute Group Portfolio",
+    "description": "Hair Drama Co. has led hair fashion in India since 2015, with handmade accessories and Disney India, Barbie and Emily in Paris licences. A Resolute venture.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/portfolio/hair-drama-co#webpage",
+          "url": "https://www.resolutecorp.in/portfolio/hair-drama-co",
+          "name": "Hair Drama Co. | Resolute Group Portfolio",
+          "description": "Hair Drama Co. has led hair fashion in India since 2015, with handmade accessories and Disney India, Barbie and Emily in Paris licences. A Resolute venture.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/portfolio/hair-drama-co#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://www.resolutecorp.in/#hair-drama-co"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/portfolio/hair-drama-co#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://www.resolutecorp.in/portfolio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Hair Drama Co.",
+              "item": "https://www.resolutecorp.in/portfolio/hair-drama-co"
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#hair-drama-co",
+          "name": "Hair Drama Co.",
+          "alternateName": "Hair Drama Company",
+          "url": "https://www.hairdramacompany.com/",
+          "foundingDate": "2015",
+          "description": "A holistic hair fashion brand creating luxurious, handmade hair accessories for women and girls.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "founder": {
+            "@id": "https://www.resolutecorp.in/#priyanka-sanghi"
+          }
+        }
+      ]
+    }
+  },
+  "delhiToofans": {
+    "path": "/portfolio/delhi-toofans",
+    "title": "Delhi Toofans | Resolute Group Portfolio",
+    "description": "Delhi Toofans compete in the Prime Volleyball League, building India's volleyball culture and homegrown talent. A Resolute Sports team, part of Resolute Group.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/portfolio/delhi-toofans#webpage",
+          "url": "https://www.resolutecorp.in/portfolio/delhi-toofans",
+          "name": "Delhi Toofans | Resolute Group Portfolio",
+          "description": "Delhi Toofans compete in the Prime Volleyball League, building India's volleyball culture and homegrown talent. A Resolute Sports team, part of Resolute Group.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/portfolio/delhi-toofans#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://www.resolutecorp.in/#delhi-toofans"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/portfolio/delhi-toofans#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://www.resolutecorp.in/portfolio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Delhi Toofans",
+              "item": "https://www.resolutecorp.in/portfolio/delhi-toofans"
+            }
+          ]
+        },
+        {
+          "@type": "SportsTeam",
+          "@id": "https://www.resolutecorp.in/#delhi-toofans",
+          "name": "Delhi Toofans",
+          "sport": "Volleyball",
+          "url": "https://delhitoofans.com/",
+          "description": "Prime Volleyball League franchise owned by Resolute Sports; award winners in every season since its 2024 debut.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#resolute-sports",
+          "name": "Resolute Sports Private Limited",
+          "description": "Owner of the Delhi Toofans and Hyderabad Toofans franchises.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "subOrganization": [
+            {
+              "@id": "https://www.resolutecorp.in/#delhi-toofans"
+            },
+            {
+              "@id": "https://www.resolutecorp.in/#hyderabad-toofans"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "hyderabadToofans": {
+    "path": "/portfolio/hyderabad-toofans",
+    "title": "Hyderabad Toofans | Resolute Group Portfolio",
+    "description": "Hyderabad Toofans compete in the Hockey India League and won bronze in 2025–26. A Resolute Sports team, part of Resolute Group.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/portfolio/hyderabad-toofans#webpage",
+          "url": "https://www.resolutecorp.in/portfolio/hyderabad-toofans",
+          "name": "Hyderabad Toofans | Resolute Group Portfolio",
+          "description": "Hyderabad Toofans compete in the Hockey India League and won bronze in 2025–26. A Resolute Sports team, part of Resolute Group.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/portfolio/hyderabad-toofans#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://www.resolutecorp.in/#hyderabad-toofans"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/portfolio/hyderabad-toofans#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Portfolio",
+              "item": "https://www.resolutecorp.in/portfolio"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Hyderabad Toofans",
+              "item": "https://www.resolutecorp.in/portfolio/hyderabad-toofans"
+            }
+          ]
+        },
+        {
+          "@type": "SportsTeam",
+          "@id": "https://www.resolutecorp.in/#hyderabad-toofans",
+          "name": "Hyderabad Toofans",
+          "sport": "Hockey",
+          "url": "https://hyderabadtoofans.net/",
+          "description": "Hockey India League franchise owned by Resolute Sports; bronze medallists in Hockey India League 2025–26.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.resolutecorp.in/#resolute-sports",
+          "name": "Resolute Sports Private Limited",
+          "description": "Owner of the Delhi Toofans and Hyderabad Toofans franchises.",
+          "parentOrganization": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "subOrganization": [
+            {
+              "@id": "https://www.resolutecorp.in/#delhi-toofans"
+            },
+            {
+              "@id": "https://www.resolutecorp.in/#hyderabad-toofans"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "leadership": {
+    "path": "/leadership",
+    "title": "Leadership | Alok Sanghi, Priyanka Sanghi and Executive Team",
+    "description": "Meet Resolute Group's leadership: Managing Director Alok Sanghi, Hair Drama Co. founder Priyanka Sanghi and the executive team.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/leadership#webpage",
+          "url": "https://www.resolutecorp.in/leadership",
+          "name": "Leadership | Alok Sanghi, Priyanka Sanghi and Executive Team",
+          "description": "Meet Resolute Group's leadership: Managing Director Alok Sanghi, Hair Drama Co. founder Priyanka Sanghi and the executive team.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/leadership#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/leadership#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Leadership",
+              "item": "https://www.resolutecorp.in/leadership"
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.resolutecorp.in/#alok-sanghi",
+          "name": "Alok Sanghi",
+          "jobTitle": "Managing Director, Resolute Group",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Indiana University Bloomington"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.resolutecorp.in/#priyanka-sanghi",
+          "name": "Priyanka Sanghi",
+          "jobTitle": "Founder, Hair Drama Co.",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#hair-drama-co"
+          },
+          "description": "Founder of Hair Drama Co. and head of the Group's lifestyle portfolio."
+        },
+        {
+          "@type": "Person",
+          "name": "Vivek Pawar",
+          "jobTitle": "CEO, Hair Drama Co.",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#hair-drama-co"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Sai Prakash",
+          "jobTitle": "CEO, Resolute Sports",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#resolute-sports"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Nikhil Rungta",
+          "jobTitle": "Chief Investment Officer",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Muath Abdel Jalil",
+          "jobTitle": "CEO, ShareSquare",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#sharesquare"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Sanjeev Ludhani",
+          "jobTitle": "Chief Digital Officer",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Manish Kumar",
+          "jobTitle": "Group General Counsel",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Dilip Chakraborty",
+          "jobTitle": "Group Head, Accounts and Taxation",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Amrita Desai",
+          "jobTitle": "Group Chief Human Resources Officer",
+          "worksFor": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          }
+        }
+      ]
+    }
+  },
+  "media": {
+    "path": "/media",
+    "title": "Media | Resolute in the News, Blog and Press",
+    "description": "Press coverage, news from Delhi Toofans, Hyderabad Toofans and Hair Drama Co., and perspectives on investing, markets and growth from Resolute Corp.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://www.resolutecorp.in/media#webpage",
+          "url": "https://www.resolutecorp.in/media",
+          "name": "Media | Resolute in the News, Blog and Press",
+          "description": "Press coverage, news from Delhi Toofans, Hyderabad Toofans and Hair Drama Co., and perspectives on investing, markets and growth from Resolute Corp.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/media#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/media#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Media",
+              "item": "https://www.resolutecorp.in/media"
+            }
+          ]
+        },
+        {
+          "@type": "Blog",
+          "@id": "/blog#blog",
+          "url": "/blog",
+          "name": "Perspectives on investing, markets and growth",
+          "publisher": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "inLanguage": "en-IN"
+        }
+      ]
+    }
+  },
+  "investors": {
+    "path": "/scheme-of-arrangement",
+    "title": "Investors | Scheme of Arrangement Documents | Resolute Corp",
+    "description": "Documents relating to the Scheme of Arrangement of Resolute Corp Bharat Private Limited, including the notice of meeting and the scrutinizer's report.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/scheme-of-arrangement#webpage",
+          "url": "https://www.resolutecorp.in/scheme-of-arrangement",
+          "name": "Investors | Scheme of Arrangement Documents | Resolute Corp",
+          "description": "Documents relating to the Scheme of Arrangement of Resolute Corp Bharat Private Limited, including the notice of meeting and the scrutinizer's report.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/scheme-of-arrangement#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/scheme-of-arrangement#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Investors",
+              "item": "https://www.resolutecorp.in/scheme-of-arrangement"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "career": {
+    "path": "/career",
+    "title": "Careers at Resolute Group | Join Our Team",
+    "description": "Explore careers at Resolute Group across investments, digital and technology, legal, accounts, people and culture, brands and sports.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "@id": "https://www.resolutecorp.in/career#webpage",
+          "url": "https://www.resolutecorp.in/career",
+          "name": "Careers at Resolute Group | Join Our Team",
+          "description": "Explore careers at Resolute Group across investments, digital and technology, legal, accounts, people and culture, brands and sports.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/career#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/career#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Careers",
+              "item": "https://www.resolutecorp.in/career"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pitch": {
+    "path": "/pitch",
+    "title": "Pitch Your Idea | Resolute Group",
+    "description": "Share your venture or investment idea with Resolute Group. A personal introduction is the best route; otherwise, contact us directly.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ContactPage",
+          "@id": "https://www.resolutecorp.in/pitch#webpage",
+          "url": "https://www.resolutecorp.in/pitch",
+          "name": "Pitch Your Idea | Resolute Group",
+          "description": "Share your venture or investment idea with Resolute Group. A personal introduction is the best route; otherwise, contact us directly.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/pitch#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/pitch#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Pitch us",
+              "item": "https://www.resolutecorp.in/pitch"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "faq": {
+    "path": "/faq",
+    "title": "FAQ | How Resolute Corp Operates, Invests and Grows",
+    "description": "Answers to common questions about how Resolute Corp operates, invests and grows.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/faq#webpage",
+          "url": "https://www.resolutecorp.in/faq",
+          "name": "FAQ | How Resolute Corp Operates, Invests and Grows",
+          "description": "Answers to common questions about how Resolute Corp operates, invests and grows.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/faq#breadcrumb"
+          },
+          "mainEntity": {
+            "@id": "https://www.resolutecorp.in/faq#faq"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/faq#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "FAQ",
+              "item": "https://www.resolutecorp.in/faq"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.resolutecorp.in/faq#faq",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/faq#webpage"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does Resolute Corp operate?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Resolute Corp is a diversified investment and venture-building group. It invests in and builds businesses across real estate, fashion and sports, combining financial discipline, industry expertise and hands-on operational leadership to scale brands in India and international markets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where does Resolute Corp operate and invest?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Resolute Corp was founded in Ahmedabad, India. Its ventures include ShareSquare in Dubai, sports franchises across India and lifestyle brands that reach global markets. This cross-border presence lets the Group pursue opportunities in both mature and developing economies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who leads Resolute Corp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Resolute Corp is led by Alok Sanghi, Managing Director, a finance and economics graduate of Indiana University with expertise in operational excellence, risk management and strategic diversification. Priyanka Sanghi, founder of Hair Drama Co., leads the Group’s lifestyle portfolio and has taken the brand to international markets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How is Resolute Corp involved in hockey and volleyball?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Through Resolute Sports, Resolute Corp owns and manages two professional teams: Delhi Toofans in the Prime Volleyball League and Hyderabad Toofans in the Hockey India League. These investments support its aim to promote sports culture, strengthen grassroots development and nurture athletic talent across India. Delhi Toofans have been award winners in every season since their 2024 debut."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What distinguishes Resolute Corp’s portfolio?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Resolute Corp invests in high-growth, high-engagement sectors (sports, lifestyle and real estate), which offers the potential for both financial returns and strong brand visibility."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How has Hair Drama Co. grown under Priyanka Sanghi’s leadership?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hair Drama Co. has broadened its product range and entered international markets through influencer marketing, global trend forecasting and omnichannel retail, positioning itself as a premium lifestyle accessory brand."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is ShareSquare?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ShareSquare is a Dubai-based fractional real estate investment platform for premium UAE properties. Investors can own shares in properties, diversify their portfolios and participate in potential appreciation and rental income. Returns are not guaranteed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Resolute Corp seek strategic partnerships?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Resolute Corp actively seeks collaborations with global brands, technology providers and event organisers to widen market reach, improve operational efficiency and open new revenue streams for each portfolio company."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is Resolute Corp’s long-term investment philosophy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Resolute Corp’s philosophy is rooted in strategic diversification, innovation-driven growth and responsible investing. Whether developing premium urban spaces, building sports franchises or scaling fashion brands, it focuses on creating financial value while fostering community development, sustainability and brand equity across its sectors."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "path": "/privacy-policy",
+    "title": "Privacy Policy | Resolute Corp Bharat Private Limited",
+    "description": "How Resolute Corp Bharat Private Limited collects, uses and protects personal data submitted through this website.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://www.resolutecorp.in/privacy-policy#webpage",
+          "url": "https://www.resolutecorp.in/privacy-policy",
+          "name": "Privacy Policy | Resolute Corp Bharat Private Limited",
+          "description": "How Resolute Corp Bharat Private Limited collects, uses and protects personal data submitted through this website.",
+          "inLanguage": "en-IN",
+          "isPartOf": {
+            "@id": "https://www.resolutecorp.in/#website"
+          },
+          "about": {
+            "@id": "https://www.resolutecorp.in/#organization"
+          },
+          "breadcrumb": {
+            "@id": "https://www.resolutecorp.in/privacy-policy#breadcrumb"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.resolutecorp.in/privacy-policy#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.resolutecorp.in/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Privacy Policy",
+              "item": "https://www.resolutecorp.in/privacy-policy"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "path": null,
+    "title": "Page not found | Resolute Corp",
+    "description": "This page could not be found. Return to the Resolute Group home page, portfolio or contact page.",
+    "robots": "noindex, follow",
+    "ogType": "website",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": []
+    }
+  },
+  "pressReleases": {
+    "path": "/press-releases",
+    "title": "Press Releases | Resolute Group in the News",
+    "description": "Press coverage and news from Resolute Group and its ventures: Delhi Toofans, Hyderabad Toofans and Hair Drama Co.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.resolutecorp.in/press-releases#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.resolutecorp.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Media",
+          "item": "https://www.resolutecorp.in/media"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Press releases",
+          "item": "https://www.resolutecorp.in/press-releases"
+        }
+      ]
+    }
+  },
+  "eventsHighlights": {
+    "path": "/events-highlights",
+    "title": "Events and Highlights | Resolute Group",
+    "description": "Events, highlights and what is coming next across Resolute Group and its ventures.",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.resolutecorp.in/events-highlights#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.resolutecorp.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Media",
+          "item": "https://www.resolutecorp.in/media"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Events and highlights",
+          "item": "https://www.resolutecorp.in/events-highlights"
+        }
+      ]
+    }
+  },
+  "blog": {
+    "path": "/blog",
+    "title": "ResoluteCorp - Finance and Investment Centric Blog",
+    "description": "Explore insights on investments and growth with Resolute Group's expert analyses and strategies for navigating dynamic markets and achieving sustainable success."
+  }
+}
