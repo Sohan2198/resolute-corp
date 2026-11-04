@@ -31,7 +31,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>Established</small>2015</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/hdc-logo.jpg" alt="Hair Drama Co. logo" width="500" height="500"><span class="venture__logo-fallback">Hair Drama Co.</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/hdc-logo.webp" alt="Hair Drama Co. logo" width="500" height="500"><span class="venture__logo-fallback">Hair Drama Co.</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Licensing partners</small>Disney India · Barbie · Emily in Paris</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>

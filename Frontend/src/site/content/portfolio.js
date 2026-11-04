@@ -78,7 +78,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>Premium properties</small>UAE</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/sharesquare.jpg" alt="ShareSquare logo" width="500" height="500"><span class="venture__logo-fallback">ShareSquare</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/sharesquare.webp" alt="ShareSquare logo" width="500" height="500"><span class="venture__logo-fallback">ShareSquare</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Own a share of</small>premium real estate</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>
@@ -99,7 +99,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>Established</small>2015</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/hdc-logo.jpg" alt="Hair Drama Co. logo" width="500" height="500"><span class="venture__logo-fallback">Hair Drama Co.</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/hdc-logo.webp" alt="Hair Drama Co. logo" width="500" height="500"><span class="venture__logo-fallback">Hair Drama Co.</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Licensing partners</small>Disney India · Barbie · Emily in Paris</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>
@@ -121,7 +121,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>PVL 2024</small>Finalists</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/dt-logo.jpg" alt="Delhi Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Delhi Toofans</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/dt-logo.webp" alt="Delhi Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Delhi Toofans</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Owned by</small>Resolute Sports</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>
@@ -142,7 +142,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>HIL 2025–26</small>Bronze medal</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/ht-logo.jpg" alt="Hyderabad Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Hyderabad Toofans</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/ht-logo.webp" alt="Hyderabad Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Hyderabad Toofans</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Owned by</small>Resolute Sports</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>

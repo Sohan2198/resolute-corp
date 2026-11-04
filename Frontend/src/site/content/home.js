@@ -18,10 +18,10 @@ const html = `
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="home" data-section="home" data-hero aria-label="Introduction">
   <div class="hero__bg">
-    <div class="hero__slide is-active" data-hero-slide><img src="/assets/img/banner-1.jpg" alt="" width="1920" height="800" fetchpriority="high"></div>
-    <div class="hero__slide" data-hero-slide><img src="/assets/img/banner-2.jpg" alt="" width="1920" height="800" loading="lazy"></div>
-    <div class="hero__slide" data-hero-slide><img src="/assets/img/banner-3.jpg" alt="" width="1920" height="800" loading="lazy"></div>
-    <div class="hero__slide" data-hero-slide><img src="/assets/img/hil_bronze.jpg" alt="" width="1920" height="801" loading="lazy"></div>
+    <div class="hero__slide is-active" data-hero-slide><img src="/assets/img/banner-1.webp" alt="" width="1920" height="800" fetchpriority="high"></div>
+    <div class="hero__slide" data-hero-slide><img src="/assets/img/banner-2.webp" alt="" width="1920" height="800" loading="lazy"></div>
+    <div class="hero__slide" data-hero-slide><img src="/assets/img/banner-3.webp" alt="" width="1920" height="800" loading="lazy"></div>
+    <div class="hero__slide" data-hero-slide><img src="/assets/img/hil_bronze.webp" alt="" width="1920" height="801" loading="lazy"></div>
   </div>
   <canvas class="hero__facets" data-facets="hero" aria-hidden="true"></canvas>
   <div class="hero__shapes" aria-hidden="true">
@@ -104,7 +104,7 @@ const html = `
     <div class="about__layout">
       <div class="about__media" data-reveal="left">
         <div class="about__badge"><span>Founded in</span><b>Ahmedabad</b></div>
-        <div class="about__frame"><img src="/assets/img/resolute-ui-about.jpg" alt="Inside the Resolute Group office" width="700" height="600" loading="lazy" decoding="async" data-parallax-media></div>
+        <div class="about__frame"><img src="/assets/img/resolute-ui-about.webp" alt="Inside the Resolute Group office" width="700" height="600" loading="lazy" decoding="async" data-parallax-media></div>
         <span class="triangle" aria-hidden="true"></span><span class="triangle" aria-hidden="true"></span><span class="triangle" aria-hidden="true"></span>
       </div>
       <div>
@@ -151,7 +151,7 @@ const html = `
   <div class="container">
     <div class="leadership__layout">
       <div class="leadership__photo leadership__photo--cutout" data-reveal="left">
-        <div class="leadership__frame"><span class="monogram" aria-hidden="true">AS</span><img src="/assets/img/alok-sanghi.webp" data-fallback-src="/assets/img/resolute-ui-alok-sir.jpg" alt="Alok Sanghi, Managing Director, Resolute Group" width="877" height="1180" decoding="async"></div>
+        <div class="leadership__frame"><span class="monogram" aria-hidden="true">AS</span><img src="/assets/img/alok-sanghi.webp" data-fallback-src="/assets/img/resolute-ui-alok-sir.webp" alt="Alok Sanghi, Managing Director, Resolute Group" width="877" height="1180" decoding="async"></div>
         <span class="triangle" aria-hidden="true"></span><span class="triangle" aria-hidden="true"></span>
       </div>
       <div>
@@ -196,7 +196,7 @@ const html = `
     </div>
 
     <a class="featured-story" href="https://www.aninews.in/news/sports/hockey/hyderabad-toofans-bag-bronze-medal-in-the-mens-hockey-india-league-2025-2620260126203001/" target="_blank" rel="noopener noreferrer" data-reveal>
-      <div class="featured-story__media"><img src="/assets/img/hil_bronze.jpg" alt="Hyderabad Toofans celebrating their Hockey India League bronze medal" width="1920" height="801" loading="lazy" decoding="async"></div>
+      <div class="featured-story__media"><img src="/assets/img/hil_bronze.webp" alt="Hyderabad Toofans celebrating their Hockey India League bronze medal" width="1920" height="801" loading="lazy" decoding="async"></div>
       <div class="featured-story__body">
         <span class="featured-story__meta">Latest · ANI News · <time datetime="2026-01-26">26 Jan 2026</time></span>
         <h3 class="featured-story__title">Hyderabad Toofans bag bronze medal in the men's Hockey India League 2025-26</h3>

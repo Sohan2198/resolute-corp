@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';
 
 export const ORIGIN = 'https://www.resolutecorp.in';
-const DEFAULT_IMAGE = `${ORIGIN}/assets/img/banner-1.jpg`;
+const DEFAULT_IMAGE = `${ORIGIN}/assets/img/banner-1-share.jpg`;
 const DEFAULT_IMAGE_ALT = 'Resolute Group: Fuelling innovation. Empowering tomorrow.';
 const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1';
 

@@ -30,7 +30,7 @@ const html = `
     </div>
 
     <a class="featured-story" href="https://www.aninews.in/news/sports/hockey/hyderabad-toofans-bag-bronze-medal-in-the-mens-hockey-india-league-2025-2620260126203001/" target="_blank" rel="noopener noreferrer" data-news-featured data-reveal>
-      <div class="featured-story__media"><img src="/assets/img/hil_bronze.jpg" alt="Hyderabad Toofans celebrating their Hockey India League bronze medal" width="1920" height="801" loading="lazy" decoding="async"></div>
+      <div class="featured-story__media"><img src="/assets/img/hil_bronze.webp" alt="Hyderabad Toofans celebrating their Hockey India League bronze medal" width="1920" height="801" loading="lazy" decoding="async"></div>
       <div class="featured-story__body">
         <span class="featured-story__meta">Latest · ANI News · <time datetime="2026-01-26">26 Jan 2026</time></span>
         <h3 class="featured-story__title">Hyderabad Toofans bag bronze medal in the men's Hockey India League 2025-26</h3>

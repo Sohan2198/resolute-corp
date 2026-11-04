@@ -31,7 +31,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>Premium properties</small>UAE</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/sharesquare.jpg" alt="ShareSquare logo" width="500" height="500"><span class="venture__logo-fallback">ShareSquare</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/sharesquare.webp" alt="ShareSquare logo" width="500" height="500"><span class="venture__logo-fallback">ShareSquare</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Own a share of</small>premium real estate</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>

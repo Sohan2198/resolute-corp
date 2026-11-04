@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Route, Routes, Outlet, Navigate } from 'react-router-dom';
 import './App.css';
 
@@ -12,18 +13,21 @@ import BlogList from './site/pages/BlogList';
 import BlogPost from './site/pages/BlogPost';
 import NotFound from './site/pages/NotFound';
 
-// Admin Components
+// Admin Components: downloaded only when an admin page is opened (the blog editor is large),
+// so visitors to the website do not load them.
 import { AdminProvider } from './contexts/AdminContext';
-import AdminLogin from './components/pages/admin/AdminLogin';
-import AdminDashboard from './components/pages/admin/AdminDashboard';
-import BlogManager from './components/pages/admin/BlogManager';
-import ContentManager from './components/pages/admin/ContentManager';
+const AdminLogin = lazy(() => import('./components/pages/admin/AdminLogin'));
+const AdminDashboard = lazy(() => import('./components/pages/admin/AdminDashboard'));
+const BlogManager = lazy(() => import('./components/pages/admin/BlogManager'));
+const ContentManager = lazy(() => import('./components/pages/admin/ContentManager'));
 
 // Pages that keep their own design (Resolute Sports, admin) keep the original loading screen.
 const LegacyLayout = () => (
   <>
     <PreLoader />
-    <Outlet />
+    <Suspense fallback={null}>
+      <Outlet />
+    </Suspense>
   </>
 );
 

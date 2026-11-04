@@ -32,7 +32,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>PVL 2024</small>Finalists</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/dt-logo.jpg" alt="Delhi Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Delhi Toofans</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/dt-logo.webp" alt="Delhi Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Delhi Toofans</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Owned by</small>Resolute Sports</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>

@@ -5,7 +5,7 @@
     "description": "Ahmedabad-based investment group with ventures in real estate, fashion and sports: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -26,7 +26,7 @@
             "width": 600,
             "height": 200
           },
-          "image": "/assets/img/banner-1.jpg",
+          "image": "/assets/img/banner-1-share.jpg",
           "description": "Resolute Corp is a diversified investment and venture-building group creating sustainable value across real estate, fashion and sports.",
           "slogan": "Progress is vitality",
           "email": "contact@resolutecorp.in",
@@ -173,7 +173,7 @@
           },
           "primaryImageOfPage": {
             "@type": "ImageObject",
-            "url": "/assets/img/banner-1.jpg"
+            "url": "/assets/img/banner-1-share.jpg"
           }
         },
         {
@@ -195,7 +195,7 @@
     "description": "Resolute Group invests in, builds and manages businesses across real estate, fashion and sports in India and the UAE, led by Managing Director Alok Sanghi.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -244,7 +244,7 @@
     "description": "Explore Resolute Group's four ventures: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans, across real estate, fashion and sports.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -358,7 +358,7 @@
     "description": "ShareSquare is a fractional real estate investment platform for premium properties in the UAE, a Resolute Group venture. Seamless, transparent and secure.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -427,7 +427,7 @@
     "description": "Hair Drama Co. has led hair fashion in India since 2015, with handmade accessories and Disney India, Barbie and Emily in Paris licences. A Resolute venture.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -500,7 +500,7 @@
     "description": "Delhi Toofans compete in the Prime Volleyball League, building India's volleyball culture and homegrown talent. A Resolute Sports team, part of Resolute Group.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -586,7 +586,7 @@
     "description": "Hyderabad Toofans compete in the Hockey India League and won bronze in 2025–26. A Resolute Sports team, part of Resolute Group.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -672,7 +672,7 @@
     "description": "Meet Resolute Group's leadership: Managing Director Alok Sanghi, Hair Drama Co. founder Priyanka Sanghi and the executive team.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -808,7 +808,7 @@
     "description": "Press coverage, news from Delhi Toofans, Hyderabad Toofans and Hair Drama Co., and perspectives on investing, markets and growth from Resolute Corp.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -867,7 +867,7 @@
     "description": "Documents relating to the Scheme of Arrangement of Resolute Corp Bharat Private Limited, including the notice of meeting and the scrutinizer's report.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -916,7 +916,7 @@
     "description": "Explore careers at Resolute Group across investments, digital and technology, legal, accounts, people and culture, brands and sports.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -965,7 +965,7 @@
     "description": "Share your venture or investment idea with Resolute Group. A personal introduction is the best route; otherwise, contact us directly.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -1014,7 +1014,7 @@
     "description": "Answers to common questions about how Resolute Corp operates, invests and grows.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -1147,7 +1147,7 @@
     "description": "How Resolute Corp Bharat Private Limited collects, uses and protects personal data submitted through this website.",
     "robots": "index, follow, max-image-preview:large, max-snippet:-1",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",
@@ -1196,7 +1196,7 @@
     "description": "This page could not be found. Return to the Resolute Group home page, portfolio or contact page.",
     "robots": "noindex, follow",
     "ogType": "website",
-    "image": "https://www.resolutecorp.in/assets/img/banner-1.jpg",
+    "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
     "jsonLd": {
       "@context": "https://schema.org",

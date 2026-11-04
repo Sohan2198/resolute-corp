@@ -31,7 +31,7 @@ const html = `
   </div>
   <div class="venture__visual">
     <div class="venture__chip venture__chip--a" data-reveal="right" data-delay="3"><small>HIL 2025–26</small>Bronze medal</div>
-    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/ht-logo.jpg" alt="Hyderabad Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Hyderabad Toofans</span></div>
+    <div class="venture__logo" data-reveal="scale" data-delay="2" data-tilt><img src="/assets/img/ht-logo.webp" alt="Hyderabad Toofans logo" width="500" height="500"><span class="venture__logo-fallback">Hyderabad Toofans</span></div>
     <div class="venture__chip venture__chip--b" data-reveal="left" data-delay="5"><small>Owned by</small>Resolute Sports</div>
   </div>
   <span class="venture__veil" aria-hidden="true"></span>

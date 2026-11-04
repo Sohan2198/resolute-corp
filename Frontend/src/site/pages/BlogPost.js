@@ -8,13 +8,15 @@ import NotFound from './NotFound';
 
 /**
  * The blog editor saves headings as bold-only paragraphs (<p><strong>Title</strong></p>), sometimes centred, plus
- * empty bold paragraphs as spacers. Mark them so the article styles can show them as headings:
- *   article__heading           a paragraph whose text is all bold
- *   article__heading--main     ...that the editor centred (the main section titles)
- *   article__spacer            an empty paragraph (spacing now comes from the heading styles)
+ * empty bold paragraphs as spacers. Turn them into real headings (for search engines and screen readers) and mark
+ * them for the article styles:
+ *   <h2 class="article__heading article__heading--main">   a bold-only line the editor centred (main section title)
+ *   <h3 class="article__heading">                         any other bold-only line (h2 when the post has no main titles)
+ *   article__spacer                                       an empty paragraph (spacing comes from the heading styles)
  */
 function formatContent(html) {
   const doc = new DOMParser().parseFromString(`<div>${html || ''}</div>`, 'text/html');
+  const headings = [];
   doc.querySelectorAll('p').forEach((p) => {
     const text = p.textContent.replace(/ /g, ' ').trim();
     if (!text) {
@@ -24,10 +26,16 @@ function formatContent(html) {
     const bold = Array.from(p.querySelectorAll('strong, b'))
       .filter((node) => !node.parentElement.closest('strong, b'))
       .map((node) => node.textContent).join('').replace(/ /g, ' ').trim();
-    if (bold === text && text.length <= 160) {
-      p.classList.add('article__heading');
-      if (p.classList.contains('ql-align-center')) p.classList.add('article__heading--main');
-    }
+    if (bold === text && text.length <= 160) headings.push({ p, main: p.classList.contains('ql-align-center') });
+  });
+  const hasMain = headings.some((h) => h.main);
+  headings.forEach(({ p, main }) => {
+    const heading = doc.createElement(main || !hasMain ? 'h2' : 'h3');
+    heading.className = p.className;
+    heading.classList.add('article__heading');
+    if (main) heading.classList.add('article__heading--main');
+    heading.innerHTML = p.innerHTML;
+    p.replaceWith(heading);
   });
   return doc.body.firstChild.innerHTML;
 }

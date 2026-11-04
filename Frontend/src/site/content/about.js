@@ -16,7 +16,7 @@ const html = `
     <div class="about__layout">
       <div class="about__media" data-reveal="left">
         <div class="about__badge"><span>Founded in</span><b>Ahmedabad</b></div>
-        <div class="about__frame"><img src="/assets/img/resolute-ui-about.jpg" alt="Inside the Resolute Group office" width="700" height="600" loading="lazy" decoding="async" data-parallax-media></div>
+        <div class="about__frame"><img src="/assets/img/resolute-ui-about.webp" alt="Inside the Resolute Group office" width="700" height="600" loading="lazy" decoding="async" data-parallax-media></div>
         <span class="triangle" aria-hidden="true"></span><span class="triangle" aria-hidden="true"></span><span class="triangle" aria-hidden="true"></span>
       </div>
       <div>
