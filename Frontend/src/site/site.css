@@ -57,10 +57,10 @@
 .rg .embed iframe { display: block; width: 100%; border: 0; }
 .rg .connect__form-wrap--embed { padding: clamp(14px, 2vw, 28px); }
 .rg .embed--form iframe { height: 960px; }
-/* Phones and tablets (form below the intro): the Microsoft Form is ~1,600px tall there. Show it in full so the
+/* Phones and tablets (form below the intro): the Microsoft Form is ~1,600px tall there (~1,900px with its validation messages). Show it in full so the
    page scrolls normally past it; a form scrolling inside a shorter frame gets stuck under touch scrolling. */
 @media (max-width: 959px) {
-  .rg .embed--form iframe { height: 1750px; }
+  .rg .embed--form iframe { height: 2000px; } /* fits the form with its validation messages (~1,875px) */
 }
 .rg .embed__fallback { padding: 14px 4px 0; font-size: 13.5px; color: #6b7684; }
 .rg .embed__fallback a { font-weight: 600; color: var(--color-blue); text-decoration: underline; text-underline-offset: 3px; }
