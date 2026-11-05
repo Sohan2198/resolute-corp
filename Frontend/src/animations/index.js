@@ -11,14 +11,14 @@ export const preLoaderAnim = () => {
     ease: "power3.inOut",
   })
     .to(
-      ".preloader",
+      ".legacy-preloader",
       {
         duration: 1.5,
         delay: 0.5, // short delay to show the loading gif
         opacity: 0,
         ease: "Power3.easeOut",
         onComplete: () => {
-          const preloader = document.querySelector(".preloader");
+          const preloader = document.querySelector(".legacy-preloader");
           if (preloader) preloader.style.display = "none";
         }
       }

@@ -1,79 +1,79 @@
-import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import { BrowserRouter, Route, Routes, Outlet, Navigate } from 'react-router-dom';
 import './App.css';
 
-import Footer from './components/layout/Footer';
-import Header from './components/layout/Header';
 import PreLoader from './components/layout/PreLoader';
-import Home from './components/pages/home/Home';
-import About from './components/pages/about/About';
-import Portfolio from './components/pages/portfolio/Portfolio';
-import Career from './components/pages/career/Career';
-import Blog from './components/pages/blog/Blog';
-import BlogPostDetail from './components/pages/blog/BlogPostDetail';
-import PressReleases from './components/pages/media/PressReleases';
-import EventsHighlights from './components/pages/media/EventsHighlights';
-import SchemeOfArrangement from './components/pages/media/SchemeOfArrangement';
-import Pitch from './components/pages/media/Pitch';
 import ResoluteSports from './components/pages/resolutesports/ResoluteSports';
 import SponsorshipPrivacyNotice from './components/pages/resolutesports/SponsorshipPrivacyNotice';
-import { Suspense } from 'react';
-import { Helmet } from 'react-helmet';
 
-// Admin Components
+// Redesigned website (src/site)
+import SiteLayout from './site/SiteLayout';
+import DesignPage from './site/DesignPage';
+import BlogList from './site/pages/BlogList';
+import BlogPost from './site/pages/BlogPost';
+import NotFound from './site/pages/NotFound';
+
+// Admin Components: downloaded only when an admin page is opened (the blog editor is large),
+// so visitors to the website do not load them.
 import { AdminProvider } from './contexts/AdminContext';
-import AdminLogin from './components/pages/admin/AdminLogin';
-import AdminDashboard from './components/pages/admin/AdminDashboard';
-import BlogManager from './components/pages/admin/BlogManager';
-import ContentManager from './components/pages/admin/ContentManager';
+const AdminLogin = lazy(() => import('./components/pages/admin/AdminLogin'));
+const AdminDashboard = lazy(() => import('./components/pages/admin/AdminDashboard'));
+const BlogManager = lazy(() => import('./components/pages/admin/BlogManager'));
+const ContentManager = lazy(() => import('./components/pages/admin/ContentManager'));
 
-const PublicLayout = () => (
+// Pages that keep their own design (Resolute Sports, admin) keep the original loading screen.
+const LegacyLayout = () => (
   <>
-    <Header />
-    <Outlet />
-    <Footer />
+    <PreLoader />
+    <Suspense fallback={null}>
+      <Outlet />
+    </Suspense>
   </>
 );
+
+const page = (key) => <DesignPage key={key} pageKey={key} />;
 
 function App() {
   return (
     <AdminProvider>
-      <PreLoader/>
       <div className="App">
         <BrowserRouter>
           <Routes>
-            {/* Public Routes with Header and Footer */}
-            <Route path="/" element={<PublicLayout />}>
-              <Route index element={
-                <Suspense fallback={<div>Components are loading please wait....</div>}>
-                  <Helmet>
-                    <title>Distinguished Investment Firm in India | Global Investment Firm | Resolutecorp</title>
-                    <meta name="description" content="Resolute Group drives financial growth across sectors like Cement, Real Estate, Fashion, and Sports with innovative strategies and risk diversification."/>
-                    <meta name="keywords" content="Distinguished investment firm, distinguished investment firm in India, global investment firm, investment management, financial services"/>
-                    <meta name="robots" content="index,follow"/>
-                  </Helmet>
-                  <Home/>
-                </Suspense>
-              } />
-              <Route path="about" element={<About />} />
-              <Route path="portfolio" element={<Portfolio />} />
-              <Route path="career" element={<Career />} />
-              <Route path="blog" element={<Blog />} />
-              <Route path="blog/:slug" element={<BlogPostDetail />} />
-              <Route path="pitch" element={<Pitch />} />
-              <Route path="events-highlights" element={<EventsHighlights />} />
-              <Route path="press-releases" element={<PressReleases />} />
-              <Route path="scheme-of-arrangement" element={<SchemeOfArrangement />} />
+            {/* Main website, new design */}
+            <Route path="/" element={<SiteLayout />}>
+              <Route index element={page('home')} />
+              <Route path="about" element={page('about')} />
+              <Route path="portfolio" element={page('portfolio')} />
+              <Route path="portfolio/sharesquare" element={page('sharesquare')} />
+              <Route path="portfolio/hair-drama-co" element={page('hairDramaCo')} />
+              <Route path="portfolio/delhi-toofans" element={page('delhiToofans')} />
+              <Route path="portfolio/hyderabad-toofans" element={page('hyderabadToofans')} />
+              <Route path="leadership" element={page('leadership')} />
+              <Route path="media" element={page('media')} />
+              <Route path="press-releases" element={page('pressReleases')} />
+              <Route path="events-highlights" element={page('eventsHighlights')} />
+              <Route path="scheme-of-arrangement" element={page('investors')} />
+              <Route path="investors" element={<Navigate to="/scheme-of-arrangement" replace />} />
+              <Route path="career" element={page('career')} />
+              <Route path="pitch" element={page('pitch')} />
+              <Route path="faq" element={page('faq')} />
+              <Route path="privacy-policy" element={page('privacy')} />
+              <Route path="blog" element={<BlogList />} />
+              <Route path="blog/:slug" element={<BlogPost />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
 
-            {/* Resolute Sports landing page (has its own header and footer) */}
-            <Route path="/resolutesports" element={<ResoluteSports />} />
-            <Route path="/sponsorship-privacy-notice" element={<SponsorshipPrivacyNotice />} />
+            <Route element={<LegacyLayout />}>
+              {/* Resolute Sports landing page (has its own header and footer) */}
+              <Route path="/resolutesports" element={<ResoluteSports />} />
+              <Route path="/sponsorship-privacy-notice" element={<SponsorshipPrivacyNotice />} />
 
-            {/* Admin Routes (No public Header/Footer) */}
-            <Route path="/admin" element={<AdminLogin />} />
-            <Route path="/admin/dashboard" element={<AdminDashboard />} />
-            <Route path="/admin/dashboard/blog" element={<BlogManager />} />
-            <Route path="/admin/dashboard/content" element={<ContentManager />} />
+              {/* Admin Routes (No public Header/Footer) */}
+              <Route path="/admin" element={<AdminLogin />} />
+              <Route path="/admin/dashboard" element={<AdminDashboard />} />
+              <Route path="/admin/dashboard/blog" element={<BlogManager />} />
+              <Route path="/admin/dashboard/content" element={<ContentManager />} />
+            </Route>
           </Routes>
         </BrowserRouter>
       </div>
