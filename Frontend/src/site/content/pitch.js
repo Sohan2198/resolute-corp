@@ -12,7 +12,7 @@ const html = `
 </div>
 
 <!-- ============================ CONNECT: PITCH US / CAREERS ============================ -->
-<section class="section connect" id="connect" data-section="connect" aria-labelledby="connect-title">
+<section class="section connect connect--pitch" id="connect" data-section="connect" aria-labelledby="connect-title">
   <div class="container">
     <div class="connect__card" data-reveal>
       <canvas class="connect__facets" data-facets="connect" aria-hidden="true"></canvas>
