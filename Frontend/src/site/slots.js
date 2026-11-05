@@ -8,6 +8,9 @@ import useBlogPosts, { isoDate } from './useBlogPosts';
 import { observeReveal } from './runtime';
 
 const PITCH_FORM_URL = 'https://forms.office.com/Pages/ResponsePage.aspx?id=Nuzr3ZxEQEeJ3Y8lwpCrElEh8u2_oLhFtowKYPoXBaNUQVlHQkZOWExUQlU4TEQ3Sjk4VVFXTk5UOC4u&embed=true';
+// The same form outside the frame: Microsoft shows a "Fill out the form" screen instead of the form in browsers
+// that block third-party cookies or storage, so offer a direct link as well.
+const PITCH_FORM_DIRECT_URL = PITCH_FORM_URL.replace('&embed=true', '');
 const CAREERS_URL = 'https://resolute.keka.com/careers/jobdetails/';
 
 export function BlogCard({ post, delay, withImage = false }) {
@@ -74,15 +77,38 @@ export function PitchForm() {
         loading="lazy"
         allowFullScreen
       />
+      <p className="embed__fallback">
+        Form not loading?{' '}
+        <a href={PITCH_FORM_DIRECT_URL} target="_blank" rel="noopener noreferrer">Open the pitch form in a new tab</a>
+      </p>
     </div>
   );
 }
 
-/** The existing Keka careers portal. */
+/**
+ * The existing Keka careers portal. Opening a job (or going back to the list) loads a new Keka page at the top of
+ * the frame, while the visitor may be scrolled far down it; bring the top of the frame into view each time.
+ */
 export function CareerJobs() {
+  const frameRef = useRef(null);
+  const loads = useRef(0);
+  const onFrameLoad = () => {
+    loads.current += 1;
+    if (loads.current === 1) return; // the first load is the job list itself
+    const frame = frameRef.current;
+    if (frame && frame.getBoundingClientRect().top < 0) {
+      const header = document.querySelector('[data-header]');
+      const offset = (header ? header.getBoundingClientRect().height : 0) + 16;
+      window.scrollTo({ top: frame.getBoundingClientRect().top + window.pageYOffset - offset, behavior: 'smooth' });
+    }
+  };
   return (
     <div className="embed embed--jobs">
-      <iframe title="Open roles at Resolute Group" src={CAREERS_URL} width="100%" loading="lazy" />
+      <iframe ref={frameRef} title="Open roles at Resolute Group" src={CAREERS_URL} width="100%" loading="lazy" onLoad={onFrameLoad} />
+      <p className="embed__fallback">
+        Openings not loading, or prefer a full page?{' '}
+        <a href={CAREERS_URL} target="_blank" rel="noopener noreferrer">Open our careers page in a new tab</a>
+      </p>
     </div>
   );
 }

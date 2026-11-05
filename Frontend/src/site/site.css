@@ -57,6 +57,14 @@
 .rg .embed iframe { display: block; width: 100%; border: 0; }
 .rg .connect__form-wrap--embed { padding: clamp(14px, 2vw, 28px); }
 .rg .embed--form iframe { height: 960px; }
+/* Phones and tablets (form below the intro): the Microsoft Form is ~1,600px tall there. Show it in full so the
+   page scrolls normally past it; a form scrolling inside a shorter frame gets stuck under touch scrolling. */
+@media (max-width: 959px) {
+  .rg .embed--form iframe { height: 1750px; }
+}
+.rg .embed__fallback { padding: 14px 4px 0; font-size: 13.5px; color: #6b7684; }
+.rg .embed__fallback a { font-weight: 600; color: var(--color-blue); text-decoration: underline; text-underline-offset: 3px; }
+.rg .embed__fallback a:hover { color: var(--color-navy); }
 .rg .connect__card--single { grid-template-columns: 1fr; }
 .rg .connect__card--single .connect__intro { display: grid; gap: 0 60px; }
 .rg .connect__card--single .tabs { justify-self: start; }
@@ -70,7 +78,13 @@
 }
 .rg .connect__embed { margin-top: clamp(24px, 3vw, 40px); }
 .rg .embed--jobs { border-top: 4px solid var(--color-blue); box-shadow: 0 26px 50px rgba(16, 57, 133, 0.1); }
-.rg .embed--jobs iframe { height: max(1100px, 100vh); }
+/* Tall enough for Keka's whole job list (about 1,500px on desktop, 2,200px on phones and tablets), so the page
+   scrolls normally instead of the list scrolling inside the frame (which gets stuck under touch scrolling). */
+.rg .embed--jobs iframe { height: 1600px; }
+@media (max-width: 959px) {
+  .rg .embed--jobs iframe { height: 2600px; } /* also fits a typical job description, e.g. AI Intern ~2,470px */
+}
+.rg .embed--jobs .embed__fallback { padding: 14px 20px 18px; }
 
 /* Blog index ---------------------------------------------------------------- */
 .rg .blog-index__tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; margin: 44px 0 0; }
