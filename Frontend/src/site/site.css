@@ -62,6 +62,15 @@
 @media (max-width: 959px) {
   .rg .embed--form iframe { height: 2000px; } /* fits the form with its validation messages (~1,875px) */
 }
+/* Microsoft Forms shows its "Fill out the form" fallback screen instead of the form when the frame is narrower
+   than 320px, which the page margins and box padding caused on phones up to ~375px wide (e.g. 360px Android
+   phones). On phones the pitch card runs edge to edge and the form uses the full screen width. */
+@media (max-width: 700px) {
+  .rg .connect--pitch .container { padding-left: 0; padding-right: 0; }
+  .rg .connect--pitch .connect__card { clip-path: none; }
+  .rg .connect--pitch .connect__form-wrap--embed { padding-left: 0; padding-right: 0; }
+  .rg .connect--pitch .embed__fallback { padding-left: var(--gutter); padding-right: var(--gutter); padding-bottom: 14px; }
+}
 .rg .embed__fallback { padding: 14px 4px 0; font-size: 13.5px; color: #6b7684; }
 .rg .embed__fallback a { font-weight: 600; color: var(--color-blue); text-decoration: underline; text-underline-offset: 3px; }
 .rg .embed__fallback a:hover { color: var(--color-navy); }
