@@ -63,7 +63,12 @@ export default function BlogPost() {
   if (post === null) return <NotFound />;
 
   const path = `/blog/${slug}`;
-  const description = post ? (post.excerpt || plainText(post.content).slice(0, 160)) : '';
+  // SEO fields from the admin editor; empty ones fall back to the post's title and opening lines.
+  const field = (name) => (post && typeof post[name] === 'string' ? post[name].trim() : '');
+  const title = field('metaTitle') || (post ? `${post.title} | Resolute Corp Blog` : '');
+  const description = field('metaDescription') || (post ? (post.excerpt || plainText(post.content).slice(0, 160)) : '');
+  const keywords = field('metaKeywords').split(',').map((k) => k.trim()).filter(Boolean).join(', ');
+  const robots = field('metaRobots') || undefined;
   // Banners pasted into the editor are stored as data: URLs, which social networks cannot fetch.
   const shareImage = post && /^https?:\/\//.test(post.banner || '') ? post.banner
     : post && post.banner && post.banner.startsWith('/') ? `${ORIGIN}${post.banner}` : undefined;
@@ -72,8 +77,10 @@ export default function BlogPost() {
     <main id="main">
       {post && (
         <Seo
-          title={`${post.title} | Resolute Corp Blog`}
+          title={title}
           description={description}
+          keywords={keywords}
+          robots={robots}
           path={path}
           ogType="article"
           image={shareImage}
