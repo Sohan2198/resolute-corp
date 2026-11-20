@@ -9,7 +9,7 @@ const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1';
  * Page title, description, canonical address, social sharing tags and structured data (JSON-LD).
  * `path` is the page's address on this site; leave it out for pages that should not have a canonical (404).
  */
-export default function Seo({ title, description, path, robots, ogType = 'website', image, imageAlt, jsonLd }) {
+export default function Seo({ title, description, path, robots, keywords, ogType = 'website', image, imageAlt, jsonLd }) {
   const url = path != null ? `${ORIGIN}${path}` : null;
   const shareImage = image || DEFAULT_IMAGE;
   return (
@@ -17,6 +17,7 @@ export default function Seo({ title, description, path, robots, ogType = 'websit
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="robots" content={robots || DEFAULT_ROBOTS} />
+      {keywords && <meta name="keywords" content={keywords} />}
       {url && <link rel="canonical" href={url} />}
       {url && <link rel="alternate" hrefLang="en-IN" href={url} />}
       {url && <link rel="alternate" hrefLang="x-default" href={url} />}

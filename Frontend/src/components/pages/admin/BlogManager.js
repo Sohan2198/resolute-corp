@@ -78,6 +78,9 @@ const resizeImageFile = (file, maxWidth = 1200, quality = 0.8) => new Promise((r
 });
 
 
+// Search engine tags for a post. Empty fields fall back to the post's title and opening lines.
+const EMPTY_SEO = { metaTitle: '', metaDescription: '', metaKeywords: '', metaRobots: '' };
+
 const BlogManager = () => {
   const { logout, isLoggedIn, authLoading } = useAdmin();
   const navigate = useNavigate();
@@ -102,7 +105,8 @@ const BlogManager = () => {
     category: '',
     banner: '',
     excerpt: '',
-    content: ''
+    content: '',
+    ...EMPTY_SEO
   });
 
   useEffect(() => {
@@ -186,7 +190,7 @@ const BlogManager = () => {
 
   const editPost = (post) => {
     setEditingPost(post);
-    setFormData(post);
+    setFormData({ ...EMPTY_SEO, ...post });
     setIsCustomCategory(false);
     setIsCustomAuthor(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -204,7 +208,8 @@ const BlogManager = () => {
       category: '',
       banner: '',
       excerpt: '',
-      content: ''
+      content: '',
+      ...EMPTY_SEO
     });
   };
 
@@ -521,7 +526,51 @@ const BlogManager = () => {
                   </div>
                 </div>
               </div>
-              
+
+              <div className="rounded-2xl border border-gray-200 bg-gray-50/60 p-6 space-y-5">
+                <div>
+                  <h3 className="text-base font-semibold text-gray-900">SEO (search engines)</h3>
+                  <p className="text-xs text-gray-500 mt-1">Optional. Leave a field empty to use the post's title and opening lines, as before.</p>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Meta title <span className="font-normal text-gray-400">({(formData.metaTitle || '').length} characters, ideally under 60)</span></label>
+                  <input
+                    type="text" name="metaTitle" value={formData.metaTitle || ''} onChange={handleInputChange}
+                    placeholder={formData.title ? `${formData.title} | Resolute Corp Blog` : 'Uses the post title when empty'}
+                    className="w-full border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#0E4669] focus:border-transparent bg-white border transition-all"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Meta description <span className="font-normal text-gray-400">({(formData.metaDescription || '').length} characters, ideally under 160)</span></label>
+                  <textarea
+                    name="metaDescription" rows={3} value={formData.metaDescription || ''} onChange={handleInputChange}
+                    placeholder="Uses the opening lines of the post when empty"
+                    className="w-full border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#0E4669] focus:border-transparent bg-white border transition-all"
+                  />
+                </div>
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                  <div className="lg:col-span-2">
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Keywords <span className="font-normal text-gray-400">(separated by commas)</span></label>
+                    <input
+                      type="text" name="metaKeywords" value={formData.metaKeywords || ''} onChange={handleInputChange}
+                      className="w-full border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#0E4669] focus:border-transparent bg-white border transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">Robots</label>
+                    <select
+                      name="metaRobots" value={formData.metaRobots || ''} onChange={handleInputChange}
+                      className="w-full border-gray-300 rounded-xl px-4 py-3 focus:ring-2 focus:ring-[#0E4669] focus:border-transparent bg-white border transition-all"
+                    >
+                      <option value="">Default (index, follow)</option>
+                      <option value="index,follow">index,follow</option>
+                      <option value="noindex,follow">noindex,follow (hide from Google)</option>
+                      <option value="noindex,nofollow">noindex,nofollow</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
               <div className="pb-12">
                 <label className="block text-sm font-medium text-gray-700 mb-2">Content (Rich Text)</label>
                 <div className="bg-white rounded-xl overflow-hidden border border-gray-300 focus-within:ring-2 focus-within:ring-[#0E4669] focus-within:border-transparent transition-all">
