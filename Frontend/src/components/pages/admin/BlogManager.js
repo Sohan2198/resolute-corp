@@ -86,6 +86,7 @@ const BlogManager = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const [editingPost, setEditingPost] = useState(null);
+  const editorRef = useRef(null);
   
   // UI States
   const [isCustomCategory, setIsCustomCategory] = useState(false);
@@ -193,7 +194,8 @@ const BlogManager = () => {
     setFormData({ ...EMPTY_SEO, ...post });
     setIsCustomCategory(false);
     setIsCustomAuthor(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // The panel scrolls inside its own container, not the window, so bring the editor into view directly.
+    editorRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const resetForm = () => {
@@ -366,7 +368,7 @@ const BlogManager = () => {
         </div>
         
         {/* Editor Form */}
-        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12">
+        <div ref={editorRef} className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden mb-12">
           <div className="px-8 py-6 border-b border-gray-100 flex justify-between items-center bg-white">
             <h3 className="text-2xl font-semibold text-gray-800">
               {editingPost ? '✨ Edit Post' : '📝 Create New Post'}

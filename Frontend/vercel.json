@@ -105,6 +105,7 @@
     { "source": "/your-investment-playbook-for-fy2027-whats-hot-whats-not", "destination": "/blog/your-investment-playbook-for-fy2027-whats-hot-whats-not", "statusCode": 301 }
   ],
   "rewrites": [
+    { "source": "/blog/:slug", "destination": "/api/blog-page?slug=:slug" },
     {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
