@@ -1,9 +1,10 @@
 {
   "home": {
     "path": "/",
-    "title": "Resolute Corp | Diversified Investment Group in India",
-    "description": "Ahmedabad-based investment group with ventures in real estate, fashion and sports: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Distinguished Investment Firm in India | Global Investment Firm | Resolutecorp",
+    "description": "Resolute Group drives financial growth across sectors like Cement, Real Estate, Fashion, and Sports with innovative strategies and risk diversification.",
+    "keywords": "Distinguished investment firm, distinguished investment firm in India, global investment firm, investment management, financial services",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -162,8 +163,8 @@
           "@type": "WebPage",
           "@id": "https://www.resolutecorp.in/#webpage",
           "url": "https://www.resolutecorp.in/",
-          "name": "Resolute Corp | Diversified Investment Group in India",
-          "description": "Ahmedabad-based investment group with ventures in real estate, fashion and sports: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans.",
+          "name": "Distinguished Investment Firm in India | Global Investment Firm | Resolutecorp",
+          "description": "Resolute Group drives financial growth across sectors like Cement, Real Estate, Fashion, and Sports with innovative strategies and risk diversification.",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -191,9 +192,10 @@
   },
   "about": {
     "path": "/about",
-    "title": "About Us | Resolute Corp, Diversified Investment Group",
-    "description": "Resolute Group invests in, builds and manages businesses across real estate, fashion and sports in India and the UAE, led by Managing Director Alok Sanghi.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Global Investment Firm | Invest in Global Markets | Resolutecorp",
+    "description": "Resolute Group aims to create global investment opportunities through innovation and technology, delivering exceptional returns and sustainable growth.",
+    "keywords": "Global investment firm, invest in global markets, investment firm, distinguished investment firm in India",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -204,8 +206,8 @@
           "@type": "AboutPage",
           "@id": "https://www.resolutecorp.in/about#webpage",
           "url": "https://www.resolutecorp.in/about",
-          "name": "About Us | Resolute Corp, Diversified Investment Group",
-          "description": "Resolute Group invests in, builds and manages businesses across real estate, fashion and sports in India and the UAE, led by Managing Director Alok Sanghi.",
+          "name": "Global Investment Firm | Invest in Global Markets | Resolutecorp",
+          "description": "Resolute Group aims to create global investment opportunities through innovation and technology, delivering exceptional returns and sustainable growth.",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -240,9 +242,10 @@
   },
   "portfolio": {
     "path": "/portfolio",
-    "title": "Portfolio | Ventures in Real Estate, Fashion and Sports",
-    "description": "Explore Resolute Group's four ventures: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans, across real estate, fashion and sports.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Resolutecorp | Investment Management and Financial Services",
+    "description": "Explore Resolute Group's diverse portfolios, including Sanghi Industries, ShareSquare, Hair Drama Co., and the dynamic sports teams – driving innovation and growth across sectors!",
+    "keywords": "Investment Management and Financial Services, investment firm, distinguished investment firm in India, global investment firm, investment management",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -253,8 +256,8 @@
           "@type": "CollectionPage",
           "@id": "https://www.resolutecorp.in/portfolio#webpage",
           "url": "https://www.resolutecorp.in/portfolio",
-          "name": "Portfolio | Ventures in Real Estate, Fashion and Sports",
-          "description": "Explore Resolute Group's four ventures: ShareSquare, Hair Drama Co., Delhi Toofans and Hyderabad Toofans, across real estate, fashion and sports.",
+          "name": "Resolutecorp | Investment Management and Financial Services",
+          "description": "Explore Resolute Group's diverse portfolios, including Sanghi Industries, ShareSquare, Hair Drama Co., and the dynamic sports teams – driving innovation and growth across sectors!",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -668,9 +671,10 @@
   },
   "leadership": {
     "path": "/leadership",
-    "title": "Leadership | Alok Sanghi, Priyanka Sanghi and Executive Team",
-    "description": "Meet Resolute Group's leadership: Managing Director Alok Sanghi, Hair Drama Co. founder Priyanka Sanghi and the executive team.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Meet The Leadership Team at Resolute Corp",
+    "description": "Meet the leadership team at Resolute Corp. Discover the vision, experience and expertise driving the company's businesses, investments and growth.",
+    "keywords": "Resolute Corp leadership team, Resolute Corp management, Resolute Corp investments, Resolute Corp business growth",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -681,8 +685,8 @@
           "@type": "WebPage",
           "@id": "https://www.resolutecorp.in/leadership#webpage",
           "url": "https://www.resolutecorp.in/leadership",
-          "name": "Leadership | Alok Sanghi, Priyanka Sanghi and Executive Team",
-          "description": "Meet Resolute Group's leadership: Managing Director Alok Sanghi, Hair Drama Co. founder Priyanka Sanghi and the executive team.",
+          "name": "Meet The Leadership Team at Resolute Corp",
+          "description": "Meet the leadership team at Resolute Corp. Discover the vision, experience and expertise driving the company's businesses, investments and growth.",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -804,9 +808,10 @@
   },
   "media": {
     "path": "/media",
-    "title": "Media | Resolute in the News, Blog and Press",
-    "description": "Press coverage, news from Delhi Toofans, Hyderabad Toofans and Hair Drama Co., and perspectives on investing, markets and growth from Resolute Corp.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Resolute Latest News | Press Releases | Announcements and Updates",
+    "description": "Explore Resolute Corp's media centre for the latest press releases, news coverage, announcements and updates on the company's businesses and initiatives.",
+    "keywords": "Press Releases, Resolute latest news, news coverage, announcements and updates",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -817,8 +822,8 @@
           "@type": "CollectionPage",
           "@id": "https://www.resolutecorp.in/media#webpage",
           "url": "https://www.resolutecorp.in/media",
-          "name": "Media | Resolute in the News, Blog and Press",
-          "description": "Press coverage, news from Delhi Toofans, Hyderabad Toofans and Hair Drama Co., and perspectives on investing, markets and growth from Resolute Corp.",
+          "name": "Resolute Latest News | Press Releases | Announcements and Updates",
+          "description": "Explore Resolute Corp's media centre for the latest press releases, news coverage, announcements and updates on the company's businesses and initiatives.",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -863,9 +868,10 @@
   },
   "investors": {
     "path": "/scheme-of-arrangement",
-    "title": "Investors | Scheme of Arrangement Documents | Resolute Corp",
-    "description": "Documents relating to the Scheme of Arrangement of Resolute Corp Bharat Private Limited, including the notice of meeting and the scrutinizer's report.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Scheme of Arrangement | Investor Information, Filings & Updates – Resolute Corp",
+    "description": "Explore Resolute Corp's Scheme of Arrangement for important investor information, official documents, filings and related updates.",
+    "keywords": "Resolute Corp investor information, Scheme of Arrangement updates, merger and demerger filings, investor relations documents",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -876,8 +882,8 @@
           "@type": "WebPage",
           "@id": "https://www.resolutecorp.in/scheme-of-arrangement#webpage",
           "url": "https://www.resolutecorp.in/scheme-of-arrangement",
-          "name": "Investors | Scheme of Arrangement Documents | Resolute Corp",
-          "description": "Documents relating to the Scheme of Arrangement of Resolute Corp Bharat Private Limited, including the notice of meeting and the scrutinizer's report.",
+          "name": "Scheme of Arrangement | Investor Information, Filings & Updates – Resolute Corp",
+          "description": "Explore Resolute Corp's Scheme of Arrangement for important investor information, official documents, filings and related updates.",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -912,9 +918,10 @@
   },
   "career": {
     "path": "/career",
-    "title": "Careers at Resolute Group | Join Our Team",
-    "description": "Explore careers at Resolute Group across investments, digital and technology, legal, accounts, people and culture, brands and sports.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Resolutecorp | Career | Investment Firm in India",
+    "description": "Join our team of innovators and make a difference in the world!",
+    "keywords": "Career, investment firm, distinguished investment firm in India, global investment firm, investment management, financial services",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -925,8 +932,8 @@
           "@type": "ContactPage",
           "@id": "https://www.resolutecorp.in/career#webpage",
           "url": "https://www.resolutecorp.in/career",
-          "name": "Careers at Resolute Group | Join Our Team",
-          "description": "Explore careers at Resolute Group across investments, digital and technology, legal, accounts, people and culture, brands and sports.",
+          "name": "Resolutecorp | Career | Investment Firm in India",
+          "description": "Join our team of innovators and make a difference in the world!",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -1010,9 +1017,10 @@
   },
   "faq": {
     "path": "/faq",
-    "title": "FAQ | How Resolute Corp Operates, Invests and Grows",
-    "description": "Answers to common questions about how Resolute Corp operates, invests and grows.",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1",
+    "title": "Frequently Asked Questions About Resolute Corp | FAQs",
+    "description": "Find answers to frequently asked questions about Resolute Corp, its business operations, investment approach, portfolio companies and key initiatives.",
+    "keywords": "frequently asked questions, business operations, investment approach, portfolio companies and key initiatives",
+    "robots": "index,follow",
     "ogType": "website",
     "image": "https://www.resolutecorp.in/assets/img/banner-1-share.jpg",
     "imageAlt": "Resolute Group: Fuelling innovation. Empowering tomorrow.",
@@ -1023,8 +1031,8 @@
           "@type": "WebPage",
           "@id": "https://www.resolutecorp.in/faq#webpage",
           "url": "https://www.resolutecorp.in/faq",
-          "name": "FAQ | How Resolute Corp Operates, Invests and Grows",
-          "description": "Answers to common questions about how Resolute Corp operates, invests and grows.",
+          "name": "Frequently Asked Questions About Resolute Corp | FAQs",
+          "description": "Find answers to frequently asked questions about Resolute Corp, its business operations, investment approach, portfolio companies and key initiatives.",
           "inLanguage": "en-IN",
           "isPartOf": {
             "@id": "https://www.resolutecorp.in/#website"
@@ -1266,6 +1274,8 @@
   "blog": {
     "path": "/blog",
     "title": "ResoluteCorp - Finance and Investment Centric Blog",
-    "description": "Explore insights on investments and growth with Resolute Group's expert analyses and strategies for navigating dynamic markets and achieving sustainable success."
+    "description": "Explore insights on investments and growth with Resolute Group's expert analyses and strategies for navigating dynamic markets and achieving sustainable success.",
+    "keywords": "Investment blog, global investment firm, invest in global markets, investment firm, distinguished investment firm in India",
+    "robots": "index,follow"
   }
 }
