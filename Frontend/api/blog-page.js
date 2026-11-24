@@ -11,7 +11,8 @@ const DEFAULT_IMAGE = `${ORIGIN}/assets/img/banner-1-share.jpg`;
 const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1';
 const FIELDS = ['title', 'excerpt', 'banner', 'metaTitle', 'metaDescription', 'metaKeywords', 'metaRobots'];
 
-const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+// Apostrophes stay as they are (attributes use double quotes), so View Page Source reads naturally.
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', '#39': "'" };
 const plainText = (html) => String(html || '')
   .replace(/<[^>]*>/g, ' ')
